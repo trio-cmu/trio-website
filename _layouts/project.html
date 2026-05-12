@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include project-hero.html %}
+
+<section class="project-body">
+  {{ content }}
+</section>
+
+{% if page.publications %}
+  <section class="project-publications">
+    <h2>Related Publications</h2>
+    {% for pid in page.publications %}
+      {% include citation.html lookup=pid style="rich" %}
+    {% endfor %}
+  </section>
+{% endif %}
+
+
+{% include tags.html tags=page.tags link="/projects/" repo=page.repo %}

@@ -31,6 +31,11 @@ defaults:
       type: "members"
     values:
       layout: member
+  # markdown files in /_projects
+  - scope:
+      type: "projects"
+    values:
+      layout: project
   # markdown files in /_posts
   - scope:
       type: "posts"
@@ -40,6 +45,9 @@ defaults:
 collections:
   # generate page for each member
   members:
+    output: true
+  # generate page for each project
+  projects:
     output: true
   # generate page for each post
   posts:

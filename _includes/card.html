@@ -1,9 +1,24 @@
 {{ " " }}
 <div class="card" data-style="{{ include.style }}">
+  {%- assign _href = include.link | default: include.url -%}
+  {%- assign is_external = false -%}
+  {%- if _href and _href contains '://' -%}
+    {%- if site.url and _href contains site.url -%}
+      {%- assign is_external = false -%}
+    {%- else -%}
+      {%- assign is_external = true -%}
+    {%- endif -%}
+  {%- endif -%}
+
   <a
-    {% if include.link %}
-      href="{{ include.link | relative_url | uri_escape }}"
+    {% if _href %}
+      {% if is_external %}
+        href="{{ _href | uri_escape }}"
+      {% else %}
+        href="{{ _href | relative_url | uri_escape }}"
+      {% endif %}
     {% endif %}
+    {% if is_external %}target="_blank" rel="noopener"{% endif %}
     aria-label="{{ include.title | default: "card link" | regex_strip }}"
     class="card-image"
   >
@@ -17,10 +32,24 @@
 
   <div class="card-text">
     {% if include.title %}
+      {%- assign _href = include.link | default: include.url -%}
+      {%- assign is_external = false -%}
+      {%- if _href and _href contains '://' -%}
+        {%- if site.url and _href contains site.url -%}
+          {%- assign is_external = false -%}
+        {%- else -%}
+          {%- assign is_external = true -%}
+        {%- endif -%}
+      {%- endif -%}
       <a
-        {% if include.link %}
-          href="{{ include.link | relative_url | uri_escape }}"
+        {% if _href %}
+          {% if is_external %}
+            href="{{ _href | uri_escape }}"
+          {% else %}
+            href="{{ _href | relative_url | uri_escape }}"
+          {% endif %}
         {% endif %}
+        {% if is_external %}target="_blank" rel="noopener"{% endif %}
         {% if include.tooltip %}
           data-tooltip="{{ include.tooltip | xml_escape }}"
         {% endif %}
