@@ -5,10 +5,13 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-wrench" %}Projects and Open Positions
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+## Open Positions
+
+We are always looking for Master's and Undergraduate students to join our lab! Below are featured projects with open positions. 
+
+Interested in collaborating or joining? [Get in touch!](/contact/) 
 
 {% include tags.html tags="publication, resource, website" %}
 

@@ -14,13 +14,21 @@ phd:
   icon: fa-solid fa-graduation-cap
   description: PhD Student
 
-undergrad:
+masters:
   icon: fa-solid fa-user-graduate
+  description: Master's Student
+
+undergrad:
+  icon: fa-solid fa-file-certificate
   description: Undergraduate Student
 
-programmer:
+visitor:
+  icon: fa-solid fa-globe
+  description: Visitor
+
+researcher:
   icon: fa-solid fa-code
-  description: Programmer
+  description: Visitor
 
 mascot:
   icon: fa-solid fa-dog

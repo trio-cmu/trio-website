@@ -1,9 +1,11 @@
 ---
 ---
 
-# trio-cmu's Website
+# TRIO @ Carnegie Mellon University
 
-An engaging 1-3 sentence description of your lab.
+### Welcome to TRIO Lab! We work at the intersection of robotics, intelligence and optimization to build trusworthy autonomous agents for the physical world. 
+
+🤖 🚧 This website is currently under construction. Please reach out if you have any questions! 🚧 🤖
 
 {% include section.html %}
 
@@ -11,7 +13,7 @@ An engaging 1-3 sentence description of your lab.
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Our overarching goal is to create physical intelligence that is trustworthy and scalable. To do so, we use and expand the capabilities of optimization tools and artificial intelligence, making them suitable for interactions with the real world.
 
 {%
   include button.html
@@ -34,12 +36,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+We are actively growing our lab. If you are an incoming student, an interested collaborator, or just generally curious about what we do, please check out our projects page for open positions and get in touch! 
 
 {%
   include button.html
   link="projects"
-  text="Browse our projects"
+  text="Browse projects & open positions"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -59,7 +61,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 {% capture text %}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Meet our team of Ph.D. students, Master's students, undergraduates, and research assistants! 
 
 {%
   include button.html

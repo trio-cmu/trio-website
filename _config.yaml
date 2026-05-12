@@ -1,19 +1,21 @@
 # site properties and page defaults
-title: trio-cmu
-subtitle: 
-description: An engaging 1-3 sentence description of your lab.
-header: images/background.jpg
-footer: images/background.jpg
+title: TRIO Lab
+subtitle: Trustworthy Robotics, Intelligence, and Optimization Lab
+description: A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.
+header: images/background-new.png
+header-dark: false
+footer: images/background-new.png
+footer-dark: false
 proofer: false
 
 # site social media and other links
 links:
-  email: contact@trio-cmu.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  #email: contact@trio-cmu.com
+  #orcid: 0000-0001-8713-9213
+  # google-scholar: ETJoidYAAAAJ
   github: trio-cmu
-  twitter: trio-cmu
-  youtube: trio-cmu
+  #twitter: trio-cmu
+  #youtube: trio-cmu
 
 ### jekyll settings
 
