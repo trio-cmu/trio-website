@@ -9,12 +9,10 @@
   publisher: International Journal of Robotics Research
   date: '2024-01-01'
   link: https://doi.org/hb3rt6
+  type: article
   buttons:
   - type: paper
     link: https://doi.org/10.1177/02783649241269337
-  type: article
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2406.02365
   title: Exploiting Chordal Sparsity for Fast Global Optimality with Application to
     Localization
@@ -25,12 +23,10 @@
   publisher: Workshop on Algorithmic Foundations for Robotics
   date: '2024-01-01'
   link: https://doi.org/hb3rwt
+  type: inproceedings
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2406.02365
-  type: inproceedings
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1109/ICASSP40776.2020.9053903
   title: Realizability of Planar Point Embeddings from Angle Measurements
   authors:
@@ -51,14 +47,12 @@
     confirm this in extensive numerical simulations, and we illustrate the use of
     these constraints for denoising angle measurements along with the reconstruction
     of a valid point set.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/ICASSP40776.2020.9053903
   pages: 5710--5714
   volume: 2020-May
   type: inproceedings
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICASSP40776.2020.9053903
 - id: doi:10.1109/LRA.2022.3233232
   title: 'Safe and Smooth: Certified Continuous-Time Range-Only Localization'
   authors:
@@ -82,15 +76,45 @@
     datasets, that the efficient local solver often finds the globally optimal solution
     (confirmed by our certificate), but it may converge to local solutions with high
     errors, which our certificate correctly detects.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/LRA.2022.3233232
   pages: 1117--1124
   volume: '8'
   number: '2'
   type: article
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2022.3233232
+- id: doi:10.1109/TRO.2024.3454570
+  title: Toward Globally Optimal State Estimation Using Automatically Tightened Semidefinite
+    Relaxations
+  authors:
+  - "Frederike D\xFCmbgen"
+  - Connor Holmes
+  - Ben Agro
+  - Timothy D. Barfoot
+  publisher: IEEE Transactions on Robotics
+  date: '2024-01-01'
+  link: https://doi.org/hb3rt9
+  abstract: In recent years, semidefinite relaxations of common optimization problems
+    in robotics have attracted growing attention due to their ability to provide globally
+    optimal solutions. In many cases, it was shown that specific handcrafted redundant
+    constraints are required to obtain tight relaxations and thus global optimality.
+    These constraints are formulation-dependent and typically identified through a
+    lengthy manual process. Instead, the present paper suggests an automatic method
+    to find a set of sufficient redundant constraints to obtain tightness, if they
+    exist. We first propose an efficient feasibility check to determine if a given
+    set of variables can lead to a tight formulation. Secondly, we show how to scale
+    the method to problems of bigger size. At no point of the process do we have to
+    find redundant constraints manually. We showcase the effectiveness of the approach,
+    in simulation and on real datasets, for range-based localization and stereo-based
+    pose estimation. Finally, we reproduce semidefinite relaxations presented in recent
+    literature and show that our automatic method always finds a smaller set of constraints
+    sufficient for tightness than previously considered.
+  pages: 4338--4358
+  volume: '40'
+  type: article
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3454570
 - id: doi:10.48550/arXiv.2206.05082
   title: 'A Fine Line: Total Least-Squares Line Fitting as QCQP Optimization'
   authors:
@@ -112,15 +136,10 @@
     as an SDP; however, with a lot of data the SDP can be slow and as such we show
     how we can construct a certificate of optimality for a faster method such as Iteratively
     Reweighted Least-Squares (IRLS).
+  type: article
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2206.05082
-  - type: source
-    link: https://github.com/example/repo
-  type: article
-  plugin: sources.py
-  file: sources.yaml
-  image: images/photo.jpg
 - id: doi:10.1109/ICRA55743.2025.11128254
   title: A Data-driven Contact Estimation Method for Wheeled-Biped Robots
   authors:
@@ -139,12 +158,10 @@
     steps rely on inertial measurements. We evaluate this approach in extensive real-robot
     and simulation experiments. Our method achieves better performance while being
     considerably more sample efficient than a comparable deep-learning baseline.
+  type: inproceedings
   buttons:
   - type: paper
     link: https://doi.org/10.1109/ICRA55743.2025.11128254
-  type: inproceedings
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1109/LRA.2024.3354623
   title: Optimal Initialization Strategies for Range-Only Trajectory Estimation
   authors:
@@ -169,15 +186,13 @@
     that our proposed approaches estimate the initial pose and initial trajectories
     accurately compared to iterative local solvers. Additionally, the proposed relaxations
     recover global minima under moderate range measurement noise levels.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/LRA.2024.3354623
   pages: 2160--2167
   volume: '9'
   number: '3'
   type: article
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2024.3354623
 - id: doi:10.48550/arXiv.2507.17572
   title: Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
   authors:
@@ -204,12 +219,10 @@
     non-parametric setting of trajectory optimization with simulators treated as black
     boxes, we demonstrate how KernelSOS can be combined with fast local solvers to
     uncover higher-quality solutions without compromising overall runtimes.'
+  type: inproceedings
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2507.17572
-  type: inproceedings
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1109/TRO.2024.3443674
   title: Data-Driven Batch Localization and SLAM Using Koopman Linearization
   authors:
@@ -239,13 +252,11 @@
     have similar performance compared to their model-based counterparts, they outperform
     the model-based approaches when the prior model is imperfect, showing the potential
     benefit of the proposed data-driven technique.'
+  pages: 3964--3983
+  type: article
   buttons:
   - type: paper
     link: https://doi.org/10.1109/TRO.2024.3443674
-  pages: 3964--3983
-  type: article
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1109/TRO.2025.3578228
   title: 'SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization
     Problems in Robotics'
@@ -274,14 +285,12 @@
     method in a real-world application: we train a deep neural network to detect image
     keypoints for robot localization in challenging lighting conditions. An open-source,
     PyTorch implementation of SDPRLayers will be made available upon paper acceptance.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/TRO.2025.3578228
   pages: 4120--4138
   volume: '41'
   type: article
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2025.3578228
 - id: doi:10.1109/TRO.2024.3475220
   title: On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems
     in Robotics
@@ -312,14 +321,12 @@
     (even for very low noise levels) unless specific redundant constraints are used.
     We demonstrate the tightness of our formulations on both simulated and real-world
     data.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/TRO.2024.3475220
   pages: 4805--4824
   volume: '40'
   type: article
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3475220
 - id: doi:10.1109/ICASSP.2018.8462441
   title: Combining Range and Direction for Improved Localization
   authors:
@@ -346,13 +353,11 @@
     regularize each projection. This solution is optimal when Gaussian noise is added
     to the edge vectors. We demonstrate in numerical simulations that both algorithms
     outperform state-of-the-art solutions.
+  pages: 3484--3488
+  type: inproceedings
   buttons:
   - type: paper
     link: https://doi.org/10.1109/ICASSP.2018.8462441
-  pages: 3484--3488
-  type: inproceedings
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2604.27667
   title: Can Tabular Foundation Models Guide Exploration in Robot Policy Learning?
   authors:
@@ -377,13 +382,24 @@
     baselines under an identical rollout budget. These results demonstrate that foundation
     models are a powerful new tool for creating sample-efficient policy learning methods
     for continuous control in robotics.
+  number: arXiv:2604.27667
+  type: misc
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2604.27667
-  number: arXiv:2604.27667
+- id: doi:10.5281/zenodo.20169956
+  title: 'POPCOR: Polynomial Optimization for Certifiably Optimal Robotics'
+  authors:
+  - "Frederike D\xFCmbgen"
+  publisher: Zenodo
+  date: '2025-01-01'
+  link: https://doi.org/hb3tvc
   type: misc
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: software
+    link: https://github.com/duembgen/popcor
+  - type: paper
+    link: https://doi.org/10.5281/zenodo.20169956
 - id: doi:10.1109/LRA.2022.3194669
   title: 'Blind as a Bat: Audible Echolocation on Small Robots'
   authors:
@@ -411,15 +427,13 @@
     during the measurement process. Even in the more challenging setting of a flying
     drone, we can successfully localize walls, which we demonstrate in a proof-of-concept
     multi-wall localization and mapping demo.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/LRA.2022.3194669
   pages: 1271--1278
   volume: '8'
   number: '3'
   type: article
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2022.3194669
 - id: doi:10.1137/18m123428x
   title: Coordinate Difference Matrices
   authors:
@@ -453,15 +467,13 @@
     analysis of the reconstruction error. Finally, we apply the established knowledge
     to five practical problems to demonstrate the versatility of this theory and showcase
     the wide range of applications covered by the CDM framework.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1137/18m123428x
   pages: 332--363
   volume: '41'
   number: '1'
   type: article
-  plugin: sources.py
-  file: sources.yaml
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1137/18m123428x
 - id: doi:10.48550/arXiv.2411.03951
   title: 'Continuous-Time State Estimation Methods in Robotics: A Survey'
   authors:
@@ -493,12 +505,10 @@
     splines and Gaussian processes together and contextualizing works from other research
     domains, this work identifies and analyzes open problems in continuous-time state
     estimation and suggests new research directions.
+  type: article
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2411.03951
-  type: article
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.48550/arXiv.2604.27175
   title: Global Sampling-Based Trajectory Optimization for Contact-Rich Manipulation
     via KernelSOS
@@ -525,10 +535,8 @@
     manipulation. Experimental results demonstrate that our approach robustly uncovers
     highquality solutions, achieving faster convergence and lower final costs compared
     to existing baseline methods.
+  number: arXiv:2604.27175
+  type: misc
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2604.27175
-  number: arXiv:2604.27175
-  type: misc
-  plugin: sources.py
-  file: sources.yaml

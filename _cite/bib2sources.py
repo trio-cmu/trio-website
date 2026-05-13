@@ -277,15 +277,25 @@ def main():
             else:
                 item["date"] = f"{year}-01-01"
 
-        # Abstract (cleaned)
-        if entry.get("abstract"):
-            item["abstract"] = clean_bibtex(entry.get("abstract"))
+        # Notes (cleaned)
+        if entry.get("note"):
+            item["note"] = clean_bibtex(entry.get("note"))
 
-        # Create button linking to DOI or URL
+        # Create buttons linking to DOI, software repo, or URL
         buttons = []
         doi = entry.get("doi", "").strip()
         url = entry.get("url", "").strip()
+        keywords = entry.get("keywords", "").strip().lower()
+        entry_type = entry.get("ENTRYTYPE", "").lower()
         
+        # Check if this is a software artifact (by entry type, zenodo DOI, or keywords)
+        is_software = entry_type == "software" or "zenodo" in doi.lower() or "software" in keywords or (url and ("github" in url or "gitlab" in url or "gitea" in url))
+        
+        # Add software button if URL exists and it's marked as software
+        if is_software and url:
+            buttons.append({"type": "software", "link": url})
+        
+        # Add paper button for DOI
         if doi:
             # Format DOI as URL if needed
             if not doi.lower().startswith("http"):
@@ -293,15 +303,16 @@ def main():
             else:
                 doi_url = doi
             buttons.append({"type": "paper", "link": doi_url})
-        elif url:
+        # Add paper button for URL if it's not already used for software
+        elif url and not is_software:
             buttons.append({"type": "paper", "link": url})
         
         if buttons:
             item["buttons"] = buttons
 
-        # Notes (cleaned)
-        if entry.get("note"):
-            item["note"] = clean_bibtex(entry.get("note"))
+        # Abstract (cleaned)
+        if entry.get("abstract"):
+            item["abstract"] = clean_bibtex(entry.get("abstract"))
 
         # Publisher or journal/booktitle (cleaned)
         publisher = clean_bibtex(entry.get("publisher", ""))

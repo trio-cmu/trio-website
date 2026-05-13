@@ -32,6 +32,9 @@
   - Majed El Helou
   - Adam Scholefield
   date: '2020-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICASSP40776.2020.9053903
   abstract: Localization of a set of nodes is an important and a thoroughly researched
     problem in robotics and sensor networks. This paper is concerned with the theory
     of localization from inner-angle measurements. We focus on the challenging case
@@ -42,9 +45,6 @@
     confirm this in extensive numerical simulations, and we illustrate the use of
     these constraints for denoising angle measurements along with the reconstruction
     of a valid point set.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/ICASSP40776.2020.9053903
   publisher: IEEE International Conference on Acoustics, Speech and Signal Processing
     (ICASSP)
   pages: 5710--5714
@@ -57,6 +57,9 @@
   - Connor Holmes
   - Timothy D. Barfoot
   date: '2023-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2022.3233232
   abstract: 'A common approach to localize a mobile robot is by measuring distances
     to points of known positions, called anchors. Locating a device from distance
     measurements is typically posed as a non-convex optimization problem, stemming
@@ -71,13 +74,41 @@
     datasets, that the efficient local solver often finds the globally optimal solution
     (confirmed by our certificate), but it may converge to local solutions with high
     errors, which our certificate correctly detects.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/LRA.2022.3233232
   publisher: IEEE Robotics and Automation Letters
   pages: 1117--1124
   volume: '8'
   number: '2'
+  type: article
+- id: doi:10.1109/TRO.2024.3454570
+  title: Toward Globally Optimal State Estimation Using Automatically Tightened Semidefinite
+    Relaxations
+  authors:
+  - "Frederike D\xFCmbgen"
+  - Connor Holmes
+  - Ben Agro
+  - Timothy D. Barfoot
+  date: '2024-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3454570
+  abstract: In recent years, semidefinite relaxations of common optimization problems
+    in robotics have attracted growing attention due to their ability to provide globally
+    optimal solutions. In many cases, it was shown that specific handcrafted redundant
+    constraints are required to obtain tight relaxations and thus global optimality.
+    These constraints are formulation-dependent and typically identified through a
+    lengthy manual process. Instead, the present paper suggests an automatic method
+    to find a set of sufficient redundant constraints to obtain tightness, if they
+    exist. We first propose an efficient feasibility check to determine if a given
+    set of variables can lead to a tight formulation. Secondly, we show how to scale
+    the method to problems of bigger size. At no point of the process do we have to
+    find redundant constraints manually. We showcase the effectiveness of the approach,
+    in simulation and on real datasets, for range-based localization and stereo-based
+    pose estimation. Finally, we reproduce semidefinite relaxations presented in recent
+    literature and show that our automatic method always finds a smaller set of constraints
+    sufficient for tightness than previously considered.
+  publisher: IEEE Transactions on Robotics
+  pages: 4338--4358
+  volume: '40'
   type: article
 - id: doi:10.48550/arXiv.2206.05082
   title: 'A Fine Line: Total Least-Squares Line Fitting as QCQP Optimization'
@@ -86,6 +117,9 @@
   - Connor Holmes
   - "Frederike D\xFCmbgen"
   date: '2022-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2206.05082
   abstract: This note uses the Total Least-Squares (TLS) line-fitting problem as a
     canvas to explore some modern optimization tools. The contribution is meant to
     be tutorial in nature. The TLS problem has a lot of mathematical similarities
@@ -98,9 +132,6 @@
     as an SDP; however, with a lot of data the SDP can be slow and as such we show
     how we can construct a certificate of optimality for a faster method such as Iteratively
     Reweighted Least-Squares (IRLS).
-  buttons:
-  - type: paper
-    link: https://doi.org/10.48550/arXiv.2206.05082
   publisher: arXiv:2206.05082
   type: article
 - id: doi:10.1109/ICRA55743.2025.11128254
@@ -110,6 +141,9 @@
   - "Frederike D\xFCmbgen"
   - "St\xE9phane Caron"
   date: '2025-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICRA55743.2025.11128254
   abstract: Contact estimation is a key ability for limbed robots, where making and
     breaking contacts has a direct impact on state estimation and balance control.
     Existing approaches typically rely on gate-cycle priors or designated contact
@@ -119,9 +153,6 @@
     steps rely on inertial measurements. We evaluate this approach in extensive real-robot
     and simulation experiments. Our method achieves better performance while being
     considerably more sample efficient than a comparable deep-learning baseline.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/ICRA55743.2025.11128254
   publisher: IEEE International Conference on Robotics and Automation (ICRA)
   type: inproceedings
 - id: doi:10.1109/LRA.2024.3354623
@@ -132,6 +163,9 @@
   - Timothy D. Barfoot
   - Angela P. Schoellig
   date: '2024-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2024.3354623
   abstract: Range-only (RO) pose estimation involves determining a robot's pose over
     time by measuring the distance between multiple devices on the robot, known as
     tags, and devices installed in the environment, known as anchors. The non-convex
@@ -146,9 +180,6 @@
     that our proposed approaches estimate the initial pose and initial trajectories
     accurately compared to iterative local solvers. Additionally, the proposed relaxations
     recover global minima under moderate range measurement noise levels.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/LRA.2024.3354623
   publisher: IEEE Robotics and Automation Letters
   pages: 2160--2167
   volume: '9'
@@ -163,6 +194,9 @@
   - Justin Carpentier
   - "Frederike D\xFCmbgen"
   date: '2026-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2507.17572
   abstract: 'Global optimization has gained attraction over the past decades, thanks
     to the development of both theoretical foundations and efficient numerical routines.
     Among recent advances, Kernel Sum of Squares (KernelSOS) provides a powerful theoretical
@@ -178,9 +212,6 @@
     non-parametric setting of trajectory optimization with simulators treated as black
     boxes, we demonstrate how KernelSOS can be combined with fast local solvers to
     uncover higher-quality solutions without compromising overall runtimes.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.48550/arXiv.2507.17572
   publisher: American Control Conference
   type: inproceedings
 - id: doi:10.1109/TRO.2024.3443674
@@ -191,6 +222,9 @@
   - James R. Forbes
   - Timothy D. Barfoot
   date: '2024-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3443674
   abstract: 'We present a framework for model-free batch localization and SLAM. We
     use lifting functions to map a control-affine system into a high-dimensional space,
     where both the process model and the measurement model are rendered bilinear.
@@ -210,9 +244,6 @@
     have similar performance compared to their model-based counterparts, they outperform
     the model-based approaches when the prior model is imperfect, showing the potential
     benefit of the proposed data-driven technique.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/TRO.2024.3443674
   publisher: IEEE Transactions on Robotics
   pages: 3964--3983
   type: article
@@ -224,6 +255,9 @@
   - "Frederike D\xFCmbgen"
   - Timothy D. Barfoot
   date: '2025-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2025.3578228
   abstract: 'Differentiable optimization is a powerful new paradigm capable of reconciling
     model-based and learning-based approaches in robotics. However, the majority of
     robotics optimization problems are non-convex and current differentiable optimization
@@ -242,9 +276,6 @@
     method in a real-world application: we train a deep neural network to detect image
     keypoints for robot localization in challenging lighting conditions. An open-source,
     PyTorch implementation of SDPRLayers will be made available upon paper acceptance.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/TRO.2025.3578228
   publisher: IEEE Transactions on Robotics
   pages: 4120--4138
   volume: '41'
@@ -257,6 +288,9 @@
   - "Frederike D\xFCmbgen"
   - Timothy D. Barfoot
   date: '2024-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3475220
   abstract: 'In recent years, there has been remarkable progress in the development
     of so-called certifiable perception methods, which leverage semidefinite, convex
     relaxations to find global optima of perception problems in robotics. However,
@@ -277,9 +311,6 @@
     (even for very low noise levels) unless specific redundant constraints are used.
     We demonstrate the tightness of our formulations on both simulated and real-world
     data.'
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/TRO.2024.3475220
   publisher: IEEE Transactions on Robotics
   pages: 4805--4824
   volume: '40'
@@ -295,6 +326,9 @@
   - Adam Scholefield
   - Martin Vetterli
   date: '2018-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICASSP.2018.8462441
   abstract: Self-localization of nodes in a sensor network is typically achieved using
     either range or direction measurements; in this paper, we show that a constructive
     combination of both improves the estimation. We propose two localization algorithms
@@ -307,9 +341,6 @@
     regularize each projection. This solution is optimal when Gaussian noise is added
     to the edge vectors. We demonstrate in numerical simulations that both algorithms
     outperform state-of-the-art solutions.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/ICASSP.2018.8462441
   publisher: IEEE International Conference on Acoustics, Speech and Signal Processing
     (ICASSP)
   pages: 3484--3488
@@ -320,6 +351,9 @@
   - Buqing Ou
   - "Frederike D\xFCmbgen"
   date: '2026-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2604.27667
   abstract: Policy optimization in high-dimensional continuous control for robotics
     remains a challenging problem. Predominant methods are inherently local and often
     require extensive tuning and carefully chosen initial guesses for good performance,
@@ -336,11 +370,19 @@
     baselines under an identical rollout budget. These results demonstrate that foundation
     models are a powerful new tool for creating sample-efficient policy learning methods
     for continuous control in robotics.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.48550/arXiv.2604.27667
   publisher: arXiv
   number: arXiv:2604.27667
+  type: misc
+- id: doi:10.5281/zenodo.20169956
+  title: 'POPCOR: Polynomial Optimization for Certifiably Optimal Robotics'
+  authors:
+  - "Frederike D\xFCmbgen"
+  date: '2025-01-01'
+  buttons:
+  - type: software
+    link: https://github.com/duembgen/popcor
+  - type: paper
+    link: https://doi.org/10.5281/zenodo.20169956
   type: misc
 - id: doi:10.1109/LRA.2022.3194669
   title: 'Blind as a Bat: Audible Echolocation on Small Robots'
@@ -351,6 +393,9 @@
   - Adam Scholefield
   - Martin Vetterli
   date: '2023-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2022.3194669
   abstract: For safe and efficient operation, mobile robots need to perceive their
     environment, and in particular, perform tasks such as obstacle detection, localization,
     and mapping. Although robots are often equipped with microphones and speakers,
@@ -367,9 +412,6 @@
     during the measurement process. Even in the more challenging setting of a flying
     drone, we can successfully localize walls, which we demonstrate in a proof-of-concept
     multi-wall localization and mapping demo.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1109/LRA.2022.3194669
   publisher: IEEE Robotics and Automation Letters
   pages: 1271--1278
   volume: '8'
@@ -384,6 +426,9 @@
   - Miranda Krekovic
   - Martin Vetterli
   date: '2020-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1137/18m123428x
   abstract: In many problems such as phase retrieval, molecular biology, source localization,
     and sensor array calibration, one can measure vector differences between pairs
     of points and attempt to recover the position of these points; this class of problems
@@ -406,9 +451,6 @@
     analysis of the reconstruction error. Finally, we apply the established knowledge
     to five practical problems to demonstrate the versatility of this theory and showcase
     the wide range of applications covered by the CDM framework.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.1137/18m123428x
   publisher: SIAM Journal on Matrix Analysis and Applications
   pages: 332--363
   volume: '41'
@@ -426,6 +468,9 @@
   - Timothy D. Barfoot
   - Marco Hutter
   date: '2025-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2411.03951
   abstract: Accurate, efficient, and robust state estimation is more important than
     ever in robotics as the variety of platforms and complexity of tasks continue
     to grow. Historically, discrete-time filters and smoothers have been the dominant
@@ -443,9 +488,6 @@
     splines and Gaussian processes together and contextualizing works from other research
     domains, this work identifies and analyzes open problems in continuous-time state
     estimation and suggests new research directions.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.48550/arXiv.2411.03951
   publisher: IEEE Transactions on Robotics
   type: article
 - id: doi:10.48550/arXiv.2604.27175
@@ -455,6 +497,9 @@
   - Zhongqi Wei
   - "Frederike D\xFCmbgen"
   date: '2026-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2604.27175
   abstract: Contact-rich manipulation is challenging due to its high dimensionality,
     the requirement for long time horizons, and the presence of hybrid contact dynamics.
     Sampling-based methods have become a popular approach for this class of problems,
@@ -472,9 +517,6 @@
     manipulation. Experimental results demonstrate that our approach robustly uncovers
     highquality solutions, achieving faster convergence and lower final costs compared
     to existing baseline methods.
-  buttons:
-  - type: paper
-    link: https://doi.org/10.48550/arXiv.2604.27175
   publisher: arXiv
   number: arXiv:2604.27175
   type: misc

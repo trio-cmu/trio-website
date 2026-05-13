@@ -7,13 +7,15 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects and Open Positions
 
+You can find below an overview of ongoing and past projects from the TRIO Lab at Carnegie Mellon University and from prior appointments at Inria, University of Toronto, and EPFL.
+
 ## Open Positions
 
 We are always looking for Master's and Undergraduate students to join our lab! Below are featured projects with open positions. 
 
 Interested in collaborating or joining? [Get in touch!](/contact/) 
 
-{% include tags.html tags="publication, resource, website" %}
+{% include tags.html tags="robotics, optimization, intelligence, software" %}
 
 {% include search-info.html %}
 

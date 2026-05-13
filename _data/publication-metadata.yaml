@@ -1,3 +1,99 @@
+# Certifiably Optimal Rotation and Pose Estimation Based on the Cayley Map
+- id: doi:10.1177/02783649241269337
+  projects:
+  - /projects/hard-problems/
+
+# Exploiting Chordal Sparsity for Fast Global Optimality with Application to Localization
+- id: doi:10.48550/arXiv.2406.02365
+  projects:
+  - /projects/seamless/
+
+# Realizability of Planar Point Embeddings from Angle Measurements
+- id: doi:10.1109/ICASSP40776.2020.9053903
+  projects: 
+  - /projects/sensors/
+
+# Safe and Smooth: Certified Continuous-Time Range-Only Localization
+- id: doi:10.1109/LRA.2022.3233232
+  projects: 
+  - /projects/sensors/
+  - /projects/hard-problems/
+
+# Toward Globally Optimal State Estimation Using Automatically Tightened Semidefinite Relaxations
+- id: doi:10.1109/TRO.2024.3454570
+  projects:
+  - /projects/hard-problems/
+  - /projects/seamless/
+  - /projects/sensors/
+
+# A Fine Line: Total Least-Squares Line Fitting as QCQP Optimization
 - id: doi:10.48550/arXiv.2206.05082
-  image: images/photo.jpg
-  code: https://github.com/example/repo
+  projects:
+  - /projects/hard-problems/
+
+# A Data-driven Contact Estimation Method for Wheeled-Biped Robots
+- id: doi:10.1109/ICRA55743.2025.11128254
+  projects: []
+
+# Optimal Initialization Strategies for Range-Only Trajectory Estimation
+- id: doi:10.1109/LRA.2024.3354623
+  projects:
+  - /projects/hard-problems/
+  - /projects/sensors/
+
+# Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
+- id: doi:10.48550/arXiv.2507.17572
+  projects:
+  - /projects/hard-problems/
+  - /projects/optimal-formulation/
+  - /projects/sample-efficiency
+
+# Data-Driven Batch Localization and SLAM Using Koopman Linearization
+- id: doi:10.1109/TRO.2024.3443674
+  projects:
+  - /projects/optimal-formulation/
+  - /projects/sample-efficiency
+
+# SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization Problems in Robotics
+- id: doi:10.1109/TRO.2025.3578228
+  projects:
+  - /projects/optimal-formulation/
+
+# On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems in Robotics
+- id: doi:10.1109/TRO.2024.3475220
+  projects:
+  - /projects/hard-problems/
+
+# Combining Range and Direction for Improved Localization
+- id: doi:10.1109/ICASSP.2018.8462441
+  projects: 
+  - /projects/sensors/
+
+# Can Tabular Foundation Models Guide Exploration in Robot Policy Learning?
+- id: doi:10.48550/arXiv.2604.27667
+  projects:
+  - /projects/sample-efficiency
+
+# POPCOR: Polynomial Optimization for Certifiably Optimal Robotics
+- id: doi:10.5281/zenodo.20169956
+  projects:
+  - /projects/seamless/
+
+# Blind as a Bat: Audible Echolocation on Small Robots
+- id: doi:10.1109/LRA.2022.3194669
+  projects:
+  - /projects/sensors/
+
+# Coordinate Difference Matrices
+- id: doi:10.1137/18m123428x
+  projects:
+  - /projects/sensors/
+
+# Continuous-Time State Estimation Methods in Robotics: A Survey
+- id: doi:10.48550/arXiv.2411.03951
+  projects: []
+
+# Global Sampling-Based Trajectory Optimization for Contact-Rich Manipulation via KernelSOS
+- id: doi:10.48550/arXiv.2604.27175
+  projects: 
+  - /projects/hard-problems/

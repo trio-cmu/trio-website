@@ -214,6 +214,11 @@ source:
   text: Source
   tooltip: Source code
 
+software:
+  icon: fa-solid fa-laptop-code
+  text: Software
+  tooltip: Software
+
 server:
   icon: fa-solid fa-server
   text: Server
@@ -233,3 +238,20 @@ package:
   icon: fa-solid fa-box
   text: Package
   tooltip: Package
+
+# project tags
+
+optimization:
+  icon: fa-solid fa-sliders
+  text: Optimization
+  tooltip: Optimization
+
+robotics:
+  icon: fa-solid fa-robot
+  text: Robotics
+  tooltip: Robotics
+
+intelligence:
+  icon: fa-solid fa-brain
+  text: Intelligence
+  tooltip: Intelligence

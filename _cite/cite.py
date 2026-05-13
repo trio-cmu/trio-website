@@ -196,7 +196,11 @@ for index, source in enumerate(sources):
                 continue
 
     # preserve fields from input source, overriding existing fields
+    # but keep source buttons separate to ensure they take priority
+    source_buttons = source.pop("buttons", None)
     citation.update(source)
+    if source_buttons:
+        citation["buttons"] = source_buttons
 
     # merge any custom metadata stored outside the generated sources file
     # (use direct dict access since _id contains dots which break get_safe)
@@ -216,6 +220,11 @@ for index, source in enumerate(sources):
     # ensure date in proper format for correct date sorting
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
+
+    # remove internal metadata fields not needed in output
+    citation.pop("plugin", None)
+    citation.pop("file", None)
+    citation.pop("projects", None)
 
     # add new citation to list
     citations.append(citation)

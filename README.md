@@ -25,16 +25,20 @@
 
   See `_members/first-last.md` for a template!
 
-## Adding Publication Thumbnails and Links
+## Managing Publications and Project Associations
 
-Keep custom publication metadata out of `_data/sources.yaml` so it does not get overwritten by the export scripts.
+Publications are automatically pulled from `_data/sources.yaml` (which is auto-generated) and enriched with metadata from `_data/publication-metadata.yaml`.
 
-1. **Add a record** in `_data/publication-metadata.yaml` with the publication `id` and any extra fields you want to keep, such as `image`, `code`, or custom `buttons`.
+### Adding Publication Thumbnails and Links
+
+Keep custom publication metadata out of `_data/sources.yaml` since it gets overwritten by the export scripts.
+
+1. **Add a record** in `_data/publication-metadata.yaml` with the publication `id` and any extra fields you want to keep:
    - `image`: Path to a thumbnail image for the publication
    - `code`: URL to code repository (automatically creates a "Source" button)
    - `buttons`: Custom buttons with `type` and `link` (e.g., `type: source`, `type: docs`)
+   - `projects`: List of project permalinks this publication is affiliated with
 2. **Regenerate the citations** so the metadata is merged into `_data/citations.yaml`.
-3. **Add the publication ID** to the project page front matter under `publications:` so the page renders it in the Related Publications section.
 
 Example:
 
@@ -46,13 +50,30 @@ Example:
   buttons:
     - type: docs
       link: https://example.com/docs
+  projects:
+    - /projects/cool-project/
+    - /projects/another-project/
 ```
 
+### Linking Publications to Projects
+
+Instead of manually listing publications in each project file, publications are automatically displayed on project pages based on their `projects` array in `publication-metadata.yaml`:
+
+- **On project pages**: Publications listed in `publication-metadata.yaml` with the project's permalink will automatically appear in the "Related Publications" section
+- **On publication pages**: Each publication displays links to all projects it's associated with
+
+Example project file:
+
 ```yaml
-# _projects/cool-dataset.md
-publications:
-  - doi:10.48550/arXiv.2206.05082
+# _projects/cool-project.md
+---
+layout: project
+permalink: /projects/cool-project/
+title: Cool Project
+---
 ```
+
+Publications with `/projects/cool-project/` in their `projects` array will automatically appear on this project's page. No need to manually manage the publications list!
 
   ## Testing Locally
 

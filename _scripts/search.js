@@ -212,4 +212,43 @@
   window.addEventListener("load", searchFromUrl);
   // after tags load
   window.addEventListener("tagsfetched", searchFromUrl);
+
+  // allow tag buttons to toggle without full navigation
+  document.addEventListener("click", (e) => {
+    const el = e.target.closest(tagSelector);
+    if (!el) return;
+    // only handle anchor-like tags
+    e.preventDefault();
+
+    const tagText = el.innerText.trim();
+    const tagNorm = normalizeTag(tagText);
+
+    const url = new URL(window.location);
+    const params = new URLSearchParams(url.search);
+    const current = params.get("search") || "";
+    const parts = splitQuery(current);
+
+    // toggle tag in parts.tags
+    const existing = parts.tags || [];
+    let newTags;
+    if (existing.includes(tagNorm)) {
+      newTags = existing.filter((t) => t !== tagNorm);
+    } else {
+      newTags = [...existing, tagNorm];
+    }
+
+    // rebuild query preserving terms and phrases
+    const pieces = [];
+    // add terms
+    for (const term of parts.terms) pieces.push(term);
+    // add phrases (non-tag quoted phrases)
+    for (const phrase of parts.phrases) pieces.push(`"${phrase}"`);
+    // add tags as quoted tag parts
+    for (const t of newTags) pieces.push(`"tag: ${t.replaceAll("-", " ")}"`);
+
+    const newQuery = pieces.join(" ").trim();
+
+    runSearch(newQuery);
+    updateUrl(newQuery);
+  });
 }

@@ -111,7 +111,24 @@
                 text=button.text
                 link=button.link
                 style="bare"
+                clickable=false
               %}
+            {% endfor %}
+          </div>
+        {% endif %}
+
+        <!-- Display related projects -->
+        {% assign pub_metadata = site.data['publication-metadata'] | where: 'id', citation.id | first %}
+        {% if pub_metadata and pub_metadata.projects.size > 0 %}
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            {% for project_url in pub_metadata.projects %}
+                {% assign project_doc = site.projects | where: 'url', project_url | first %}
+                {% if project_doc %}
+                  <a href="{{ project_url | relative_url }}" class="citation-project-link">
+                    {{ project_doc.title }}
+                </a>
+              {% endif %}
             {% endfor %}
           </div>
         {% endif %}

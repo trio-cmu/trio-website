@@ -8,11 +8,12 @@ layout: default
   {{ content }}
 </section>
 
-{% if page.publications %}
+{% assign project_publications = site.data.sources | publications_for_project: page.permalink, site.data['publication-metadata'] %}
+{% if project_publications.size > 0 %}
   <section class="project-publications">
     <h2>Related Publications</h2>
-    {% for pid in page.publications %}
-      {% include citation.html lookup=pid style="rich" %}
+    {% for pub in project_publications %}
+      {% include citation.html lookup=pub.id style="rich" %}
     {% endfor %}
   </section>
 {% endif %}
