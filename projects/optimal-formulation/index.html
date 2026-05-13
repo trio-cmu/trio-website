@@ -43,25 +43,25 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Cool Tutorial | TRIO Lab</title>
+<title>Optimal problem formulation | TRIO Lab</title>
 
 <link rel="icon" href="/trio-website/images/icon.png">
 
-<meta name="title" content="Cool Tutorial">
-<meta name="description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.">
+<meta name="title" content="Optimal problem formulation">
+<meta name="description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. We explore how to automatically design optimization problems for robotics.">
 
-<meta property="og:title" content="Cool Tutorial">
+<meta property="og:title" content="Optimal problem formulation">
 <meta property="og:site_title" content="TRIO Lab">
-<meta property="og:description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.">
+<meta property="og:description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. We explore how to automatically design optimization problems for robotics.">
 <meta property="og:url" content="https://trio-cmu.github.io/trio-website">
-<meta property="og:image" content="/trio-website/images/share.jpg">
+<meta property="og:image" content="/trio-website/images/share.png">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="Cool Tutorial">
-<meta property="twitter:description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.">
+<meta property="twitter:title" content="Optimal problem formulation">
+<meta property="twitter:description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. We explore how to automatically design optimization problems for robotics.">
 <meta property="twitter:url" content="https://trio-cmu.github.io/trio-website">
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:image" content="/trio-website/images/share.jpg">
+<meta property="twitter:image" content="/trio-website/images/share.png">
 
 
   <meta property="og:type" content="website">
@@ -73,9 +73,9 @@
     
       "@type": "WebSite",
     
-    "name": "Cool Tutorial",
-    "description": "Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.",
-    "headline": "Cool Tutorial",
+    "name": "Optimal problem formulation",
+    "description": "Trustworthy Robotics, Intelligence, and Optimization Lab. We explore how to automatically design optimization problems for robotics.",
+    "headline": "Optimal problem formulation",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/trio-website/images/icon.png" }
@@ -44228,61 +44228,342 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <section class="background" data-size="page">
     <header class="project-hero">
-  <h1 class="page-title">Cool Tutorial</h1>
+  <h1 class="page-title">Optimal problem formulation</h1>
   
-    <p class="page-subtitle">a subtitle</p>
+    <p class="page-subtitle">...closing the loop between solvers and formulation</p>
   
 </header>
 
 <div class="feature">
-  <a href="https://github.com/" class="feature-image" aria-label="Cool Tutorial">
-    <img src="/trio-website/images/photo.jpg" loading="lazy" alt="Cool Tutorial" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+  <a class="feature-image" aria-label="Optimal problem formulation">
+    <img src="/trio-website/images/photo.jpg" loading="lazy" alt="Optimal problem formulation" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="feature-text">
     
+      <p>We explore how to automatically design optimization problems for robotics.</p>
 
     
 
     
-      <p>
-
-
-
-  </p>
-<div class="button-wrapper">
-    <a class="button" href="https://github.com/" data-tooltip="External link" data-style="bare" aria-label="External link">
-      <i class="icon fa-solid fa-up-right-from-square"></i>
-      
-        <span>External Link</span>
-      
-    </a>
-  </div>
-
 
     
   </div>
 </div>
 
 <section class="project-body">
-  
+  <h2 id="differentiable-global-optimization-layers">Differentiable global optimization layers</h2>
+
+<p>A straightforward way to close the loop between formulation and solvers is to make the solvers differentiable, allowing us to use them as layers in a larger problem including, for example, deep-learned feature extractors. Thanks to our work on SDPRLayers, one can plug global optimization tools into end-to-end learned pipelines and harvest the advantages of certifiable optimization with deep-learned feature extraction and dimensionality reduction. Ongoing collaborations are exploring how to use this tool for a variety of applications, including <em>global</em> sensitivity-aware feature learning and optimization landscape shaping and characterization.</p>
+
+<h2 id="solver-aware-formulation">Solver-aware formulation</h2>
+
+<p>Our works on KernelSOS and Koopman-inspired methods are also examples of formulation / modeling choices that are made with the solver in mind. In both cases, we choose model classes that are not only accurate but also amenable to global optimization tools.</p>
 
 </section>
 
 
 
-
-
-
-
-  <div class="tags" data-repo="greenelab/lab-website-template">
+  <section class="project-publications">
+    <h2>Related Publications</h2>
     
-      <a href='/trio-website/projects/?search="tag:%20resource"' class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
+      
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation citation--conference">
+    
+      <a href="https://doi.org/hb3rvf" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming">
+        <img src="" alt="Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
       </a>
     
-      <a href='/trio-website/projects/?search="tag:%20publication"' class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-users"></i>
+
+      <a href="https://doi.org/hb3rvf" target="_blank" rel="noopener noreferrer" class="citation-title">
+        Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Antoine Groudiev, Fabian Schramm, éloïse Berthier, Justin Carpentier, Frederike Dümbgen
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-kind">Conference</span>
+        <span class="citation-publisher">American Control Conference</span>
+         · 
+        <span class="citation-date">2026</span>
+      </div>
+
+      
+        
+
+        
+          <div class="citation-buttons">
+            
+              
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
+        
+          <span>Paper</span>
+        
+      </a>
+    
+  </div>
+
+
+            
+          </div>
+        
+
+        <!-- Display related projects -->
+        
+        
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            
+                
+                
+                  <a href="/trio-website/projects/hard-problems/" class="citation-project-link">
+                    Global optimization for realistic robotics
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                    Optimal problem formulation
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
+                    Sample-efficient learning
+                </a>
+              
+            
+          </div>
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+    
+      
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation citation--journal">
+    
+      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Data-Driven Batch Localization and SLAM Using Koopman Linearization">
+        <img src="" alt="Data-Driven Batch Localization and SLAM Using Koopman Linearization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-newspaper"></i>
+
+      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-title">
+        Data-Driven Batch Localization and SLAM Using Koopman Linearization
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Zi Cong Guo, Frederike Dümbgen, James R. Forbes, Timothy D. Barfoot
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-kind">Journal</span>
+        <span class="citation-publisher">IEEE Transactions on Robotics</span>
+         · 
+        <span class="citation-date">2024</span>
+      </div>
+
+      
+        
+
+        
+          <div class="citation-buttons">
+            
+              
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
+        
+          <span>Paper</span>
+        
+      </a>
+    
+  </div>
+
+
+            
+          </div>
+        
+
+        <!-- Display related projects -->
+        
+        
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            
+                
+                
+                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                    Optimal problem formulation
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
+                    Sample-efficient learning
+                </a>
+              
+            
+          </div>
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+    
+      
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation citation--journal">
+    
+      <a href="https://doi.org/hb3r2r" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization Problems in Robotics">
+        <img src="" alt="SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization Problems in Robotics" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-newspaper"></i>
+
+      <a href="https://doi.org/hb3r2r" target="_blank" rel="noopener noreferrer" class="citation-title">
+        SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization Problems in Robotics
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Connor Holmes, Frederike Dümbgen, Timothy D. Barfoot
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-kind">Journal</span>
+        <span class="citation-publisher">IEEE Transactions on Robotics</span>
+         · 
+        <span class="citation-date">2025</span>
+      </div>
+
+      
+        
+
+        
+          <div class="citation-buttons">
+            
+              
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://doi.org/10.1109/TRO.2025.3578228" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
+        
+          <span>Paper</span>
+        
+      </a>
+    
+  </div>
+
+
+            
+          </div>
+        
+
+        <!-- Display related projects -->
+        
+        
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            
+                
+                
+                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                    Optimal problem formulation
+                </a>
+              
+            
+          </div>
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+    
+  </section>
+
+
+
+
+
+
+  <div class="tags">
+    
+      <a href='/trio-website/projects/?search="tag:%20robotics"' class="tag" data-tooltip='Show items with the tag "robotics"'>
+        robotics
+      </a>
+    
+      <a href='/trio-website/projects/?search="tag:%20optimization"' class="tag" data-tooltip='Show items with the tag "optimization"'>
+        optimization
       </a>
     
   </div>
@@ -44308,11 +44589,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 
 
+
   <div class="button-wrapper">
-    <a class="button" href="https://github.com/trio-cmu" data-tooltip="GitHub" data-style="bare" aria-label="GitHub">
-      <i class="icon fa-brands fa-github"></i>
-      
-    </a>
+    
+      <a class="button" href="https://github.com/trio-cmu" data-tooltip="GitHub" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <i class="icon fa-brands fa-github"></i>
+        
+      </a>
+    
   </div>
 
 
