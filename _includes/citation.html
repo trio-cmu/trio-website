@@ -14,6 +14,8 @@
       <a
         {% if citation.link %}
           href="{{ citation.link | relative_url | uri_escape }}"
+          target="_blank"
+          rel="noopener noreferrer"
         {% endif %}
         class="citation-image"
         aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
@@ -34,6 +36,8 @@
       <a
         {% if citation.link %}
           href="{{ citation.link | relative_url | xml_escape }}"
+          target="_blank"
+          rel="noopener noreferrer"
         {% endif %}
         class="citation-title"
       >
@@ -65,11 +69,11 @@
         </span>
         &nbsp;·&nbsp;
         <span class="citation-date">
-          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
-        </span>
-        &nbsp;·&nbsp;
-        <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
+          {%- if citation.date -%}
+            {{- citation.date | date: "%Y" -}}
+          {%- else -%}
+            {{- "[no date info]" -}}
+          {%- endif -%}
         </span>
       </div>
 

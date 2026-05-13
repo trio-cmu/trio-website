@@ -7,17 +7,11 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Our research lies at the intersection of robotics, intelligence, and optimization, to build trustworthy autonomous systems of the future. 
+Our research lies at the intersection of robotics, intelligence, and optimization, to build trustworthy autonomous systems that can solve challenging tasks in the real world. 
 
 {% include section.html %}
 
-## Highlighted
-
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
-
-{% include section.html %}
-
-## All
+## Selection of Publications
 
 {% include search-box.html %}
 

@@ -1,23 +1,480 @@
-- id: doi:10.1371/journal.pcbi.1007128
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  date: 2020-12-4
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- id: doi:10.1177/02783649241269337
+  title: Certifiably Optimal Rotation and Pose Estimation Based on the Cayley Map
+  authors:
+  - Timothy D Barfoot
+  - Connor Holmes
+  - "Frederike D\xFCmbgen"
+  date: '2024-01-01'
   buttons:
-    - type: manubot
-      link: https://greenelab.github.io/meta-review/
-    - type: source
-      text: Manuscript Source
-      link: https://github.com/greenelab/meta-review
-    - type: website
-      link: http://manubot.org/
-  tags:
-    - open science
-    - collaboration
-  repo: greenelab/meta-review
-
-- id: doi:10.1016/j.csbj.2020.05.017
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-
-- id: doi:10.7554/eLife.32822
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
+  - type: paper
+    link: https://doi.org/10.1177/02783649241269337
+  publisher: International Journal of Robotics Research
+  type: article
+- id: doi:10.48550/arXiv.2406.02365
+  title: Exploiting Chordal Sparsity for Fast Global Optimality with Application to
+    Localization
+  authors:
+  - "Frederike D\xFCmbgen"
+  - Connor Holmes
+  - Timothy D. Barfoot
+  date: '2024-01-01'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2406.02365
+  publisher: Workshop on Algorithmic Foundations for Robotics
+  type: article
+- id: doi:10.1109/ICASSP40776.2020.9053903
+  title: Realizability of Planar Point Embeddings from Angle Measurements
+  authors:
+  - "Frederike D\xFCmbgen"
+  - Majed El Helou
+  - Adam Scholefield
+  date: '2020-01-01'
+  abstract: Localization of a set of nodes is an important and a thoroughly researched
+    problem in robotics and sensor networks. This paper is concerned with the theory
+    of localization from inner-angle measurements. We focus on the challenging case
+    where no anchor locations are known.Inspired by Euclidean distance matrices, we
+    investigate when a set of inner angles corresponds to a realizable point set.
+    In particular, we find linear and non-linear constraints that are provably necessary,
+    and we conjecture also sufficient for characterizing realizable angle sets. We
+    confirm this in extensive numerical simulations, and we illustrate the use of
+    these constraints for denoising angle measurements along with the reconstruction
+    of a valid point set.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICASSP40776.2020.9053903
+  publisher: IEEE International Conference on Acoustics, Speech and Signal Processing
+    (ICASSP)
+  pages: 5710--5714
+  volume: 2020-May
+  type: inproceedings
+- id: doi:10.1109/LRA.2022.3233232
+  title: 'Safe and Smooth: Certified Continuous-Time Range-Only Localization'
+  authors:
+  - "Frederike D\xFCmbgen"
+  - Connor Holmes
+  - Timothy D. Barfoot
+  date: '2023-01-01'
+  abstract: 'A common approach to localize a mobile robot is by measuring distances
+    to points of known positions, called anchors. Locating a device from distance
+    measurements is typically posed as a non-convex optimization problem, stemming
+    from the nonlinearity of the measurement model. Non-convex optimization problems
+    may yield suboptimal solutions when local iterative solvers such as Gauss-Newton
+    are employed. In this letter, we design an optimality certificate for continuous-time
+    range-only localization. Our formulation allows for the integration of a motion
+    prior, which ensures smoothness of the solution and is crucial for localizing
+    from only a few distance measurements. The proposed certificate comes at little
+    additional cost since it has the same complexity as the sparse local solver itself:
+    linear in the number of positions. We show, both in simulation and on real-world
+    datasets, that the efficient local solver often finds the globally optimal solution
+    (confirmed by our certificate), but it may converge to local solutions with high
+    errors, which our certificate correctly detects.'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2022.3233232
+  publisher: IEEE Robotics and Automation Letters
+  pages: 1117--1124
+  volume: '8'
+  number: '2'
+  type: article
+- id: doi:10.48550/arXiv.2206.05082
+  title: 'A Fine Line: Total Least-Squares Line Fitting as QCQP Optimization'
+  authors:
+  - Timothy D. Barfoot
+  - Connor Holmes
+  - "Frederike D\xFCmbgen"
+  date: '2022-01-01'
+  abstract: This note uses the Total Least-Squares (TLS) line-fitting problem as a
+    canvas to explore some modern optimization tools. The contribution is meant to
+    be tutorial in nature. The TLS problem has a lot of mathematical similarities
+    to important problems in robotics and computer vision but is easier to visualize
+    and understand. We demonstrate how to turn this problem into a Quadratically Constrained
+    Quadratic Program (QCQP) so that it can be cast either as an eigenproblem or a
+    Semi-Definite Program (SDP). We then turn to the more challenging situation where
+    a Geman-McClure cost function and M-estimation are used to reject outlier datapoints.
+    Using Black-Rangarajan duality, we show this can also be cast as a QCQP and solved
+    as an SDP; however, with a lot of data the SDP can be slow and as such we show
+    how we can construct a certificate of optimality for a faster method such as Iteratively
+    Reweighted Least-Squares (IRLS).
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2206.05082
+  publisher: arXiv:2206.05082
+  type: article
+- id: doi:10.1109/ICRA55743.2025.11128254
+  title: A Data-driven Contact Estimation Method for Wheeled-Biped Robots
+  authors:
+  - "Bora G\xF6kbakan"
+  - "Frederike D\xFCmbgen"
+  - "St\xE9phane Caron"
+  date: '2025-01-01'
+  abstract: Contact estimation is a key ability for limbed robots, where making and
+    breaking contacts has a direct impact on state estimation and balance control.
+    Existing approaches typically rely on gate-cycle priors or designated contact
+    sensors. We design a contact estimator that is suitable for the emerging wheeled-biped
+    robot types that do not have these features. To this end, we propose a Bayes filter
+    in which update steps are learned from real-robot torque measurements while prediction
+    steps rely on inertial measurements. We evaluate this approach in extensive real-robot
+    and simulation experiments. Our method achieves better performance while being
+    considerably more sample efficient than a comparable deep-learning baseline.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICRA55743.2025.11128254
+  publisher: IEEE International Conference on Robotics and Automation (ICRA)
+  type: inproceedings
+- id: doi:10.1109/LRA.2024.3354623
+  title: Optimal Initialization Strategies for Range-Only Trajectory Estimation
+  authors:
+  - Abhishek Goudar
+  - "Frederike D\xFCmbgen"
+  - Timothy D. Barfoot
+  - Angela P. Schoellig
+  date: '2024-01-01'
+  abstract: Range-only (RO) pose estimation involves determining a robot's pose over
+    time by measuring the distance between multiple devices on the robot, known as
+    tags, and devices installed in the environment, known as anchors. The non-convex
+    nature of the range measurement model results in a cost function with possible
+    local minima. In the absence of a good initial guess, commonly used iterative
+    solvers can get stuck in these local minima resulting in poor trajectory estimation
+    accuracy. In this letter, we propose convex relaxations to the original non-convex
+    problem based on semidefinite programs (SDPs). Specifically, we formulate computationally
+    tractable SDP relaxations to obtain accurate initial pose and trajectory estimates
+    for RO trajectory estimation under static and dynamic (i.e., constant-velocity
+    motion) conditions. Through simulation and hardware experiments, we demonstrate
+    that our proposed approaches estimate the initial pose and initial trajectories
+    accurately compared to iterative local solvers. Additionally, the proposed relaxations
+    recover global minima under moderate range measurement noise levels.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2024.3354623
+  publisher: IEEE Robotics and Automation Letters
+  pages: 2160--2167
+  volume: '9'
+  number: '3'
+  type: article
+- id: doi:10.48550/arXiv.2507.17572
+  title: Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
+  authors:
+  - Antoine Groudiev
+  - Fabian Schramm
+  - "\xE9lo\xEFse Berthier"
+  - Justin Carpentier
+  - "Frederike D\xFCmbgen"
+  date: '2026-01-01'
+  abstract: 'Global optimization has gained attraction over the past decades, thanks
+    to the development of both theoretical foundations and efficient numerical routines.
+    Among recent advances, Kernel Sum of Squares (KernelSOS) provides a powerful theoretical
+    framework, combining the expressivity of kernel methods with the guarantees of
+    SOS optimization. In this paper, we take KernelSOS from theory to practice and
+    demonstrate its use on challenging control and robotics problems. We identify
+    and address the practical considerations required to make the method work in applied
+    settings: restarting strategies, systematic calibration of hyperparameters, methods
+    for recovering minimizers, and the combination with fast local solvers. As a proof
+    of concept, the application of KernelSOS to robot localization highlights its
+    competitiveness with existing SOS approaches that rely on heuristics and handcrafted
+    reformulations to render the problem polynomial. Even in the high-dimensional,
+    non-parametric setting of trajectory optimization with simulators treated as black
+    boxes, we demonstrate how KernelSOS can be combined with fast local solvers to
+    uncover higher-quality solutions without compromising overall runtimes.'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2507.17572
+  publisher: American Control Conference
+  type: inproceedings
+- id: doi:10.1109/TRO.2024.3443674
+  title: Data-Driven Batch Localization and SLAM Using Koopman Linearization
+  authors:
+  - Zi Cong Guo
+  - "Frederike D\xFCmbgen"
+  - James R. Forbes
+  - Timothy D. Barfoot
+  date: '2024-01-01'
+  abstract: 'We present a framework for model-free batch localization and SLAM. We
+    use lifting functions to map a control-affine system into a high-dimensional space,
+    where both the process model and the measurement model are rendered bilinear.
+    During training, we solve a least-squares problem using groundtruth data to compute
+    the high-dimensional model matrices associated with the lifted system purely from
+    data. At inference time, we solve for the unknown robot trajectory and landmarks
+    through an optimization problem, where constraints are introduced to keep the
+    solution on the manifold of the lifting functions. The problem is efficiently
+    solved using a sequential quadratic program (SQP), where the complexity of an
+    SQP iteration scales linearly with the number of timesteps. Our algorithms, called
+    Reduced Constrained Koopman Linearization Localization (RCKL-Loc) and Reduced
+    Constrained Koopman Linearization SLAM (RCKL-SLAM), are validated experimentally
+    in simulation and on two datasets: one with an indoor mobile robot equipped with
+    a laser rangefinder that measures range to cylindrical landmarks, and one on a
+    golf cart equipped with RFID range sensors. We compare RCKL-Loc and RCKL-SLAM
+    with classic model-based nonlinear batch estimation. While RCKL-Loc and RCKL-SLAM
+    have similar performance compared to their model-based counterparts, they outperform
+    the model-based approaches when the prior model is imperfect, showing the potential
+    benefit of the proposed data-driven technique.'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3443674
+  publisher: IEEE Transactions on Robotics
+  pages: 3964--3983
+  type: article
+- id: doi:10.1109/TRO.2025.3578228
+  title: 'SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization
+    Problems in Robotics'
+  authors:
+  - Connor Holmes
+  - "Frederike D\xFCmbgen"
+  - Timothy D. Barfoot
+  date: '2025-01-01'
+  abstract: 'Differentiable optimization is a powerful new paradigm capable of reconciling
+    model-based and learning-based approaches in robotics. However, the majority of
+    robotics optimization problems are non-convex and current differentiable optimization
+    techniques are therefore prone to convergence to local minima. When this occurs,
+    the gradients provided by these existing solvers can be wildly inaccurate and
+    will ultimately corrupt the training process. On the other hand, any non-convex
+    robotics problems can be framed as polynomial optimization problems and, in turn,
+    admit convex relaxations that can be used to recover a global solution via so-called
+    certifiably correct methods. We present SDPRLayers, an approach that leverages
+    these methods as well as state-of-the-art convex implicit differentiation techniques
+    to provide certifiably correct gradients throughout the training process. We introduce
+    this approach and showcase theoretical results that provide conditions under which
+    correctness of the gradients is guaranteed. We demonstrate our approach on two
+    simple-but-demonstrative simulated examples, which expose the potential pitfalls
+    of existing, state-of-the-art, differentiable optimization methods. We apply our
+    method in a real-world application: we train a deep neural network to detect image
+    keypoints for robot localization in challenging lighting conditions. An open-source,
+    PyTorch implementation of SDPRLayers will be made available upon paper acceptance.'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2025.3578228
+  publisher: IEEE Transactions on Robotics
+  pages: 4120--4138
+  volume: '41'
+  type: article
+- id: doi:10.1109/TRO.2024.3475220
+  title: On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems
+    in Robotics
+  authors:
+  - Connor Holmes
+  - "Frederike D\xFCmbgen"
+  - Timothy D. Barfoot
+  date: '2024-01-01'
+  abstract: 'In recent years, there has been remarkable progress in the development
+    of so-called certifiable perception methods, which leverage semidefinite, convex
+    relaxations to find global optima of perception problems in robotics. However,
+    many of these relaxations rely on simplifying assumptions that facilitate the
+    problem formulation, such as an isotropic measurement noise distribution. In this
+    paper, we explore the tightness of the semidefinite relaxations of matrix-weighted
+    (anisotropic) stateestimation problems and reveal the limitations lurking therein:
+    matrix-weighted factors can cause convex relaxations to lose tightness. In particular,
+    we show that the semidefinite relaxations of localization problems with matrix
+    weights may be tight only for low noise levels. To better understand this issue,
+    we introduce a theoretical connection between the posterior uncertainty of the
+    state estimate and the dual variable of the convex relaxation. With this connection
+    in mind, we empirically explore the factors that contribute to this loss of tightness
+    and demonstrate that redundant constraints can be used to regain it. As a second
+    technical contribution of this paper, we show that the stateof-the-art relaxation
+    of scalar-weighted SLAM cannot be used when matrix weights are considered. We
+    provide an alternate formulation and show that its SDP relaxation is not tight
+    (even for very low noise levels) unless specific redundant constraints are used.
+    We demonstrate the tightness of our formulations on both simulated and real-world
+    data.'
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/TRO.2024.3475220
+  publisher: IEEE Transactions on Robotics
+  pages: 4805--4824
+  volume: '40'
+  type: article
+- id: doi:10.1109/ICASSP.2018.8462441
+  title: Combining Range and Direction for Improved Localization
+  authors:
+  - Gilles Baechler
+  - "Frederike D\xFCmbgen"
+  - Golnoosh Elhami
+  - Miranda Krekovic
+  - Robin Scheibler
+  - Adam Scholefield
+  - Martin Vetterli
+  date: '2018-01-01'
+  abstract: Self-localization of nodes in a sensor network is typically achieved using
+    either range or direction measurements; in this paper, we show that a constructive
+    combination of both improves the estimation. We propose two localization algorithms
+    that make use of the differences between the sensors' coordinates, or edge vectors;
+    these can be calculated from measured distances and angles. Our first method improves
+    the existing edge-multidimensional scaling algorithm (E- MDS) by introducing additional
+    constraints that enforce geometric consistency between the edge vectors. On the
+    other hand, our second method decomposes the edge vectors onto 1-dimensional spaces
+    and introduces the concept of coordinate difference matrices (CDMs) to independently
+    regularize each projection. This solution is optimal when Gaussian noise is added
+    to the edge vectors. We demonstrate in numerical simulations that both algorithms
+    outperform state-of-the-art solutions.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/ICASSP.2018.8462441
+  publisher: IEEE International Conference on Acoustics, Speech and Signal Processing
+    (ICASSP)
+  pages: 3484--3488
+  type: inproceedings
+- id: doi:10.48550/arXiv.2604.27667
+  title: Can Tabular Foundation Models Guide Exploration in Robot Policy Learning?
+  authors:
+  - Buqing Ou
+  - "Frederike D\xFCmbgen"
+  date: '2026-01-01'
+  abstract: Policy optimization in high-dimensional continuous control for robotics
+    remains a challenging problem. Predominant methods are inherently local and often
+    require extensive tuning and carefully chosen initial guesses for good performance,
+    whereas more global and less initialization-sensitive search methods typically
+    incur high rollout costs. We propose TFM-S3, a tabular hybrid local-global method
+    for improving global exploration in robot policy learning with limited rollout
+    cost. We interleave high-frequency local updates with intermittent rounds of global
+    search. In each search round, we construct a dynamically updated low-dimensional
+    policy subspace via SVD and perform iterative surrogate-guided refinement within
+    this space. A pretrained tabular foundation model predicts candidate returns from
+    a small context set, enabling large-scale screening with limited rollout cost.
+    Experiments on continuous control benchmarks show that TFM-S3 consistently accelerates
+    early-stage convergence and improves final performance compared to TD3 and population-based
+    baselines under an identical rollout budget. These results demonstrate that foundation
+    models are a powerful new tool for creating sample-efficient policy learning methods
+    for continuous control in robotics.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2604.27667
+  publisher: arXiv
+  number: arXiv:2604.27667
+  type: misc
+- id: doi:10.1109/LRA.2022.3194669
+  title: 'Blind as a Bat: Audible Echolocation on Small Robots'
+  authors:
+  - "Frederike D\xFCmbgen"
+  - Adrien Hoffet
+  - "Mihailo Kolund\u017Eija"
+  - Adam Scholefield
+  - Martin Vetterli
+  date: '2023-01-01'
+  abstract: For safe and efficient operation, mobile robots need to perceive their
+    environment, and in particular, perform tasks such as obstacle detection, localization,
+    and mapping. Although robots are often equipped with microphones and speakers,
+    the audio modality is rarely used for these tasks. Compared to the localization
+    of sound sources, for which many practical solutions exist, algorithms for active
+    echolocation are less developed and often rely on hardware requirements that are
+    out of reach for small robots. We propose an end-to-end pipeline for sound-based
+    localization and mapping that is targeted at, but not limited to, robots equipped
+    with only simple buzzers and low-end microphones. The method is model-based, runs
+    in real time, and requires no prior calibration or training. We successfully test
+    the algorithm on the e-puck robot with its integrated audio hardware, and on the
+    Crazyflie drone, for which we design a reproducible audio extension deck. We achieve
+    centimeter-level wall localization on both platforms when the robots are static
+    during the measurement process. Even in the more challenging setting of a flying
+    drone, we can successfully localize walls, which we demonstrate in a proof-of-concept
+    multi-wall localization and mapping demo.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1109/LRA.2022.3194669
+  publisher: IEEE Robotics and Automation Letters
+  pages: 1271--1278
+  volume: '8'
+  number: '3'
+  type: article
+- id: doi:10.1137/18m123428x
+  title: Coordinate Difference Matrices
+  authors:
+  - Gilles Baechler
+  - "Frederike D\xFCmbgen"
+  - Golnoosh Elhami
+  - Miranda Krekovic
+  - Martin Vetterli
+  date: '2020-01-01'
+  abstract: In many problems such as phase retrieval, molecular biology, source localization,
+    and sensor array calibration, one can measure vector differences between pairs
+    of points and attempt to recover the position of these points; this class of problems
+    is called vector geometry problems (VGPs). A closely related field studies distance
+    geometry problems (DGPs), where only the Euclidean distance between pairs of points
+    is available. This has been extensively studied in the literature and is often
+    associated with Euclidean distance matrices (EDMs). Although similar to DGPs,
+    VGPs have received little attention in the literature; our goal is to fill in
+    this gap and introduce a framework to solve VGPs. Inspired by EDM-related approaches,
+    we arrange the differences in what we call a coordinate difference matrix (CDM)
+    and introduce a methodology to reconstruct a set of points from CDM entries. We
+    first propose a reconstruction scheme in 1D and then generalize it to higher dimensions.
+    We show that our algorithm is optimal in the least-squares sense, even when we
+    have only access to partial measurements. In addition, we provide necessary and
+    sufficient conditions on the number and structure of measurements needed for a
+    successful reconstruction, as well as a comparison with EDMs. In particular we
+    show that compared to EDMs, CDMs are simpler objects, both from an algorithmic
+    and a theoretical point of view. Therefore, CDMs should be favored over EDMs whenever
+    vector differences are available. In the presence of noise, we provide a statistical
+    analysis of the reconstruction error. Finally, we apply the established knowledge
+    to five practical problems to demonstrate the versatility of this theory and showcase
+    the wide range of applications covered by the CDM framework.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.1137/18m123428x
+  publisher: SIAM Journal on Matrix Analysis and Applications
+  pages: 332--363
+  volume: '41'
+  number: '1'
+  type: article
+- id: doi:10.48550/arXiv.2411.03951
+  title: 'Continuous-Time State Estimation Methods in Robotics: A Survey'
+  authors:
+  - William Talbot
+  - Julian Nubert
+  - Turcan Tuna
+  - Cesar Cadena
+  - "Frederike D\xFCmbgen"
+  - Jesus Tordesillas
+  - Timothy D. Barfoot
+  - Marco Hutter
+  date: '2025-01-01'
+  abstract: Accurate, efficient, and robust state estimation is more important than
+    ever in robotics as the variety of platforms and complexity of tasks continue
+    to grow. Historically, discrete-time filters and smoothers have been the dominant
+    approach, in which the estimated variables are states at discrete sample times.
+    The paradigm of continuous-time state estimation proposes an alternative strategy
+    by estimating variables that express the state as a continuous function of time,
+    which can be evaluated at any query time. Not only can this benefit downstream
+    tasks such as planning and control, but it also significantly increases estimator
+    performance and flexibility, as well as reduces sensor preprocessing and interfacing
+    complexity. Despite this, continuous-time methods remain underutilized, potentially
+    because they are less well-known within robotics. To remedy this, this work presents
+    a unifying formulation of these methods and the most exhaustive literature review
+    to date, systematically categorizing prior work by methodology, application, state
+    variables, historical context, and theoretical contribution to the field. By surveying
+    splines and Gaussian processes together and contextualizing works from other research
+    domains, this work identifies and analyzes open problems in continuous-time state
+    estimation and suggests new research directions.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2411.03951
+  publisher: IEEE Transactions on Robotics
+  type: article
+- id: doi:10.48550/arXiv.2604.27175
+  title: Global Sampling-Based Trajectory Optimization for Contact-Rich Manipulation
+    via KernelSOS
+  authors:
+  - Zhongqi Wei
+  - "Frederike D\xFCmbgen"
+  date: '2026-01-01'
+  abstract: Contact-rich manipulation is challenging due to its high dimensionality,
+    the requirement for long time horizons, and the presence of hybrid contact dynamics.
+    Sampling-based methods have become a popular approach for this class of problems,
+    but without explicit mechanisms for global exploration, they are susceptible to
+    converging to poor local minima. In this paper, we introduce Global-MPPI, a unified
+    trajectory optimization framework that integrates global exploration and local
+    refinement. At the global level, we leverage kernel sum-ofsquares optimization
+    to identify globally promising regions of the solution space. To enable reliable
+    performance for the nonsmooth landscapes inherent to contact-rich manipulation,
+    we introduce a graduated non-convexity strategy based on log-sumexp smoothing,
+    which transitions the optimization landscape from a smoothed surrogate to the
+    original non-smooth objective. Finally, we employ the model-predictive path integral
+    method to locally refine the solution. We evaluate Global-MPPI on high-dimensional,
+    long-horizon contact-rich tasks, including the PushT task and dexterous in-hand
+    manipulation. Experimental results demonstrate that our approach robustly uncovers
+    highquality solutions, achieving faster convergence and lower final costs compared
+    to existing baseline methods.
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2604.27175
+  publisher: arXiv
+  number: arXiv:2604.27175
+  type: misc
