@@ -24,7 +24,7 @@
   - type: paper
     link: https://doi.org/10.48550/arXiv.2406.02365
   publisher: Workshop on Algorithmic Foundations for Robotics
-  type: article
+  type: inproceedings
 - id: doi:10.1109/ICASSP40776.2020.9053903
   title: Realizability of Planar Point Embeddings from Angle Measurements
   authors:

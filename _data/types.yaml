@@ -177,6 +177,11 @@ article:
   text: Article
   tooltip: Article
 
+inproceedings:
+  icon: fa-solid fa-users
+  text: Conference
+  tooltip: Conference
+
 journal:
   icon: fa-regular fa-newspaper
   text: Journal

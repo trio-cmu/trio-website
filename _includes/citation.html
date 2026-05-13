@@ -8,8 +8,19 @@
   {% assign citation = include %}
 {% endif %}
 
+{% assign publication_kind = "journal" %}
+{% assign citation_type = citation.type | default: "" %}
+
+{% if citation_type == "inproceedings" %}
+  {% assign publication_kind = "conference" %}
+{% endif %}
+
+{% if citation_type == "misc" %}
+  {% assign publication_kind = "preprint" %}
+{% endif %}
+
 <div class="citation-container">
-  <div class="citation">
+  <div class="citation citation--{{ publication_kind }}">
     {% if include.style == "rich" %}
       <a
         {% if citation.link %}
@@ -64,6 +75,7 @@
       </div>
 
       <div class="citation-details">
+        <span class="citation-kind">{{ publication_kind | capitalize }}</span>
         <span class="citation-publisher">
           {{- citation.publisher | default: "[no publisher info]" -}}
         </span>

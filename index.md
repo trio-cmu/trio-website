@@ -1,7 +1,7 @@
 ---
 ---
 
-# TRIO @ Carnegie Mellon University
+# TRIO Lab @ Carnegie Mellon University
 
 ### Welcome to TRIO Lab! We work at the intersection of robotics, intelligence and optimization to build trusworthy autonomous agents for the physical world. 
 

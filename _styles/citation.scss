@@ -17,6 +17,25 @@ $wrap: 800px;
   box-shadow: var(--shadow);
 }
 
+.citation--journal {
+  --citation-accent: #0f766e;
+  --citation-accent-soft: rgba(15, 118, 110, 0.12);
+}
+
+.citation--conference {
+  --citation-accent: #c2410c;
+  --citation-accent-soft: rgba(194, 65, 12, 0.12);
+}
+
+.citation--preprint {
+  --citation-accent: #1d4ed8;
+  --citation-accent-soft: rgba(29, 78, 216, 0.12);
+}
+
+.citation {
+  border-left: 6px solid var(--citation-accent, var(--light-gray));
+}
+
 .citation-image {
   position: relative;
   width: $thumb-size;
@@ -53,6 +72,26 @@ $wrap: 800px;
   width: 100%;
 }
 
+.citation-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.citation-kind {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: var(--citation-accent-soft, rgba(107, 114, 128, 0.12));
+  color: var(--citation-accent, var(--gray));
+  font-size: 0.75rem;
+  font-weight: var(--semi-bold);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .citation-title {
   font-weight: var(--semi-bold);
 }
@@ -61,14 +100,13 @@ $wrap: 800px;
   position: absolute;
   top: 20px;
   right: 20px;
-  color: var(--light-gray);
-  opacity: 0.5;
+  color: var(--citation-accent, var(--light-gray));
+  opacity: 0.18;
   font-size: 30px;
   z-index: -1;
 }
 
 .citation-publisher {
-  text-transform: capitalize;
 }
 
 .citation-description {

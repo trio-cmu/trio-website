@@ -13,6 +13,8 @@
       {% if include.flip %}
         data-flip
       {% endif %}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="{{ button.tooltip | default: button.icon | default: "button" | regex_strip }}"
     >
       {% include icon.html icon=button.icon %}

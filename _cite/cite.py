@@ -17,6 +17,39 @@ load_dotenv()
 errors = []
 warnings = []
 
+# optional custom publication metadata keyed by citation id
+publication_metadata = {}
+
+
+def load_publication_metadata():
+    """
+    load custom publication metadata that should survive exports
+    """
+
+    metadata_file = Path("_data/publication-metadata.yaml")
+    if not metadata_file.is_file():
+        return {}
+
+    try:
+        data = load_data(metadata_file)
+        if not list_of_dicts(data):
+            raise Exception(f"{metadata_file.name} data file not a list of dicts")
+    except Exception as e:
+        log(e, indent=2, level="ERROR")
+        errors.append(e)
+        return {}
+
+    metadata_by_id = {}
+    for entry in data:
+        metadata_id = get_safe(entry, "id", "").strip()
+        if not metadata_id:
+            continue
+        metadata_by_id[metadata_id] = {
+            key: value for key, value in entry.items() if key != "id"
+        }
+
+    return metadata_by_id
+
 # output citations file
 output_file = "_data/citations.yaml"
 
@@ -117,6 +150,8 @@ log()
 
 log("Generating citations")
 
+publication_metadata = load_publication_metadata()
+
 # list of new citations
 citations = []
 
@@ -162,6 +197,21 @@ for index, source in enumerate(sources):
 
     # preserve fields from input source, overriding existing fields
     citation.update(source)
+
+    # merge any custom metadata stored outside the generated sources file
+    # (use direct dict access since _id contains dots which break get_safe)
+    custom_meta = publication_metadata.get(_id, {})
+    
+    # convert code field into a button if present
+    if "code" in custom_meta:
+        code_link = custom_meta.pop("code")  # remove from metadata
+        if "buttons" not in citation:
+            citation["buttons"] = []
+        # add code button if not already present
+        if not any(b.get("type") == "source" for b in citation["buttons"]):
+            citation["buttons"].append({"type": "source", "link": code_link})
+    
+    citation.update(custom_meta)
 
     # ensure date in proper format for correct date sorting
     if get_safe(citation, "date", ""):

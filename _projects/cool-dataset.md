@@ -10,8 +10,8 @@ description: We explore how to reduce sample complexity in reinforcement and imi
 group: featured
 tags:
   - resource
-# publications:
-#   - doi:10.1371/journal.pcbi.1007128
+publications:
+  - doi:10.48550/arXiv.2206.05082
 ---
 
 This description can be much longer and will be placed on the project page only. 

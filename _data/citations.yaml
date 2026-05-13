@@ -28,7 +28,7 @@
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2406.02365
-  type: article
+  type: inproceedings
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICASSP40776.2020.9053903
@@ -115,9 +115,12 @@
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2206.05082
+  - type: source
+    link: https://github.com/example/repo
   type: article
   plugin: sources.py
   file: sources.yaml
+  image: images/photo.jpg
 - id: doi:10.1109/ICRA55743.2025.11128254
   title: A Data-driven Contact Estimation Method for Wheeled-Biped Robots
   authors:
