@@ -7,18 +7,23 @@
 }
 
 .feature-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   width: 40%;
   aspect-ratio: 3/2;
   border-radius: var(--rounded);
   overflow: hidden;
+  background: var(--background);
   box-shadow: var(--shadow);
 }
 
 .feature-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  display: block;
 }
 
 .feature-text {

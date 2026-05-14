@@ -143,6 +143,10 @@
   
 
   
+    <link href="/trio-website/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/trio-website/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -212,6 +216,10 @@
 
   
     <link href="/trio-website/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/trio-website/_styles/lightbox.css" rel="stylesheet">
   
 
   
@@ -301,9 +309,13 @@
 
   <script src="/trio-website/_scripts/anchors.js"></script>
 
+  <script src="/trio-website/_scripts/carousel.js"></script>
+
   <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
+
+  <script src="/trio-website/_scripts/lightbox.js"></script>
 
   <script src="/trio-website/_scripts/search.js"></script>
 
@@ -44172,14 +44184,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/research/" data-tooltip="Published works">
-          Research
-        </a>
-        
-      
-    
-      
-        
         <a href="/trio-website/projects/" data-tooltip="Software, datasets, and more">
           Projects
         </a>
@@ -44190,6 +44194,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
         
         <a href="/trio-website/team/" data-tooltip="About our team">
           Team
+        </a>
+        
+      
+    
+      
+        
+        <a href="/trio-website/research/" data-tooltip="Published works">
+          Publications
         </a>
         
       
@@ -44234,22 +44246,25 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   
 </header>
 
+
+
 <div class="feature">
-  <a class="feature-image" aria-label="Optimal problem formulation">
-    <img src="/trio-website/images/photo.jpg" loading="lazy" alt="Optimal problem formulation" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-  </a>
+    <a href="/trio-website/images/projects/formulation.png" data-lightbox-src="/trio-website/images/projects/formulation.png" data-lightbox-alt="Optimal problem formulation" data-lightbox-group="/projects/formulation/" class="feature-image" aria-label="Optimal problem formulation">
+      <img src="/trio-website/images/projects/formulation.png" loading="lazy" alt="Optimal problem formulation" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    </a>
 
-  <div class="feature-text">
-    
-      <p>We explore how to automatically design optimization problems for robotics.</p>
+    <div class="feature-text">
+      
+        <p>We explore how to automatically design optimization problems for robotics.</p>
 
-    
+      
 
-    
+      
 
-    
+      
+    </div>
   </div>
-</div>
+
 
 <section class="project-body">
   <h2 id="differentiable-global-optimization-layers">Differentiable global optimization layers</h2>
@@ -44319,10 +44334,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
+      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Conference</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44348,103 +44363,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
             
                 
                 
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
-                    Optimal problem formulation
-                </a>
-              
-            
-                
-                
-                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
-                    Sample-efficient learning
-                </a>
-              
-            
-          </div>
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-    
-      
-
-
-
-
-
-
-
-
-
-
-<div class="citation-container">
-  <div class="citation citation--journal">
-    
-      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Data-Driven Batch Localization and SLAM Using Koopman Linearization">
-        <img src="" alt="Data-Driven Batch Localization and SLAM Using Koopman Linearization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-newspaper"></i>
-
-      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-title">
-        Data-Driven Batch Localization and SLAM Using Koopman Linearization
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Zi Cong Guo, Frederike Dümbgen, James R. Forbes, Timothy D. Barfoot
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-kind">Journal</span>
-        <span class="citation-publisher">IEEE Transactions on Robotics</span>
-         · 
-        <span class="citation-date">2024</span>
-      </div>
-
-      
-        
-
-        
-          <div class="citation-buttons">
-            
-              
-
-
-
-
-  <div class="button-wrapper">
-    
-      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
-        
-          <span>Journal</span>
-        
-      </a>
-    
-  </div>
-
-
-            
-          </div>
-        
-
-        <!-- Display related projects -->
-        
-        
-          <div class="citation-projects">
-            <span class="citation-projects-label">Related Projects:</span>
-            
-                
-                
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
                     Optimal problem formulation
                 </a>
               
@@ -44518,10 +44437,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/TRO.2025.3578228" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/TRO.2025.3578228" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44540,8 +44459,104 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
             
                 
                 
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
                     Optimal problem formulation
+                </a>
+              
+            
+          </div>
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation citation--journal">
+    
+      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Data-Driven Batch Localization and SLAM Using Koopman Linearization">
+        <img src="" alt="Data-Driven Batch Localization and SLAM Using Koopman Linearization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-newspaper"></i>
+
+      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-title">
+        Data-Driven Batch Localization and SLAM Using Koopman Linearization
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Zi Cong Guo, Frederike Dümbgen, James R. Forbes, Timothy D. Barfoot
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-kind">Journal</span>
+        <span class="citation-publisher">IEEE Transactions on Robotics</span>
+         · 
+        <span class="citation-date">2024</span>
+      </div>
+
+      
+        
+
+        
+          <div class="citation-buttons">
+            
+              
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
+        
+          <span>Paper</span>
+        
+      </a>
+    
+  </div>
+
+
+            
+          </div>
+        
+
+        <!-- Display related projects -->
+        
+        
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            
+                
+                
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
+                    Optimal problem formulation
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
+                    Sample-efficient learning
                 </a>
               
             
@@ -44621,5 +44636,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
+    <dialog class="lightbox" aria-label="Image preview">
+  <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image preview">
+    ×
+  </button>
+  <figure class="lightbox-frame">
+    <img class="lightbox-image" data-lightbox-image alt="" loading="eager">
+    <figcaption class="lightbox-caption" data-lightbox-caption></figcaption>
+  </figure>
+</dialog>
   </body>
 </html>

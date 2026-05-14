@@ -143,6 +143,10 @@
   
 
   
+    <link href="/trio-website/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/trio-website/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -212,6 +216,10 @@
 
   
     <link href="/trio-website/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/trio-website/_styles/lightbox.css" rel="stylesheet">
   
 
   
@@ -301,9 +309,13 @@
 
   <script src="/trio-website/_scripts/anchors.js"></script>
 
+  <script src="/trio-website/_scripts/carousel.js"></script>
+
   <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
+
+  <script src="/trio-website/_scripts/lightbox.js"></script>
 
   <script src="/trio-website/_scripts/search.js"></script>
 
@@ -44172,14 +44184,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/research/" data-tooltip="Published works">
-          Research
-        </a>
-        
-      
-    
-      
-        
         <a href="/trio-website/projects/" data-tooltip="Software, datasets, and more">
           Projects
         </a>
@@ -44190,6 +44194,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
         
         <a href="/trio-website/team/" data-tooltip="About our team">
           Team
+        </a>
+        
+      
+    
+      
+        
+        <a href="/trio-website/research/" data-tooltip="Published works">
+          Publications
         </a>
         
       
@@ -44234,22 +44246,60 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   
 </header>
 
+
+
 <div class="feature">
-  <a class="feature-image" aria-label="Sample-efficient learning">
-    <img src="/trio-website/images/photo.jpg" loading="lazy" alt="Sample-efficient learning" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="feature-text">
+    <div class="carousel" role="region" aria-label="Image carousel">
+  <div class="carousel-container">
     
-      <p>We explore how to reduce sample complexity in data-driven policy learning through global optimization tools.</p>
-
     
-
+      <div class="carousel-slide" data-slide-index="0" data-active="true">
+        <a href="/trio-website/images/projects/sample-efficiency.png" data-lightbox-src="/trio-website/images/projects/sample-efficiency.png" data-lightbox-alt="Sample-efficient learning" data-lightbox-caption="Sample-efficient learning - image 1 of 2" data-lightbox-group="/projects/sample-efficiency" aria-label="Sample-efficient learning - image 1 of 2" class="carousel-image-link">
+          <img src="/trio-website/images/projects/sample-efficiency.png" loading="lazy" alt="Sample-efficient learning - image 1 of 2" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+        </a>
+      </div>
     
-
+      <div class="carousel-slide" data-slide-index="1">
+        <a href="/trio-website/images/projects/sample-efficiency2.png" data-lightbox-src="/trio-website/images/projects/sample-efficiency2.png" data-lightbox-alt="Sample-efficient learning" data-lightbox-caption="Sample-efficient learning - image 2 of 2" data-lightbox-group="/projects/sample-efficiency" aria-label="Sample-efficient learning - image 2 of 2" class="carousel-image-link">
+          <img src="/trio-website/images/projects/sample-efficiency2.png" loading="lazy" alt="Sample-efficient learning - image 2 of 2" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+        </a>
+      </div>
     
   </div>
+
+  
+    <div class="carousel-controls">
+      <button class="carousel-button carousel-prev" aria-label="Previous image" data-direction="prev">
+        <span>❮</span>
+      </button>
+      <button class="carousel-button carousel-next" aria-label="Next image" data-direction="next">
+        <span>❯</span>
+      </button>
+    </div>
+
+    <div class="carousel-indicators">
+      
+        <button class="carousel-indicator active" aria-label="Go to image 1" data-slide-index="0"></button>
+      
+        <button class="carousel-indicator " aria-label="Go to image 2" data-slide-index="1"></button>
+      
+    </div>
+  
 </div>
+
+
+    <div class="feature-text">
+      
+        <p>We explore how to reduce sample complexity in data-driven policy learning through global optimization tools.</p>
+
+      
+
+      
+
+      
+    </div>
+  </div>
+
 
 <section class="project-body">
   <p>Policy learning from data is one of the fundamental capabilities to create intelligent robots at scale, but predominant methodologies are highly sample-inefficient, requiring hundreds of hours of interactions with a simulator or real hardware to teach a robot even basics skills. When robot morphology, task descriptions, or the environment change, the policy often have to be retrained or finetuned / recalibrated.</p>
@@ -44258,17 +44308,17 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 <h2 id="1-surrogate-based-learning">1. Surrogate-based learning</h2>
 
-<p>We explore how to use surrogate methods that map control actions to expected rewards, using those models to steer the robot towards optimal solutions. Crucially, when we choose surrogate models with global optimization in mind, we can choose models that are both accurate <em>and</em> usable by global solvers.</p>
+<p>We explore how to use surrogate methods that map control actions to expected rewards, using those models to steer the robot towards optimal solutions. Crucially, when we choose surrogate models with global optimization in mind, we can choose models that are both accurate <em>and</em> usable by global solvers. We show this by adopting KernelSOS to optimal control and estimation problems.</p>
 
 <h2 id="2-tabular-foundation-models">2. Tabular foundation models</h2>
 
-<p>In surrogate-based learning, significant manual work and domain expertise is often required to construct effective model classes. The chosen models are usually application-specific and the work as to be repeated when requirements change. We explore how to use foundation models – predictors that have been trained on vast corpori of heterogeneous data – as surrogate models that can be efficiently constructed as new data is coming in. For example, we show that tabular foundation models can reduce sample efficiency in policy learning, where they can be used as surrogates for reward predictions for different policy parametereizations.</p>
+<p>In surrogate-based learning, significant manual work and domain expertise is often required to construct effective model classes. The chosen models are usually application-specific and the work as to be repeated when requirements change. We explore how to use foundation models – predictors that have been trained on vast corpori of heterogeneous data – as surrogate models that can be efficiently constructed as new data is coming in. For example, we show that tabular foundation models can increase sample efficiency in policy learning, where they can be used as surrogates for reward predictions for different policy parametereizations.</p>
 
 <h2 id="3-innovative-model-learning">3. Innovative model learning</h2>
 
-<p>Finally, we have turned to Koopman-inspired methods for sample-efficient learning. Originally, these methods learn a linear representation of system dynamics. When combined with methods that also learn a linear representation of measurement models, we can use good-old Kalman filtering and LQR control to solve for policies that are both sample-efficient and globally optimal.</p>
+<p>Finally, in past work we have turned to Koopman-inspired methods for sample-efficient learning. Originally, these methods were used to find a linear representation of <em>system dynamics</em>. When combined with methods that also learn a linear representation of <em>measurement models</em>, we can use good-old Kalman filtering and LQR control to create an end-to-end optimal estimation and control loop that is both sample-efficient and globally optimal.</p>
 
-<p>An common thread of the above works is that we effectively close the loop between modeling and optimization. We dive deeper into this topic in <a href="/projects/optimal-design">/projects/optimal-design</a>.</p>
+<p><em>A common thread of the above works is that we effectively close the loop between modeling and optimization. We dive deeper into this topic in <a href="/projects/formulation">Optimal problem formulation</a>.</em></p>
 
 </section>
 
@@ -44276,205 +44326,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <section class="project-publications">
     <h2>Related Publications</h2>
-    
-      
-
-
-
-
-
-
-
-
-
-
-<div class="citation-container">
-  <div class="citation citation--conference">
-    
-      <a href="https://doi.org/hb3rvf" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming">
-        <img src="" alt="Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-users"></i>
-
-      <a href="https://doi.org/hb3rvf" target="_blank" rel="noopener noreferrer" class="citation-title">
-        Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Antoine Groudiev, Fabian Schramm, éloïse Berthier, Justin Carpentier, Frederike Dümbgen
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-kind">Conference</span>
-        <span class="citation-publisher">American Control Conference</span>
-         · 
-        <span class="citation-date">2026</span>
-      </div>
-
-      
-        
-
-        
-          <div class="citation-buttons">
-            
-              
-
-
-
-
-  <div class="button-wrapper">
-    
-      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
-        
-          <span>Conference</span>
-        
-      </a>
-    
-  </div>
-
-
-            
-          </div>
-        
-
-        <!-- Display related projects -->
-        
-        
-          <div class="citation-projects">
-            <span class="citation-projects-label">Related Projects:</span>
-            
-                
-                
-                  <a href="/trio-website/projects/hard-problems/" class="citation-project-link">
-                    Global optimization for realistic robotics
-                </a>
-              
-            
-                
-                
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
-                    Optimal problem formulation
-                </a>
-              
-            
-                
-                
-                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
-                    Sample-efficient learning
-                </a>
-              
-            
-          </div>
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
-    
-      
-
-
-
-
-
-
-
-
-
-
-<div class="citation-container">
-  <div class="citation citation--journal">
-    
-      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Data-Driven Batch Localization and SLAM Using Koopman Linearization">
-        <img src="" alt="Data-Driven Batch Localization and SLAM Using Koopman Linearization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
-
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-newspaper"></i>
-
-      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-title">
-        Data-Driven Batch Localization and SLAM Using Koopman Linearization
-      </a>
-
-      <div class="citation-authors" tabindex="0">
-        Zi Cong Guo, Frederike Dümbgen, James R. Forbes, Timothy D. Barfoot
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-kind">Journal</span>
-        <span class="citation-publisher">IEEE Transactions on Robotics</span>
-         · 
-        <span class="citation-date">2024</span>
-      </div>
-
-      
-        
-
-        
-          <div class="citation-buttons">
-            
-              
-
-
-
-
-  <div class="button-wrapper">
-    
-      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
-        
-          <span>Journal</span>
-        
-      </a>
-    
-  </div>
-
-
-            
-          </div>
-        
-
-        <!-- Display related projects -->
-        
-        
-          <div class="citation-projects">
-            <span class="citation-projects-label">Related Projects:</span>
-            
-                
-                
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
-                    Optimal problem formulation
-                </a>
-              
-            
-                
-                
-                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
-                    Sample-efficient learning
-                </a>
-              
-            
-          </div>
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
     
       
 
@@ -44565,6 +44416,205 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 </div>
 
     
+      
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation citation--conference">
+    
+      <a href="https://doi.org/hb3rvf" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming">
+        <img src="" alt="Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-users"></i>
+
+      <a href="https://doi.org/hb3rvf" target="_blank" rel="noopener noreferrer" class="citation-title">
+        Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Antoine Groudiev, Fabian Schramm, éloïse Berthier, Justin Carpentier, Frederike Dümbgen
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-kind">Conference</span>
+        <span class="citation-publisher">American Control Conference</span>
+         · 
+        <span class="citation-date">2026</span>
+      </div>
+
+      
+        
+
+        
+          <div class="citation-buttons">
+            
+              
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
+        
+          <span>Paper</span>
+        
+      </a>
+    
+  </div>
+
+
+            
+          </div>
+        
+
+        <!-- Display related projects -->
+        
+        
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            
+                
+                
+                  <a href="/trio-website/projects/hard-problems/" class="citation-project-link">
+                    Global optimization for realistic robotics
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
+                    Optimal problem formulation
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
+                    Sample-efficient learning
+                </a>
+              
+            
+          </div>
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+    
+      
+
+
+
+
+
+
+
+
+
+
+<div class="citation-container">
+  <div class="citation citation--journal">
+    
+      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-image" aria-label="Data-Driven Batch Localization and SLAM Using Koopman Linearization">
+        <img src="" alt="Data-Driven Batch Localization and SLAM Using Koopman Linearization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+      </a>
+    
+
+    <div class="citation-text">
+      
+      <i class="icon fa-solid fa-newspaper"></i>
+
+      <a href="https://doi.org/hb3rvg" target="_blank" rel="noopener noreferrer" class="citation-title">
+        Data-Driven Batch Localization and SLAM Using Koopman Linearization
+      </a>
+
+      <div class="citation-authors" tabindex="0">
+        Zi Cong Guo, Frederike Dümbgen, James R. Forbes, Timothy D. Barfoot
+
+      </div>
+
+      <div class="citation-details">
+        <span class="citation-kind">Journal</span>
+        <span class="citation-publisher">IEEE Transactions on Robotics</span>
+         · 
+        <span class="citation-date">2024</span>
+      </div>
+
+      
+        
+
+        
+          <div class="citation-buttons">
+            
+              
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
+        
+          <span>Paper</span>
+        
+      </a>
+    
+  </div>
+
+
+            
+          </div>
+        
+
+        <!-- Display related projects -->
+        
+        
+          <div class="citation-projects">
+            <span class="citation-projects-label">Related Projects:</span>
+            
+                
+                
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
+                    Optimal problem formulation
+                </a>
+              
+            
+                
+                
+                  <a href="/trio-website/projects/sample-efficiency" class="citation-project-link">
+                    Sample-efficient learning
+                </a>
+              
+            
+          </div>
+        
+
+        
+      
+    </div>
+  </div>
+</div>
+
+    
   </section>
 
 
@@ -44635,5 +44685,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
+    <dialog class="lightbox" aria-label="Image preview">
+  <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image preview">
+    ×
+  </button>
+  <figure class="lightbox-frame">
+    <img class="lightbox-image" data-lightbox-image alt="" loading="eager">
+    <figcaption class="lightbox-caption" data-lightbox-caption></figcaption>
+  </figure>
+</dialog>
   </body>
 </html>

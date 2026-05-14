@@ -143,6 +143,10 @@
   
 
   
+    <link href="/trio-website/_styles/carousel.css" rel="stylesheet">
+  
+
+  
     <link href="/trio-website/_styles/checkbox.css" rel="stylesheet">
   
 
@@ -212,6 +216,10 @@
 
   
     <link href="/trio-website/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/trio-website/_styles/lightbox.css" rel="stylesheet">
   
 
   
@@ -340,6 +348,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -355,9 +365,13 @@
 
   <script src="/trio-website/_scripts/anchors.js"></script>
 
+  <script src="/trio-website/_scripts/carousel.js"></script>
+
   <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
+
+  <script src="/trio-website/_scripts/lightbox.js"></script>
 
   <script src="/trio-website/_scripts/search.js"></script>
 
@@ -44226,14 +44240,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/research/" data-tooltip="Published works">
-          Research
-        </a>
-        
-      
-    
-      
-        
         <a href="/trio-website/projects/" data-tooltip="Software, datasets, and more">
           Projects
         </a>
@@ -44244,6 +44250,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
         
         <a href="/trio-website/team/" data-tooltip="About our team">
           Team
+        </a>
+        
+      
+    
+      
+        
+        <a href="/trio-website/research/" data-tooltip="Published works">
+          Publications
         </a>
         
       
@@ -44288,9 +44302,8 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 <h2 id="open-positions">Open Positions</h2>
 
-<p>We are always looking for Master’s and Undergraduate students to join our lab! Below are featured projects with open positions.</p>
-
-<p>Interested in collaborating or joining? <a href="/contact/">Get in touch!</a></p>
+<p>We are always looking for Master’s and Undergraduate students to join our lab!<br>
+Interested in collaborating or joining? <a href="/contact/">Get in touch</a> and let us know which of the below projects you are interested in!</p>
 
 <div class="tags">
     
@@ -44328,24 +44341,36 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 <h2 id="featured">Featured</h2>
 
-<div class="card" data-style="">
-<a href="/trio-website/projects/seamless/" aria-label="Seamless modeling and optimization" class="card-image">
-    <img src="/trio-website/images/photo.jpg" alt="Seamless modeling and optimization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+<div class="grid" data-style="featured">
+
+
+
+
+  
+
+
+
+    
+
+     
+<div class="card" data-style="grid">
+<a href="/trio-website/projects/hard-problems/" aria-label="Global optimization for realistic robotics" class="card-image">
+    <img src="/trio-website/images/projects/hard-problems.png" alt="Global optimization for realistic robotics" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
-    <a href="/trio-website/projects/seamless/" class="card-title">
-        Seamless modeling and optimization
+    <a href="/trio-website/projects/hard-problems/" class="card-title">
+        Global optimization for realistic robotics
     </a>
     
 
     
-      <span class="card-subtitle">... to lower the barrier of entry to certifiable robotics</span>
+      <span class="card-subtitle">...tackling non-convex, non-smooth and long-horizon problems</span>
     
 
     
       <p>
-        We develop software and tools that automate the process of formulating, solving, and certifying global optimization problems for robotics.
+        We push the boundaries of what optimization problems are solvable in robotics, by developing tools based on global optimization.
 
       </p>
     
@@ -44356,8 +44381,12 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="tags">
     
-      <a href='/trio-website/projects/?search="tag:%20software"' class="tag" data-tooltip='Show items with the tag "software"'>
-        software
+      <a href='/trio-website/projects/?search="tag:%20robotics"' class="tag" data-tooltip='Show items with the tag "robotics"'>
+        robotics
+      </a>
+    
+      <a href='/trio-website/projects/?search="tag:%20optimization"' class="tag" data-tooltip='Show items with the tag "optimization"'>
+        optimization
       </a>
     
   </div>
@@ -44367,9 +44396,13 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   </div>
 </div>
 
-<div class="card" data-style="">
+  
+    
+
+     
+<div class="card" data-style="grid">
 <a href="/trio-website/projects/sample-efficiency" aria-label="Sample-efficient learning" class="card-image">
-    <img src="/trio-website/images/photo.jpg" alt="Sample-efficient learning" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    <img src="/trio-website/images/projects/sample-efficiency.png" alt="Sample-efficient learning" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -44413,28 +44446,61 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
   </div>
 </div>
-  </section>
 
   
-  
-  
+    
 
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
-
-<h2 id="more">More</h2>
-
-<div class="card" data-style="small">
-<a href="/trio-website/projects/optimal-formulation/" aria-label="Optimal problem formulation" class="card-image">
-    <img src="/trio-website/images/photo.jpg" alt="Optimal problem formulation" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+     
+<div class="card" data-style="grid">
+<a href="/trio-website/projects/seamless/" aria-label="Seamless modeling and optimization" class="card-image">
+    <img src="/trio-website/images/projects/seamless.png" alt="Seamless modeling and optimization" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
-    <a href="/trio-website/projects/optimal-formulation/" class="card-title">
+    <a href="/trio-website/projects/seamless/" class="card-title">
+        Seamless modeling and optimization
+    </a>
+    
+
+    
+      <span class="card-subtitle">... to lower the barrier of entry to certifiable robotics</span>
+    
+
+    
+      <p>
+        We develop software and tools that automate the process of formulating, solving, and certifying global optimization problems for robotics.
+
+      </p>
+    
+
+    
+      
+
+
+  <div class="tags">
+    
+      <a href='/trio-website/projects/?search="tag:%20software"' class="tag" data-tooltip='Show items with the tag "software"'>
+        software
+      </a>
+    
+  </div>
+
+
+    
+  </div>
+</div>
+
+  
+    
+
+     
+<div class="card" data-style="grid">
+<a href="/trio-website/projects/formulation/" aria-label="Optimal problem formulation" class="card-image">
+    <img src="/trio-website/images/projects/formulation.png" alt="Optimal problem formulation" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    <a href="/trio-website/projects/formulation/" class="card-title">
         Optimal problem formulation
     </a>
     
@@ -44471,52 +44537,13 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   </div>
 </div>
 
-<div class="card" data-style="small">
-<a href="/trio-website/projects/hard-problems/" aria-label="Global optimization for realistic robotics" class="card-image">
-    <img src="/trio-website/images/photo.jpg" alt="Global optimization for realistic robotics" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    <a href="/trio-website/projects/hard-problems/" class="card-title">
-        Global optimization for realistic robotics
-    </a>
+  
     
 
-    
-      <span class="card-subtitle">...tackling non-convex, non-smooth and long-horizon problems</span>
-    
-
-    
-      <p>
-        We push the boundaries of what optimization problems are solvable in robotics, by developing tools based on global optimization.
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags">
-    
-      <a href='/trio-website/projects/?search="tag:%20robotics"' class="tag" data-tooltip='Show items with the tag "robotics"'>
-        robotics
-      </a>
-    
-      <a href='/trio-website/projects/?search="tag:%20optimization"' class="tag" data-tooltip='Show items with the tag "optimization"'>
-        optimization
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="small">
+     
+<div class="card" data-style="grid">
 <a href="/trio-website/projects/sensors/" aria-label="Non-common sensors for robotics" class="card-image">
-    <img src="/trio-website/images/photo.jpg" alt="Non-common sensors for robotics" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    <img src="/trio-website/images/projects/sensors.png" alt="Non-common sensors for robotics" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
   </a>
 
   <div class="card-text">
@@ -44560,6 +44587,22 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
   </div>
 </div>
+
+  
+
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
   </section>
 
 
@@ -44608,5 +44651,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
+    <dialog class="lightbox" aria-label="Image preview">
+  <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image preview">
+    ×
+  </button>
+  <figure class="lightbox-frame">
+    <img class="lightbox-image" data-lightbox-image alt="" loading="eager">
+    <figcaption class="lightbox-caption" data-lightbox-caption></figcaption>
+  </figure>
+</dialog>
   </body>
 </html>

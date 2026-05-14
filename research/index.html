@@ -43,21 +43,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Research | TRIO Lab</title>
+<title>Publications | TRIO Lab</title>
 
 <link rel="icon" href="/trio-website/images/icon.png">
 
-<meta name="title" content="Research">
+<meta name="title" content="Publications">
 <meta name="description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.">
 
-<meta property="og:title" content="Research">
+<meta property="og:title" content="Publications">
 <meta property="og:site_title" content="TRIO Lab">
 <meta property="og:description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.">
 <meta property="og:url" content="https://trio-cmu.github.io/trio-website">
 <meta property="og:image" content="/trio-website/images/share.png">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="Research">
+<meta property="twitter:title" content="Publications">
 <meta property="twitter:description" content="Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.">
 <meta property="twitter:url" content="https://trio-cmu.github.io/trio-website">
 <meta property="twitter:card" content="summary_large_image">
@@ -73,9 +73,9 @@
     
       "@type": "WebSite",
     
-    "name": "Research",
+    "name": "Publications",
     "description": "Trustworthy Robotics, Intelligence, and Optimization Lab. A research lab at Carnegie Mellon University focused on trustworthy robotics, intelligence, and optimization.",
-    "headline": "Research",
+    "headline": "Publications",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/trio-website/images/icon.png" }
@@ -140,6 +140,10 @@
 
   
     <link href="/trio-website/_styles/card.css" rel="stylesheet">
+  
+
+  
+    <link href="/trio-website/_styles/carousel.css" rel="stylesheet">
   
 
   
@@ -212,6 +216,10 @@
 
   
     <link href="/trio-website/_styles/image.css" rel="stylesheet">
+  
+
+  
+    <link href="/trio-website/_styles/lightbox.css" rel="stylesheet">
   
 
   
@@ -340,6 +348,8 @@
 
   
 
+  
+
 
 <!-- include all css in styles folder -->
 
@@ -355,9 +365,13 @@
 
   <script src="/trio-website/_scripts/anchors.js"></script>
 
+  <script src="/trio-website/_scripts/carousel.js"></script>
+
   <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
+
+  <script src="/trio-website/_scripts/lightbox.js"></script>
 
   <script src="/trio-website/_scripts/search.js"></script>
 
@@ -44226,14 +44240,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/research/" data-tooltip="Published works">
-          Research
-        </a>
-        
-      
-    
-      
-        
         <a href="/trio-website/projects/" data-tooltip="Software, datasets, and more">
           Projects
         </a>
@@ -44244,6 +44250,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
         
         <a href="/trio-website/team/" data-tooltip="About our team">
           Team
+        </a>
+        
+      
+    
+      
+        
+        <a href="/trio-website/research/" data-tooltip="Published works">
+          Publications
         </a>
         
       
@@ -44281,8 +44295,8 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   
 
   <section class="background" data-size="page">
-    <h1 id="research">
-<i class="icon fa-solid fa-microscope"></i>Research</h1>
+    <h1 id="publications">
+<i class="icon fa-solid fa-microscope"></i>Publications</h1>
 
 <p>Our research lies at the intersection of robotics, intelligence, and optimization, to build trustworthy autonomous systems that can solve challenging tasks in the real world.</p>
 
@@ -44310,6 +44324,8 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 </div>
 
 <div class="search-info"></div>
+
+<p>{# Sort citations by date (newest first) #}</p>
 
 <div class="citation-container">
   <div class="citation citation--preprint">
@@ -44506,10 +44522,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
+      <a class="button" href="https://doi.org/10.48550/arXiv.2507.17572" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Conference</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44535,7 +44551,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
             
                 
                 
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
                     Optimal problem formulation
                 </a>
               
@@ -44597,10 +44613,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.48550/arXiv.2411.03951" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.48550/arXiv.2411.03951" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44757,10 +44773,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/TRO.2025.3578228" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/TRO.2025.3578228" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44779,7 +44795,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
             
                 
                 
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
                     Optimal problem formulation
                 </a>
               
@@ -44834,10 +44850,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/ICRA55743.2025.11128254" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
+      <a class="button" href="https://doi.org/10.1109/ICRA55743.2025.11128254" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Conference</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44899,10 +44915,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/TRO.2024.3475220" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/TRO.2024.3475220" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44976,10 +44992,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/TRO.2024.3443674" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -44998,7 +45014,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
             
                 
                 
-                  <a href="/trio-website/projects/optimal-formulation/" class="citation-project-link">
+                  <a href="/trio-website/projects/formulation/" class="citation-project-link">
                     Optimal problem formulation
                 </a>
               
@@ -45060,10 +45076,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/LRA.2024.3354623" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/LRA.2024.3354623" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45144,10 +45160,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/TRO.2024.3454570" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/TRO.2024.3454570" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45235,10 +45251,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.48550/arXiv.2406.02365" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
+      <a class="button" href="https://doi.org/10.48550/arXiv.2406.02365" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Conference</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45312,10 +45328,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1177/02783649241269337" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1177/02783649241269337" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45389,10 +45405,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/LRA.2022.3194669" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/LRA.2022.3194669" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45466,10 +45482,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/LRA.2022.3233232" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1109/LRA.2022.3233232" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45550,10 +45566,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.48550/arXiv.2206.05082" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.48550/arXiv.2206.05082" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45627,10 +45643,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1137/18m123428x" data-tooltip="Journal" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Journal">
-        <i class="icon fa-regular fa-newspaper"></i>
+      <a class="button" href="https://doi.org/10.1137/18m123428x" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Journal</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45704,10 +45720,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/ICASSP40776.2020.9053903" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
+      <a class="button" href="https://doi.org/10.1109/ICASSP40776.2020.9053903" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Conference</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45781,10 +45797,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://doi.org/10.1109/ICASSP.2018.8462441" data-tooltip="Conference" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Conference">
-        <i class="icon fa-solid fa-users"></i>
+      <a class="button" href="https://doi.org/10.1109/ICASSP.2018.8462441" data-tooltip="Paper" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Paper">
+        <i class="icon fa-solid fa-scroll"></i>
         
-          <span>Conference</span>
+          <span>Paper</span>
         
       </a>
     
@@ -45864,5 +45880,14 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
+    <dialog class="lightbox" aria-label="Image preview">
+  <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image preview">
+    ×
+  </button>
+  <figure class="lightbox-frame">
+    <img class="lightbox-image" data-lightbox-image alt="" loading="eager">
+    <figcaption class="lightbox-caption" data-lightbox-caption></figcaption>
+  </figure>
+</dialog>
   </body>
 </html>
