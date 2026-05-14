@@ -11,7 +11,7 @@
   link: https://doi.org/hb3rt6
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1177/02783649241269337
 - id: doi:10.48550/arXiv.2406.02365
   title: Exploiting Chordal Sparsity for Fast Global Optimality with Application to
@@ -25,7 +25,7 @@
   link: https://doi.org/hb3rwt
   type: inproceedings
   buttons:
-  - type: paper
+  - type: inproceedings
     link: https://doi.org/10.48550/arXiv.2406.02365
 - id: doi:10.1109/ICASSP40776.2020.9053903
   title: Realizability of Planar Point Embeddings from Angle Measurements
@@ -51,7 +51,7 @@
   volume: 2020-May
   type: inproceedings
   buttons:
-  - type: paper
+  - type: inproceedings
     link: https://doi.org/10.1109/ICASSP40776.2020.9053903
 - id: doi:10.1109/LRA.2022.3233232
   title: 'Safe and Smooth: Certified Continuous-Time Range-Only Localization'
@@ -81,7 +81,7 @@
   number: '2'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/LRA.2022.3233232
 - id: doi:10.1109/TRO.2024.3454570
   title: Toward Globally Optimal State Estimation Using Automatically Tightened Semidefinite
@@ -113,7 +113,7 @@
   volume: '40'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/TRO.2024.3454570
 - id: doi:10.48550/arXiv.2206.05082
   title: 'A Fine Line: Total Least-Squares Line Fitting as QCQP Optimization'
@@ -138,7 +138,7 @@
     Reweighted Least-Squares (IRLS).
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.48550/arXiv.2206.05082
 - id: doi:10.1109/ICRA55743.2025.11128254
   title: A Data-driven Contact Estimation Method for Wheeled-Biped Robots
@@ -160,7 +160,7 @@
     considerably more sample efficient than a comparable deep-learning baseline.
   type: inproceedings
   buttons:
-  - type: paper
+  - type: inproceedings
     link: https://doi.org/10.1109/ICRA55743.2025.11128254
 - id: doi:10.1109/LRA.2024.3354623
   title: Optimal Initialization Strategies for Range-Only Trajectory Estimation
@@ -191,7 +191,7 @@
   number: '3'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/LRA.2024.3354623
 - id: doi:10.48550/arXiv.2507.17572
   title: Sampling-Based Global Optimal Control and Estimation via Semidefinite Programming
@@ -221,7 +221,7 @@
     uncover higher-quality solutions without compromising overall runtimes.'
   type: inproceedings
   buttons:
-  - type: paper
+  - type: inproceedings
     link: https://doi.org/10.48550/arXiv.2507.17572
 - id: doi:10.1109/TRO.2024.3443674
   title: Data-Driven Batch Localization and SLAM Using Koopman Linearization
@@ -255,7 +255,7 @@
   pages: 3964--3983
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/TRO.2024.3443674
 - id: doi:10.1109/TRO.2025.3578228
   title: 'SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization
@@ -289,7 +289,7 @@
   volume: '41'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/TRO.2025.3578228
 - id: doi:10.1109/TRO.2024.3475220
   title: On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems
@@ -325,7 +325,7 @@
   volume: '40'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/TRO.2024.3475220
 - id: doi:10.1109/ICASSP.2018.8462441
   title: Combining Range and Direction for Improved Localization
@@ -356,7 +356,7 @@
   pages: 3484--3488
   type: inproceedings
   buttons:
-  - type: paper
+  - type: inproceedings
     link: https://doi.org/10.1109/ICASSP.2018.8462441
 - id: doi:10.48550/arXiv.2604.27667
   title: Can Tabular Foundation Models Guide Exploration in Robot Policy Learning?
@@ -394,11 +394,11 @@
   publisher: Zenodo
   date: '2025-01-01'
   link: https://doi.org/hb3tvc
-  type: misc
+  type: software
   buttons:
-  - type: software
+  - type: source
     link: https://github.com/duembgen/popcor
-  - type: paper
+  - type: software
     link: https://doi.org/10.5281/zenodo.20169956
 - id: doi:10.1109/LRA.2022.3194669
   title: 'Blind as a Bat: Audible Echolocation on Small Robots'
@@ -432,7 +432,7 @@
   number: '3'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1109/LRA.2022.3194669
 - id: doi:10.1137/18m123428x
   title: Coordinate Difference Matrices
@@ -472,7 +472,7 @@
   number: '1'
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.1137/18m123428x
 - id: doi:10.48550/arXiv.2411.03951
   title: 'Continuous-Time State Estimation Methods in Robotics: A Survey'
@@ -507,7 +507,7 @@
     estimation and suggests new research directions.
   type: article
   buttons:
-  - type: paper
+  - type: journal
     link: https://doi.org/10.48550/arXiv.2411.03951
 - id: doi:10.48550/arXiv.2604.27175
   title: Global Sampling-Based Trajectory Optimization for Contact-Rich Manipulation

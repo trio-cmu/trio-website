@@ -242,6 +242,28 @@ def parse_bibtex_month(month_string):
     return ""
 
 
+def doi_button_type(doi, entry_type):
+    """
+    Pick a button type that matches the DOI-backed item.
+
+    Zenodo DOIs are treated as software artifacts. Other DOIs are mapped to the
+    publication kind when possible so we do not label every DOI as a generic
+    paper.
+    """
+    doi = doi.lower()
+
+    if "zenodo" in doi:
+        return "software"
+
+    if entry_type in {"article", "journal"}:
+        return "journal"
+
+    if entry_type in {"inproceedings", "conference", "proceedings"}:
+        return "inproceedings"
+
+    return "paper"
+
+
 def main():
     bib_path = Path("_data/zotero-export.bib")
     if not bib_path.is_file():
@@ -287,22 +309,25 @@ def main():
         url = entry.get("url", "").strip()
         keywords = entry.get("keywords", "").strip().lower()
         entry_type = entry.get("ENTRYTYPE", "").lower()
-        
-        # Check if this is a software artifact (by entry type, zenodo DOI, or keywords)
-        is_software = entry_type == "software" or "zenodo" in doi.lower() or "software" in keywords or (url and ("github" in url or "gitlab" in url or "gitea" in url))
-        
-        # Add software button if URL exists and it's marked as software
-        if is_software and url:
-            buttons.append({"type": "software", "link": url})
-        
-        # Add paper button for DOI
+        doi_url = ""
+
         if doi:
-            # Format DOI as URL if needed
             if not doi.lower().startswith("http"):
                 doi_url = f"https://doi.org/{doi.replace('doi:', '')}"
             else:
                 doi_url = doi
-            buttons.append({"type": "paper", "link": doi_url})
+        
+        # Check if this is a software artifact (by entry type, zenodo DOI, or keywords)
+        is_software = entry_type == "software" or "zenodo" in doi.lower() or "software" in keywords or (url and ("github" in url or "gitlab" in url or "gitea" in url))
+        
+        # Add repository/source links for software artifacts.
+        if is_software and url:
+            button_type = "source" if "zenodo" in doi.lower() else "software"
+            buttons.append({"type": button_type, "link": url})
+        
+        # Add a DOI button using the most specific type available.
+        if doi:
+            buttons.append({"type": doi_button_type(doi, entry_type), "link": doi_url})
         # Add paper button for URL if it's not already used for software
         elif url and not is_software:
             buttons.append({"type": "paper", "link": url})
@@ -335,9 +360,13 @@ def main():
         if entry.get("number"):
             item["number"] = clean_bibtex(entry.get("number"))
 
-        # Entry type (article, inproceedings, etc.) for reference
+        # Entry type (article, inproceedings, etc.) for reference.
+        # Treat misc software artifacts as software so they do not render as preprints.
         if entry.get("ENTRYTYPE"):
-            item["type"] = entry.get("ENTRYTYPE").lower()
+            if entry_type == "misc" and is_software:
+                item["type"] = "software"
+            else:
+                item["type"] = entry.get("ENTRYTYPE").lower()
 
         entries.append(item)
 
