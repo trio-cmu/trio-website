@@ -1,0 +1,54 @@
+<div class="carousel" role="region" aria-label="Image carousel">
+  <div class="carousel-container">
+    {% assign images = include.images %}
+    {% for image in images %}
+      <div class="carousel-slide" data-slide-index="{{ forloop.index0 }}" {% if forloop.index == 1 %}data-active="true"{% endif %}>
+        <a
+          href="{{ image | relative_url | uri_escape }}"
+          data-lightbox-src="{{ image | relative_url | uri_escape }}"
+          data-lightbox-alt="{{ page.title | default: 'carousel image' | regex_strip }}"
+          data-lightbox-caption="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
+          data-lightbox-group="{{ page.url }}"
+          aria-label="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
+          class="carousel-image-link"
+        >
+          <img
+            src="{{ image | relative_url | uri_escape }}"
+            loading="lazy"
+            alt="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
+            {% include fallback.html %}
+          >
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if images.size > 1 %}
+    <div class="carousel-controls">
+      <button
+        class="carousel-button carousel-prev"
+        aria-label="Previous image"
+        data-direction="prev"
+      >
+        <span>❮</span>
+      </button>
+      <button
+        class="carousel-button carousel-next"
+        aria-label="Next image"
+        data-direction="next"
+      >
+        <span>❯</span>
+      </button>
+    </div>
+
+    <div class="carousel-indicators">
+      {% for image in images %}
+        <button
+          class="carousel-indicator {% if forloop.index == 1 %}active{% endif %}"
+          aria-label="Go to image {{ forloop.index }}"
+          data-slide-index="{{ forloop.index0 }}"
+        ></button>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>

@@ -246,20 +246,14 @@ def doi_button_type(doi, entry_type):
     """
     Pick a button type that matches the DOI-backed item.
 
-    Zenodo DOIs are treated as software artifacts. Other DOIs are mapped to the
-    publication kind when possible so we do not label every DOI as a generic
-    paper.
+    Zenodo DOIs are treated as software artifacts. Other DOI-backed items use
+    the generic paper label so the publication cards can keep their kind chip
+    separate from the clickable button label.
     """
     doi = doi.lower()
 
     if "zenodo" in doi:
         return "software"
-
-    if entry_type in {"article", "journal"}:
-        return "journal"
-
-    if entry_type in {"inproceedings", "conference", "proceedings"}:
-        return "inproceedings"
 
     return "paper"
 

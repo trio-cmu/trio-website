@@ -11,9 +11,8 @@ You can find below an overview of ongoing and past projects from the TRIO Lab at
 
 ## Open Positions
 
-We are always looking for Master's and Undergraduate students to join our lab! Below are featured projects with open positions. 
-
-Interested in collaborating or joining? [Get in touch!](/contact/) 
+We are always looking for Master's and Undergraduate students to join our lab!  
+Interested in collaborating or joining? [Get in touch](/contact/) and let us know which of the below projects you are interested in!
 
 {% include tags.html tags="robotics, optimization, intelligence, software" %}
 
@@ -23,10 +22,17 @@ Interested in collaborating or joining? [Get in touch!](/contact/)
 
 ## Featured
 
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
+<div class="grid" data-style="featured">
+{% include list.html component="card" data="projects" filter="featured == true" style="grid" %}
+</div>
 
 {% include section.html %}
 
+{% assign other_projects = site['projects'] | data_filter: "featured != true" %}
+{% if other_projects.size > 0 %}
 ## More
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+<div class="grid" data-style="more">
+{% include list.html component="card" data="projects" filter="featured != true" style="grid" %}
+</div>
+{% endif %}

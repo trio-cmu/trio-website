@@ -1,5 +1,6 @@
 {{ " " }}
 <div class="card" data-style="{{ include.style }}">
+  {%- assign card_image = include.image | first_image -%}
   {%- assign _href = include.link | default: include.url -%}
   {%- assign is_external = false -%}
   {%- if _href and _href contains '://' -%}
@@ -23,7 +24,7 @@
     class="card-image"
   >
     <img
-      src="{{ include.image | relative_url | uri_escape }}"
+      src="{{ card_image | relative_url | uri_escape }}"
       alt="{{ include.title | default: "card image" | regex_strip }}"
       loading="lazy"
       {% include fallback.html %}

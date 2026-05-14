@@ -12,11 +12,22 @@ module PublicationsFilter
     end
     
     # Filter publications for this project
-    publications_data.select do |pub|
+    results = publications_data.select do |pub|
       pub_id = pub['id']
       projects = metadata_by_id[pub_id] || []
       projects.include?(project_permalink)
     end
+
+    # Sort by date (newest first). Dates are expected as YYYY-MM-DD strings;
+    # fall back to earliest date when parsing fails or date missing.
+    require 'date'
+    results.sort_by do |pub|
+      begin
+        Date.parse(pub['date'].to_s)
+      rescue
+        Date.new(0)
+      end
+    end.reverse
   end
 end
 

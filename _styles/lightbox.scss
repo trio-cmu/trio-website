@@ -1,0 +1,61 @@
+---
+---
+
+.lightbox {
+  width: min(92vw, 1200px);
+  max-width: min(92vw, 1200px);
+  margin: auto;
+  padding: 0;
+  border: none;
+  border-radius: var(--rounded);
+  background: transparent;
+  overflow: visible;
+  box-shadow: none;
+
+  &::backdrop {
+    background: rgba(15, 18, 28, 0.8);
+    backdrop-filter: blur(4px);
+  }
+}
+
+.lightbox-frame {
+  position: relative;
+  margin: 0;
+  padding: 18px 18px 14px;
+  background: var(--background);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+.lightbox-image {
+  display: block;
+  width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+}
+
+.lightbox-caption {
+  margin-top: 12px;
+  color: var(--text-light, var(--gray-600));
+  text-align: center;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--dark-gray);
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}

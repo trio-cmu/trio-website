@@ -1,15 +1,18 @@
 ---
 layout: project
-permalink: /projects/optimal-formulation/
+permalink: /projects/formulation/
 title: Optimal problem formulation 
 subtitle: ...closing the loop between solvers and formulation
 description: We explore how to automatically design optimization problems for robotics.
-image: images/photo.jpg
+image: images/projects/formulation.png
 #external_link: https://github.com/
 #repo: greenelab/lab-website-template
 tags:
   - robotics
   - optimization
+
+order: 4
+featured: true
 ---
 
 ## Differentiable global optimization layers

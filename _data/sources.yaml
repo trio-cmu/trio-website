@@ -8,7 +8,7 @@
   - "Frederike D\xFCmbgen"
   date: '2024-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1177/02783649241269337
   publisher: International Journal of Robotics Research
   type: article
@@ -21,7 +21,7 @@
   - Timothy D. Barfoot
   date: '2024-01-01'
   buttons:
-  - type: inproceedings
+  - type: paper
     link: https://doi.org/10.48550/arXiv.2406.02365
   publisher: Workshop on Algorithmic Foundations for Robotics
   type: inproceedings
@@ -33,7 +33,7 @@
   - Adam Scholefield
   date: '2020-01-01'
   buttons:
-  - type: inproceedings
+  - type: paper
     link: https://doi.org/10.1109/ICASSP40776.2020.9053903
   abstract: Localization of a set of nodes is an important and a thoroughly researched
     problem in robotics and sensor networks. This paper is concerned with the theory
@@ -58,7 +58,7 @@
   - Timothy D. Barfoot
   date: '2023-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/LRA.2022.3233232
   abstract: 'A common approach to localize a mobile robot is by measuring distances
     to points of known positions, called anchors. Locating a device from distance
@@ -89,7 +89,7 @@
   - Timothy D. Barfoot
   date: '2024-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/TRO.2024.3454570
   abstract: In recent years, semidefinite relaxations of common optimization problems
     in robotics have attracted growing attention due to their ability to provide globally
@@ -118,7 +118,7 @@
   - "Frederike D\xFCmbgen"
   date: '2022-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.48550/arXiv.2206.05082
   abstract: This note uses the Total Least-Squares (TLS) line-fitting problem as a
     canvas to explore some modern optimization tools. The contribution is meant to
@@ -142,7 +142,7 @@
   - "St\xE9phane Caron"
   date: '2025-01-01'
   buttons:
-  - type: inproceedings
+  - type: paper
     link: https://doi.org/10.1109/ICRA55743.2025.11128254
   abstract: Contact estimation is a key ability for limbed robots, where making and
     breaking contacts has a direct impact on state estimation and balance control.
@@ -164,7 +164,7 @@
   - Angela P. Schoellig
   date: '2024-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/LRA.2024.3354623
   abstract: Range-only (RO) pose estimation involves determining a robot's pose over
     time by measuring the distance between multiple devices on the robot, known as
@@ -195,7 +195,7 @@
   - "Frederike D\xFCmbgen"
   date: '2026-01-01'
   buttons:
-  - type: inproceedings
+  - type: paper
     link: https://doi.org/10.48550/arXiv.2507.17572
   abstract: 'Global optimization has gained attraction over the past decades, thanks
     to the development of both theoretical foundations and efficient numerical routines.
@@ -223,7 +223,7 @@
   - Timothy D. Barfoot
   date: '2024-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/TRO.2024.3443674
   abstract: 'We present a framework for model-free batch localization and SLAM. We
     use lifting functions to map a control-affine system into a high-dimensional space,
@@ -256,7 +256,7 @@
   - Timothy D. Barfoot
   date: '2025-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/TRO.2025.3578228
   abstract: 'Differentiable optimization is a powerful new paradigm capable of reconciling
     model-based and learning-based approaches in robotics. However, the majority of
@@ -289,7 +289,7 @@
   - Timothy D. Barfoot
   date: '2024-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/TRO.2024.3475220
   abstract: 'In recent years, there has been remarkable progress in the development
     of so-called certifiable perception methods, which leverage semidefinite, convex
@@ -327,7 +327,7 @@
   - Martin Vetterli
   date: '2018-01-01'
   buttons:
-  - type: inproceedings
+  - type: paper
     link: https://doi.org/10.1109/ICASSP.2018.8462441
   abstract: Self-localization of nodes in a sensor network is typically achieved using
     either range or direction measurements; in this paper, we show that a constructive
@@ -394,7 +394,7 @@
   - Martin Vetterli
   date: '2023-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1109/LRA.2022.3194669
   abstract: For safe and efficient operation, mobile robots need to perceive their
     environment, and in particular, perform tasks such as obstacle detection, localization,
@@ -427,7 +427,7 @@
   - Martin Vetterli
   date: '2020-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.1137/18m123428x
   abstract: In many problems such as phase retrieval, molecular biology, source localization,
     and sensor array calibration, one can measure vector differences between pairs
@@ -469,7 +469,7 @@
   - Marco Hutter
   date: '2025-01-01'
   buttons:
-  - type: journal
+  - type: paper
     link: https://doi.org/10.48550/arXiv.2411.03951
   abstract: Accurate, efficient, and robust state estimation is more important than
     ever in robotics as the variety of platforms and complexity of tasks continue

@@ -3,11 +3,15 @@ layout: project
 permalink: /projects/seamless/
 title: Seamless modeling and optimization
 subtitle: ... to lower the barrier of entry to certifiable robotics
-image: images/photo.jpg
+image: 
+- images/projects/seamless.png
+- images/projects/seamless2.png
 #external_link: https://github.com/duembgen/popcor
 # repo: https://github.com/duembgen/popcor
 description: We develop software and tools that automate the process of formulating, solving, and certifying global optimization problems for robotics.
 group: featured
+order: 3
+featured: true
 tags:
   - software
 ---

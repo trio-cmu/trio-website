@@ -1,11 +1,11 @@
 ---
-title: Research
+title: Publications
 nav:
-  order: 1
+  order: 4
   tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
+# {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
 Our research lies at the intersection of robotics, intelligence, and optimization, to build trustworthy autonomous systems that can solve challenging tasks in the real world. 
 

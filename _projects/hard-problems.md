@@ -4,9 +4,12 @@ permalink: /projects/hard-problems/
 title: Global optimization for realistic robotics
 subtitle: ...tackling non-convex, non-smooth and long-horizon problems 
 description: We push the boundaries of what optimization problems are solvable in robotics, by developing tools based on global optimization.
-image: images/photo.jpg
+image: 
+- images/projects/hard-problems.png
+- images/projects/hard-problems2.png
 #external_link: https://github.com/
 #repo: greenelab/lab-website-template
+order: 1
 featured: true
 tags:
   - robotics

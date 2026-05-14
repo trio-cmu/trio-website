@@ -5,35 +5,65 @@
   {% endif %}
 </header>
 
-<div class="feature">
-  <a
-    {% if page.external_link %}
-      href="{{ page.external_link | relative_url | uri_escape }}"
-    {% endif %}
-    class="feature-image"
-    aria-label="{{ page.title | default: 'feature link' | regex_strip }}"
-  >
-    <img
-      src="{{ page.image | relative_url | uri_escape }}"
-      loading="lazy"
-      alt="{{ page.title | default: 'feature image' | regex_strip }}"
-      {% include fallback.html %}
-    >
-  </a>
+{% assign project_images = page.images | default: page.image | image_list %}
 
-  <div class="feature-text">
-    {% if page.description %}
-      {{ page.description | markdownify }}
-    {% endif %}
+{% if project_images.size > 1 %}
+  {%- comment -%} Multiple images: display carousel {%- endcomment -%}
+  <div class="feature">
+    {% include carousel.html images=project_images %}
 
-    {% if page.lead %}
-      {{ page.lead | markdownify }}
-    {% endif %}
+    <div class="feature-text">
+      {% if page.description %}
+        {{ page.description | markdownify }}
+      {% endif %}
 
-    {% if page.external_link %}
-      <p>{% include button.html type="external" link=page.external_link style="bare" %}</p>
-    {% endif %}
+      {% if page.lead %}
+        {{ page.lead | markdownify }}
+      {% endif %}
+
+      {% if page.external_link %}
+        <p>{% include button.html type="external" link=page.external_link style="bare" %}</p>
+      {% endif %}
+    </div>
   </div>
-</div>
+{% elsif project_images.size == 1 %}
+  {%- comment -%} Single image: display as before {%- endcomment -%}
+  <div class="feature">
+    <a
+      {% if page.external_link %}
+        href="{{ page.external_link | relative_url | uri_escape }}"
+      {% endif %}
+      {% unless page.external_link %}
+        href="{{ project_images.first | relative_url | uri_escape }}"
+        data-lightbox-src="{{ project_images.first | relative_url | uri_escape }}"
+        data-lightbox-alt="{{ page.title | default: 'feature image' | regex_strip }}"
+        data-lightbox-group="{{ page.url }}"
+      {% endunless %}
+      class="feature-image"
+      aria-label="{{ page.title | default: 'feature link' | regex_strip }}"
+    >
+      <img
+        src="{{ project_images.first | relative_url | uri_escape }}"
+        loading="lazy"
+        alt="{{ page.title | default: 'feature image' | regex_strip }}"
+        {% include fallback.html %}
+      >
+    </a>
+
+    <div class="feature-text">
+      {% if page.description %}
+        {{ page.description | markdownify }}
+      {% endif %}
+
+      {% if page.lead %}
+        {{ page.lead | markdownify }}
+      {% endif %}
+
+      {% if page.external_link %}
+        <p>{% include button.html type="external" link=page.external_link style="bare" %}</p>
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
 
 {%- comment -%} publications are rendered by the project layout {%- endcomment -%}

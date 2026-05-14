@@ -18,6 +18,21 @@ module Jekyll
       return object
     end
 
+    # normalize image data to an array of image paths
+    def image_list(image)
+      if image.is_a?(Array)
+        return image.compact.select{|item| item != ""}
+      elsif image
+        return [image]
+      end
+      return []
+    end
+
+    # return the first image path from a string or array input
+    def first_image(image)
+      return image_list(image).first
+    end
+
  
     def empty_binding
       binding

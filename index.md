@@ -17,29 +17,6 @@ Our overarching goal is to create physical intelligence that is trustworthy and 
 
 {%
   include button.html
-  link="research"
-  text="See our publications"
-  icon="fa-solid fa-arrow-right"
-  flip=true
-  style="bare"
-%}
-
-{% endcapture %}
-
-{%
-  include feature.html
-  image="images/photo.jpg"
-  link="research"
-  title="Our Research"
-  text=text
-%}
-
-{% capture text %}
-
-We are actively growing our lab. If you are an incoming student, an interested collaborator, or just generally curious about what we do, please check out our projects page for open positions and get in touch! 
-
-{%
-  include button.html
   link="projects"
   text="Browse projects & open positions"
   icon="fa-solid fa-arrow-right"

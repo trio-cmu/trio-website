@@ -1,0 +1,149 @@
+---
+---
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+
+  &-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    background-color: var(--gray-100);
+  }
+
+  &-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    .carousel-image-link {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+
+    &[data-active="true"] {
+      opacity: 1;
+    }
+  }
+
+  &-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    pointer-events: none;
+  }
+
+  &-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    color: var(--dark-gray);
+    font-size: 20px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.95);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+  }
+
+  &-indicators {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+
+  &-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    &.active {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    margin: 20px 0;
+
+    &-button {
+      width: 36px;
+      height: 36px;
+      font-size: 16px;
+    }
+
+    &-controls {
+      padding: 0 8px;
+    }
+
+    &-indicators {
+      bottom: 8px;
+      gap: 6px;
+    }
+
+    &-indicator {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

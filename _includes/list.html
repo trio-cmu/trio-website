@@ -5,7 +5,12 @@
   | data_filter: include.filter
 %}
 
-{% assign data = data | sort: "date" | reverse %}
+{% if include.data == "citations" %}
+  {# Sort citations by date (newest first) #}
+  {% assign data = data | sort: "date" | reverse %}
+{% else %}
+  {% assign data = data | sort: "order" %}
+{% endif %}
 
 {% for d in data %}
     {% assign style = d.style | default: include.style %}

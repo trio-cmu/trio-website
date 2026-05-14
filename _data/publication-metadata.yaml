@@ -45,19 +45,19 @@
 - id: doi:10.48550/arXiv.2507.17572
   projects:
   - /projects/hard-problems/
-  - /projects/optimal-formulation/
+  - /projects/formulation/
   - /projects/sample-efficiency
 
 # Data-Driven Batch Localization and SLAM Using Koopman Linearization
 - id: doi:10.1109/TRO.2024.3443674
   projects:
-  - /projects/optimal-formulation/
+  - /projects/formulation/
   - /projects/sample-efficiency
 
 # SDPRLayers: Certifiable Backpropagation Through Polynomial Optimization Problems in Robotics
 - id: doi:10.1109/TRO.2025.3578228
   projects:
-  - /projects/optimal-formulation/
+  - /projects/formulation/
 
 # On Semidefinite Relaxations for Matrix-Weighted State-Estimation Problems in Robotics
 - id: doi:10.1109/TRO.2024.3475220

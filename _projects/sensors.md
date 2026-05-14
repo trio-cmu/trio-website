@@ -3,11 +3,12 @@ layout: project
 permalink: /projects/sensors/
 title: Non-common sensors for robotics
 subtitle: ... enabling more robust spatial intelligence 
-description: We use sound, radio frequencies, and other modalities for spatial perception for redundancy and robustness in challenging environments.
-image: images/photo.jpg
+image: images/projects/sensors.png
 #external_link: https://github.com/
 #repo: greenelab/lab-website-template
-featured: false
+description: We use sound, radio frequencies, and other modalities for spatial perception for redundancy and robustness in challenging environments.
+order: 5
+featured: true
 tags:
   - robotics
   - optimization
