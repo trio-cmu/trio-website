@@ -26,6 +26,11 @@
   --citation-accent-soft: rgba(29, 78, 216, 0.12);
 }
 
+.citation--software {
+  --citation-accent: #6b7280;
+  --citation-accent-soft: rgba(107, 114, 128, 0.12);
+}
+
 .citation {
   border-left: 6px solid var(--citation-accent, var(--light-gray));
 }
