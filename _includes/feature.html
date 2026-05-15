@@ -8,15 +8,31 @@
     {% if include.link %}
       href="{{ include.link | relative_url | uri_escape }}"
     {% endif %}
-    class="feature-image"
+    class="feature-image{% if include.images %} feature-image-collage{% endif %}"
     aria-label="{{ include.title | default: "feature link" | regex_strip }}"
   >
-    <img
-      src="{{ include.image | relative_url | uri_escape }}"
-      loading="lazy"
-      alt="{{ include.title | default: "feature image" | regex_strip }}"
-      {% include fallback.html %}
-    >
+    {% assign feature_images = include.images | default: include.image | image_list %}
+    {% if feature_images.size > 1 %}
+      <div class="feature-collage" aria-hidden="true">
+        {% for image in feature_images %}
+          <div class="feature-collage-tile">
+            <img
+              src="{{ image | relative_url | uri_escape }}"
+              loading="lazy"
+              alt=""
+              {% include fallback.html %}
+            >
+          </div>
+        {% endfor %}
+      </div>
+    {% else %}
+      <img
+        src="{{ feature_images.first | relative_url | uri_escape }}"
+        loading="lazy"
+        alt="{{ include.title | default: "feature image" | regex_strip }}"
+        {% include fallback.html %}
+      >
+    {% endif %}
   </a>
   <div class="feature-text">
     {% if include.title %}

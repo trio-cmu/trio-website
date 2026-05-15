@@ -10,6 +10,10 @@ nav:
 
 Meet our team of Ph.D. students, Master's students, undergraduates, and research assistants! 
 
+
+{% include carousel.html class="team-carousel" aria_label="Team image carousel" items=site.data.team_carousel %}
+
+
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}

@@ -1,29 +1,73 @@
-<div class="carousel" role="region" aria-label="Image carousel">
+{% assign emptyarray = "" | split: "," %}
+{% assign carousel_items = include.items | default: emptyarray %}
+{% assign carousel_images = include.images | default: emptyarray %}
+{% assign carousel_class = include.class | default: "" %}
+
+<div
+  class="carousel{% if carousel_class != "" %} {{ carousel_class }}{% endif %}"
+  role="region"
+  aria-label="{{ include.aria_label | default: 'Image carousel' }}"
+>
   <div class="carousel-container">
-    {% assign images = include.images %}
-    {% for image in images %}
-      <div class="carousel-slide" data-slide-index="{{ forloop.index0 }}" {% if forloop.index == 1 %}data-active="true"{% endif %}>
-        <a
-          href="{{ image | relative_url | uri_escape }}"
-          data-lightbox-src="{{ image | relative_url | uri_escape }}"
-          data-lightbox-alt="{{ page.title | default: 'carousel image' | regex_strip }}"
-          data-lightbox-caption="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
-          data-lightbox-group="{{ page.url }}"
-          aria-label="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
-          class="carousel-image-link"
-        >
-          <img
-            src="{{ image | relative_url | uri_escape }}"
-            loading="lazy"
-            alt="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
-            {% include fallback.html %}
+    {% if carousel_items.size > 0 %}
+      {% for item in carousel_items %}
+        {% assign image = item.image | default: item %}
+        {% assign caption = item.caption | default: item.title | default: page.title | default: 'carousel image' %}
+        <div class="carousel-slide" data-slide-index="{{ forloop.index0 }}" {% if forloop.index == 1 %}data-active="true"{% endif %}>
+          <figure class="carousel-figure">
+            <a
+              href="{{ image | relative_url | uri_escape }}"
+              data-lightbox-src="{{ image | relative_url | uri_escape }}"
+              data-lightbox-alt="{{ caption | regex_strip }}"
+              data-lightbox-caption="{{ caption | markdownify | strip_newlines | strip_html | regex_strip }}"
+              data-lightbox-group="{{ page.url }}"
+              aria-label="{{ caption | regex_strip }}"
+              class="carousel-image-link"
+            >
+              <img
+                src="{{ image | relative_url | uri_escape }}"
+                loading="lazy"
+                alt="{{ caption | regex_strip }}"
+                {% include fallback.html %}
+              >
+            </a>
+            {% if caption %}
+              <figcaption>{{ caption }}</figcaption>
+            {% endif %}
+          </figure>
+        </div>
+      {% endfor %}
+    {% else %}
+      {% assign images = carousel_images %}
+      {% for image in images %}
+        <div class="carousel-slide" data-slide-index="{{ forloop.index0 }}" {% if forloop.index == 1 %}data-active="true"{% endif %}>
+          <a
+            href="{{ image | relative_url | uri_escape }}"
+            data-lightbox-src="{{ image | relative_url | uri_escape }}"
+            data-lightbox-alt="{{ page.title | default: 'carousel image' | regex_strip }}"
+            data-lightbox-caption="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
+            data-lightbox-group="{{ page.url }}"
+            aria-label="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
+            class="carousel-image-link"
           >
-        </a>
-      </div>
-    {% endfor %}
+            <img
+              src="{{ image | relative_url | uri_escape }}"
+              loading="lazy"
+              alt="{{ page.title | default: 'carousel image' | regex_strip }} - image {{ forloop.index }} of {{ images.size }}"
+              {% include fallback.html %}
+            >
+          </a>
+        </div>
+      {% endfor %}
+    {% endif %}
   </div>
 
-  {% if images.size > 1 %}
+  {% if carousel_items.size > 0 %}
+    {% assign slide_count = carousel_items.size %}
+  {% else %}
+    {% assign slide_count = carousel_images.size %}
+  {% endif %}
+  {% if slide_count > 1 %}
     <div class="carousel-controls">
       <button
         class="carousel-button carousel-prev"
@@ -42,13 +86,23 @@
     </div>
 
     <div class="carousel-indicators">
-      {% for image in images %}
+      {% if carousel_items.size > 0 %}
+        {% for item in carousel_items %}
+          <button
+            class="carousel-indicator {% if forloop.index == 1 %}active{% endif %}"
+            aria-label="Go to image {{ forloop.index }}"
+            data-slide-index="{{ forloop.index0 }}"
+          ></button>
+        {% endfor %}
+      {% else %}
+        {% for image in carousel_images %}
         <button
           class="carousel-indicator {% if forloop.index == 1 %}active{% endif %}"
           aria-label="Go to image {{ forloop.index }}"
           data-slide-index="{{ forloop.index0 }}"
         ></button>
-      {% endfor %}
+        {% endfor %}
+      {% endif %}
     </div>
   {% endif %}
 </div>

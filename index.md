@@ -1,11 +1,14 @@
 ---
 ---
 
-# TRIO Lab @ Carnegie Mellon University
+{% assign project_images = site.static_files | where_exp: "file", "file.path contains '/images/projects/'" | map: "path" | sort %}
+{% assign team_images = site.static_files | where_exp: "file", "file.path contains '/images/team/'" | map: "path" | sort %}
 
-### Welcome to TRIO Lab! We work at the intersection of robotics, intelligence and optimization to build trusworthy autonomous agents for the physical world. 
-
-🤖 🚧 This website is currently under construction. Please reach out if you have any questions! 🚧 🤖
+<div class="project-hero">
+  <h1 class="page-title">TRIO Lab @ Carnegie Mellon University</h1>
+  <h3 class="page-subtitle">Welcome to TRIO Lab! We work at the intersection of robotics, intelligence and optimization to build trusworthy autonomous agents for the physical world.</h3>
+  <p>🤖 🚧 This website is currently under construction. Please reach out if you have any questions! 🚧 🤖</p>
+</div>
 
 {% include section.html %}
 
@@ -28,7 +31,7 @@ Our overarching goal is to create physical intelligence that is trustworthy and 
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  images=project_images
   link="projects"
   title="Our Projects"
   flip=true
@@ -53,7 +56,7 @@ Meet our team of Ph.D. students, Master's students, undergraduates, and research
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  images=team_images
   link="team"
   title="Our Team"
   text=text

@@ -59,3 +59,47 @@
   cursor: pointer;
   box-shadow: var(--shadow);
 }
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--dark-gray);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transform: translateY(-50%);
+}
+
+.lightbox-prev {
+  left: 10px;
+}
+
+.lightbox-next {
+  right: 10px;
+}
+
+@media (max-width: 700px) {
+  .lightbox-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+  }
+
+  .lightbox-prev {
+    left: 6px;
+  }
+
+  .lightbox-next {
+    right: 6px;
+  }
+}

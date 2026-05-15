@@ -1,0 +1,54 @@
+---
+---
+
+.team-carousel {
+  margin: 40px 0;
+
+  .carousel-container {
+    aspect-ratio: 4 / 3;
+  }
+
+  .carousel-slide {
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .carousel-figure {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    gap: 12px;
+    box-sizing: border-box;
+  }
+
+  .carousel-image-link {
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 0;
+  }
+
+  .carousel-image-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  figcaption {
+    flex: 0 0 auto;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    .carousel-figure {
+      padding: 16px;
+      gap: 10px;
+    }
+  }
+}
