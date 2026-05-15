@@ -10,6 +10,8 @@
     const image = dialog.querySelector("[data-lightbox-image]");
     const caption = dialog.querySelector("[data-lightbox-caption]");
     const closeButton = dialog.querySelector("[data-lightbox-close]");
+    const prevButton = dialog.querySelector("[data-lightbox-prev]");
+    const nextButton = dialog.querySelector("[data-lightbox-next]");
 
     const closeDialog = () => {
       if (dialog.open) dialog.close();
@@ -30,6 +32,12 @@
 
     const galleryNext = () => showGalleryIndex(galleryIndex + 1);
     const galleryPrev = () => showGalleryIndex(galleryIndex - 1);
+
+    const updateNavVisibility = () => {
+      const showNav = gallery.length > 1;
+      if (prevButton) prevButton.hidden = !showNav;
+      if (nextButton) nextButton.hidden = !showNav;
+    };
 
     const openDialog = (trigger) => {
       // prefer explicit dataset, otherwise fall back to contained img src
@@ -65,6 +73,7 @@
       if (galleryIndex === -1) galleryIndex = 0;
 
       showGalleryIndex(galleryIndex);
+      updateNavVisibility();
 
       dialog.showModal();
       // focus close button for accessibility
@@ -87,6 +96,8 @@
     });
 
     closeButton?.addEventListener("click", closeDialog);
+    prevButton?.addEventListener("click", galleryPrev);
+    nextButton?.addEventListener("click", galleryNext);
 
     dialog.addEventListener("click", (event) => {
       const rect = dialog.getBoundingClientRect();
@@ -102,6 +113,7 @@
       image.removeAttribute("src");
       image.alt = "";
       caption.textContent = "";
+      updateNavVisibility();
     });
   };
 

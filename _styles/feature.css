@@ -19,6 +19,45 @@
   box-shadow: var(--shadow);
 }
 
+.feature-image-collage {
+  padding: 0;
+}
+
+.feature-collage {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 4px;
+  padding: 4px;
+  background: var(--background);
+  place-content: center;
+  overflow: hidden;
+  border-radius: var(--rounded);
+}
+
+.feature-collage-tile {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+.feature-collage-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.feature-collage-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 .feature-image img {
   width: 100%;
   height: 100%;
@@ -48,6 +87,9 @@
   .feature-image {
     width: 100%;
     max-width: 400px;
+  }
+  .feature-collage {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
