@@ -1,6 +1,6 @@
 ---
 name: Frederike Duembgen
-image: images/photo.jpg
+image: images/frederike-duembgen.jpg
 role: principal-investigator
 aliases:
   - F. Duembgen
