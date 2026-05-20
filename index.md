@@ -2,7 +2,6 @@
 ---
 
 {% assign project_images = site.static_files | where_exp: "file", "file.path contains '/images/projects/'" | map: "path" | sort %}
-{% assign team_images = site.static_files | where_exp: "file", "file.path contains '/images/team/'" | map: "path" | sort %}
 
 <div class="project-hero">
   <h1 class="page-title">TRIO Lab @ Carnegie Mellon University</h1>
@@ -56,7 +55,7 @@ Meet our team of Ph.D. students, Master's students, undergraduates, and research
 
 {%
   include feature.html
-  images=team_images
+  image="images/team/team-pizzadinner-2026.jpg"
   link="team"
   title="Our Team"
   text=text
