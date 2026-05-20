@@ -15,6 +15,8 @@
   aspect-ratio: 3/2;
   border-radius: var(--rounded);
   overflow: hidden;
+  position: relative;
+  isolation: isolate;
   background: var(--background);
   box-shadow: var(--shadow);
 }
@@ -63,8 +65,26 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
+.feature-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: 2;
+  background: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0) 18%), linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0) 18%), linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0) 18%), linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0) 18%);
+  mix-blend-mode: normal;
+}
+
+@media (max-width: 700px) {
+  .feature-image::after {
+    filter: blur(6px);
+  }
+}
 .feature-text {
   flex-grow: 1;
 }
