@@ -121,7 +121,7 @@
   - Timothy D. Barfoot
   - Connor Holmes
   - "Frederike D\xFCmbgen"
-  publisher: arXiv:2206.05082
+  publisher: arXiv
   date: '2022-01-01'
   link: https://doi.org/hb3rwv
   abstract: This note uses the Total Least-Squares (TLS) line-fitting problem as a
@@ -136,7 +136,7 @@
     as an SDP; however, with a lot of data the SDP can be slow and as such we show
     how we can construct a certificate of optimality for a faster method such as Iteratively
     Reweighted Least-Squares (IRLS).
-  type: article
+  type: misc
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2206.05082

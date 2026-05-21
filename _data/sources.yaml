@@ -132,8 +132,7 @@
     as an SDP; however, with a lot of data the SDP can be slow and as such we show
     how we can construct a certificate of optimality for a faster method such as Iteratively
     Reweighted Least-Squares (IRLS).
-  publisher: arXiv:2206.05082
-  type: article
+  type: misc
 - id: doi:10.1109/ICRA55743.2025.11128254
   title: A Data-driven Contact Estimation Method for Wheeled-Biped Robots
   authors:
