@@ -121,7 +121,7 @@
   - Timothy D. Barfoot
   - Connor Holmes
   - "Frederike D\xFCmbgen"
-  publisher: arXiv:2206.05082
+  publisher: arXiv
   date: '2022-01-01'
   link: https://doi.org/hb3rwv
   abstract: This note uses the Total Least-Squares (TLS) line-fitting problem as a
@@ -136,7 +136,7 @@
     as an SDP; however, with a lot of data the SDP can be slow and as such we show
     how we can construct a certificate of optimality for a faster method such as Iteratively
     Reweighted Least-Squares (IRLS).
-  type: article
+  type: misc
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2206.05082
@@ -387,6 +387,39 @@
   buttons:
   - type: paper
     link: https://doi.org/10.48550/arXiv.2604.27667
+- id: doi:10.48550/arXiv.2605.21179
+  title: 'KSOS-BO: Improving Sampling in Bayesian Optimization via Kernel Sum of Squares'
+  authors:
+  - Buqing Ou
+  - "Frederike D\xFCmbgen"
+  publisher: arXiv
+  date: '2026-05-01'
+  link: https://doi.org/hb46nf
+  abstract: Bayesian Optimization (BO) is an effective framework for globally optimizing
+    functions whose evaluations are expensive. It is particularly effective for optimizing
+    functions defined over continuous domains and explicitly handles stochastic noise
+    in evaluations. As a result, it is widely applied in areas such as hyperparameter
+    tuning, robotics policy search, and scientific experiment design, where sample
+    efficiency is essential. Its two-step procedure consists of model fitting followed
+    by optimization of the acquisition function, which is often treated as a generic
+    black-box problem despite its structured nature. In this work, we introduce KSOS-BO,
+    a kernel-based derivative-free framework for BO acquisition optimization. KSOS-BO
+    formulates the optimization of the acquisition function as a semidefinite program
+    with kernel-induced representations, enabling a structured global search. Across
+    a diverse set of benchmark functions with varying landscape properties, KSOS-BO
+    consistently outperforms derivative-free baselines using Sobol Search, Differential
+    Evolution, or CMA-ES to optimize the acquisition function, achieving an average
+    regret improvement of 81.16\% on 10/15 benchmarks. In particular, KSOS-BO demonstrates
+    strong performance in highly multimodal and unimodal but ill-conditioned functions,
+    indicating its applicability to diverse landscape structures. Despite a higher
+    per-iteration computational cost, it converges faster in wall-clock time with
+    an average improvement of 93.55\% on 10/15 benchmarks, as it reaches high-quality
+    solutions with fewer evaluations. Limitations include reduced effectiveness on
+    functions with steep drops or plate-shaped regions.
+  type: misc
+  buttons:
+  - type: paper
+    link: https://doi.org/10.48550/arXiv.2605.21179
 - id: doi:10.5281/zenodo.20169956
   title: 'POPCOR: Polynomial Optimization for Certifiably Optimal Robotics'
   authors:
@@ -396,8 +429,6 @@
   link: https://doi.org/hb3tvc
   type: software
   buttons:
-  - type: source
-    link: https://github.com/duembgen/popcor
   - type: software
     link: https://doi.org/10.5281/zenodo.20169956
 - id: doi:10.1109/LRA.2022.3194669
