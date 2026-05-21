@@ -6,7 +6,6 @@
 %}
 
 {% if include.data == "citations" %}
-  {# Sort citations by date (newest first) #}
   {% assign data = data | sort: "date" | reverse %}
 {% else %}
   {% assign data = data | sort: "order" %}

@@ -72,7 +72,7 @@
 # Can Tabular Foundation Models Guide Exploration in Robot Policy Learning?
 - id: doi:10.48550/arXiv.2604.27667
   projects:
-  - /projects/sample-efficiency
+  - /projects/sample-efficiency/
 
 # POPCOR: Polynomial Optimization for Certifiably Optimal Robotics
 - id: doi:10.5281/zenodo.20169956
@@ -97,3 +97,10 @@
 - id: doi:10.48550/arXiv.2604.27175
   projects: 
   - /projects/hard-problems/
+
+# KSOS-BO
+- id: doi:10.48550/arXiv.2605.21179
+  projects: 
+  - /projects/sample-efficiency/
+
+  # EOF
