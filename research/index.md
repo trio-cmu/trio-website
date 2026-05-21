@@ -17,6 +17,4 @@ Below is a selection of publications from the newly formed TRIO Lab at Carnegie 
 
 {% include search-box.html %}
 
-{% include search-info.html %}
-
 {% include list.html data="citations" component="citation" style="rich" %}
