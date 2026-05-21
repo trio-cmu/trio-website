@@ -8,7 +8,7 @@ links:
   email: buqingo@andrew.cmu.edu
   # home-page: https://duembgen.github.io
   # twitter: sarahjohnson
-  orcid:　0009-0003-3748-0239
+  orcid: 0009-0003-3748-0239
   #google-scholar: https://scholar.google.com/citations?user=qZoT7ZgAAAAJ&hl=en&oi=ao
   #linkedin: zhongqi-wei-40a5b6332
 ---
