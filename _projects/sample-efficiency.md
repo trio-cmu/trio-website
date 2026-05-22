@@ -1,6 +1,6 @@
 ---
 layout: project
-permalink: /projects/sample-efficiency
+permalink: /projects/sample-efficiency/
 title: Sample-efficient learning 
 subtitle: ...using global optimization
 image: 

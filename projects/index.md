@@ -16,8 +16,6 @@ Interested in collaborating or joining? [Get in touch](/contact/) and let us kno
 
 {% include tags.html tags="robotics, optimization, intelligence, software" %}
 
-{% include search-info.html %}
-
 {% include section.html %}
 
 ## Featured
