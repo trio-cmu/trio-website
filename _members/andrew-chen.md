@@ -1,7 +1,7 @@
 ---
 name: Andrew Chen
 image: images/andrew-chen.jpg
-role: undergraduate
+role: undergrad
 group: current
 links:
   github: anchen2
