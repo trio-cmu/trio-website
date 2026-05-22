@@ -1,7 +1,7 @@
 ---
 name: Le Qiu
 image: images/le-qiu.jpg
-role: phd # available: phd, ms, undergrad, visitor, researcher
+role: phd-incoming # available: phd, ms, undergrad, visitor, researcher
 group: current # available:  alum, featured, current, staff, collaborator
 links:
   # github:
