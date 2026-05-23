@@ -106,12 +106,6 @@ github:
   tooltip: GitHub
   link: https://github.com/$VALUE
 
-linkedin:
-  icon: fa-brands fa-linkedin
-  text: LinkedIn
-  tooltip: LinkedIn
-  link: https://linkedin.com/in/$VALUE
-
 twitter:
   icon: fa-brands fa-twitter
   text: Twitter

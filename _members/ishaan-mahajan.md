@@ -5,10 +5,9 @@ role: phd-incoming
 group: current
 links:
   home-page: https://ishaanmahajan.com
-  email: iam2141@columbia.edu
   google-scholar: HMDSXuMAAAAJ&hl=en
-  github: ishaanamahajan
-  linkedin: ishaan-mahajan15
 ---
 
-I am an incoming PhD student at Carnegie Mellon University. My research interests include embedded optimization, model predictive control, and robotic systems that can run reliably on edge hardware.
+Ishaan is an incoming PhD student interested in building safe autonomous systems, particularly with a focus on encountering out-of-distribution (OOD) conditions.
+
+In his free time, he enjoys being active, including playing squash, running, and lifting.
