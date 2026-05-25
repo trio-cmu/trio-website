@@ -22,6 +22,10 @@ research-assistant:
   icon: fa-solid fa-hands-helping
   description: Research Assistant
 
+master:
+  icon: fa-solid fa-user-graduate
+  description: Master's Student
+
 masters:
   icon: fa-solid fa-user-graduate
   description: Master's Student
