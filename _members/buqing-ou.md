@@ -1,7 +1,7 @@
 ---
 name: Buqing Ou
 image: images/buqing-ou.jpg
-role: master # available: phd, undergrad, visitor, researcher
+role: masters # available: phd, undergrad, visitor, researcher
 group: current # available:  alum, featured, current, staff, collaborator
 links:
   github: obuqing

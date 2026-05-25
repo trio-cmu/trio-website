@@ -17,7 +17,7 @@
   2. **Add the following information** at the top of your file (between the `---` lines):
      - `name`: Your full name
      - `image`: Path to your photo (e.g., `images/jane-doe.jpg`)
-    - `role`: Your role (`phd`, `phd-incoming`, `master`, `undergrad`, `research-assistant`, `visitor`, or `researcher`)
+    - `role`: Your role (`phd`, `phd-incoming`, `masters`, `undergrad`, `research-assistant`, `visitor`, or `researcher`)
      - `group`: Your status (`current`, `alum`, `staff`, or `collaborator`)
      - `links`: Your social/professional links (github, email, home-page, twitter, orcid, etc.) — optional links can be commented out with `#`
   3. **Write a brief bio** below the frontmatter: a couple of sentences about your research interests and yourself
