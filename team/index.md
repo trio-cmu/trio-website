@@ -17,7 +17,12 @@ Meet our team of Ph.D. students, Master's students, undergraduates, and research
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role != 'principal-investigator'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd-incoming'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role == 'master' or role == 'masters'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role == 'visitor'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role == 'research-assistant'" sort="name" %}
+{% include list.html data="members" component="portrait" filter="role == 'undergrad'" sort="name" %}
 
 {% include section.html background="images/background-new.png" dark=false %}
 
