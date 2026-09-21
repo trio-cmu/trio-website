@@ -2,10 +2,13 @@
 ---
 
 .team-carousel {
-  margin: 40px 0;
+  margin: 32px auto 8px;
+  max-width: 760px;
+  background: var(--background-alt);
+  border: 1px solid var(--light-gray);
 
   .carousel-container {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 10;
   }
 
   .carousel-slide {
@@ -19,7 +22,7 @@
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 20px;
+    padding: 16px 16px 36px;
     gap: 12px;
     box-sizing: border-box;
   }
@@ -41,14 +44,134 @@
   figcaption {
     flex: 0 0 auto;
     margin: 0;
-    font-style: italic;
+    color: var(--dark-gray);
+    font-size: 0.8rem;
     text-align: center;
   }
 
   @media (max-width: 700px) {
     .carousel-figure {
-      padding: 16px;
+      padding: 12px 12px 32px;
       gap: 10px;
     }
+  }
+  .carousel-indicator {
+    background: var(--light-gray);
+  }
+
+  .carousel-indicator.active {
+    background: var(--primary);
+  }
+
+  .carousel-button {
+    color: #232534;
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  @media (max-width: 500px) {
+    .carousel-container {
+      aspect-ratio: 1 / 1;
+    }
+  }
+}
+
+.team-intro {
+  max-width: 670px;
+  margin: 20px auto;
+  color: var(--dark-gray);
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 32px;
+  padding-top: 12px;
+}
+
+.team-lead {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 32px 0 8px;
+}
+
+.team-lead .portrait {
+  width: 240px;
+  max-width: 100%;
+  margin: 0;
+}
+
+.team-lead .portrait-image {
+  border: 4px solid var(--background);
+  margin-bottom: 16px;
+}
+
+.team-lead .portrait-name {
+  font-size: 1.25rem;
+}
+
+.team-lead-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-lead-links {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.team-lead-links .button {
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  font-size: 1.375rem;
+  border-radius: 50%;
+}
+
+.team-lead-links .button:hover {
+  background: var(--secondary);
+}
+
+.team-grid .portrait {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.team-grid .portrait-image {
+  max-width: 168px;
+  border: 4px solid var(--background);
+  margin-bottom: 16px;
+}
+
+.team-join-title {
+  border: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 800px) {
+  .team-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 18px;
+  }
+
+  .team-grid .portrait-image {
+    max-width: 144px;
   }
 }

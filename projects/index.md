@@ -12,7 +12,7 @@ You can find below an overview of ongoing and past projects from the TRIO Lab at
 ## Open Positions
 
 We are always looking for Master's and Undergraduate students to join our lab!  
-Interested in collaborating or joining? [Get in touch](/contact/) and let us know which of the below projects you are interested in!
+Interested in collaborating or joining? [Get in touch]({{ '/contact/' | relative_url }}) and let us know which of the below projects you are interested in!
 
 {% include tags.html tags="robotics, optimization, intelligence, software" %}
 

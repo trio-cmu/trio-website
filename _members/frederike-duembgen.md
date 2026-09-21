@@ -1,5 +1,6 @@
 ---
 name: Frederike Duembgen
+layout: member-links
 image: images/frederike-duembgen.jpg
 role: principal-investigator
 aliases:
@@ -7,6 +8,6 @@ aliases:
   - F Duembgen
 links:
   home-page: https://duembgen.github.io
-  orcid: 0000-0001-8713-9213
+  google-scholar: "_ABmvmkAAAAJ&hl=en&oi=ao"
+  linkedin: duembgen
 ---
-

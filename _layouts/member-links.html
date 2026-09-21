@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="member-links-profile">
+  <img
+    class="portrait-image"
+    src="{{ page.image | relative_url | uri_escape }}"
+    alt="{{ page.name | xml_escape }}"
+    width="220"
+    height="220"
+    {% include fallback.html %}
+  >
+  <h1>{{ page.name }}</h1>
+  <p class="member-role">{{ site.data.types[page.role].description }}</p>
+  <div class="member-links">
+    {% for link in page.links %}
+      {% assign key = link[0] %}
+      {% assign value = link[1] %}
+      {% include button.html type=key link=value style="bare" %}
+    {% endfor %}
+  </div>
+</div>
+
+{{ content }}

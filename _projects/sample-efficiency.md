@@ -34,4 +34,4 @@ In surrogate-based learning, significant manual work and domain expertise is oft
 
 Finally, in past work we have turned to Koopman-inspired methods for sample-efficient learning. Originally, these methods were used to find a linear representation of *system dynamics*. When combined with methods that also learn a linear representation of *measurement models*, we can use good-old Kalman filtering and LQR control to create an end-to-end optimal estimation and control loop that is both sample-efficient and globally optimal. 
 
-*A common thread of the above works is that we effectively close the loop between modeling and optimization. We dive deeper into this topic in [Optimal problem formulation](/projects/formulation).*
+*A common thread of the above works is that we effectively close the loop between modeling and optimization. We dive deeper into this topic in [Optimal problem formulation]({{ '/projects/formulation/' | relative_url }}).*
