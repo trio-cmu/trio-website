@@ -8,6 +8,6 @@ links:
   github: oafolaya
 ---
 
-I am an M.S. student in Mechanical Engineering at Carnegie Mellon University interested in control and optimization for robotic systems. My current research focuses on optimization-based methods for range-based robot localization, including convex relaxations for position estimation.
+Oluwatodimu is an M.S. student in Mechanical Engineering at Carnegie Mellon University interested in control and optimization for robotic systems. Their current research focuses on optimization-based methods for range-based robot localization, including convex relaxations for position estimation.
 
-Outside of academics, I enjoy making music, cooking, and playing basketball.
+Outside of academics, Oluwatodimu enjoys making music, cooking, and playing basketball.

@@ -13,4 +13,4 @@ links:
   #linkedin: zhongqi-wei-40a5b6332
 ---
 
-I’m a second-year MS student working at the intersection of robotics, reinforcement learning, optimization, and machine learning. My research focuses on sample-efficient robot learning, including policy optimization, Bayesian optimization, and learning-based control for continuous control and manipulation tasks. More broadly, I’m interested in developing autonomous robotic systems that are adaptive, efficient, and reliable in complex real-world environments. Outside of research, I enjoy doing jigsaw puzzles, singing, and hiking.
+Buqing is a second-year M.S. student working at the intersection of robotics, reinforcement learning, optimization, and machine learning. Their research focuses on sample-efficient robot learning, including policy optimization, Bayesian optimization, and learning-based control for continuous control and manipulation tasks. More broadly, Buqing is interested in developing autonomous robotic systems that are adaptive, efficient, and reliable in complex real-world environments. Outside of research, they enjoy jigsaw puzzles, singing, and hiking.

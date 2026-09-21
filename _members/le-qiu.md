@@ -13,4 +13,4 @@ links:
   # linkedin:
 ---
 
-I am a PhD student working at the intersection of optimization, control theory, and learning-based control for robotics. I am interested in developing reliable, adaptive, and generalizable robot autonomy.
+Le is a PhD student working at the intersection of optimization, control theory, and learning-based control for robotics. Their research aims to develop reliable, adaptive, and generalizable robot autonomy.

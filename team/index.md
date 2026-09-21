@@ -9,25 +9,11 @@ nav:
 
 <p class="team-intro">Meet the people working together to build trustworthy robotics, intelligence, and optimization at Carnegie Mellon University.</p>
 
-<div class="team-lead">
+<div class="team-grid">
   {% assign principal_investigators = site.members | where: "role", "principal-investigator" | sort: "name" %}
   {% for member in principal_investigators %}
-    <div class="team-lead-card">
-      {% include portrait.html lookup=member.slug clickable=false %}
-      <div class="team-lead-links">
-        {% for link in member.links %}
-          {% assign key = link[0] %}
-          {% assign value = link[1] %}
-          {% include button.html type=key link=value text="" style="bare" %}
-        {% endfor %}
-      </div>
-    </div>
+    {% include portrait.html lookup=member.slug %}
   {% endfor %}
-</div>
-
-{% include section.html %}
-
-<div class="team-grid">
   {% for group in site.data.team_groups %}
     {% unless group.role == "principal-investigator" %}
       {% assign members = site.members | where: "role", group.role | sort: "name" %}

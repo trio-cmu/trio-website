@@ -8,6 +8,6 @@ links:
   email: junlongn@andrew.cmu.edu
 ---
 
-I am a first-year M.S. student working on robotics, foundation models, and optimization-based control, and I'm interested in making robotic systems more capable, trustworthy, and adaptable in the real world.
+Junlong is a first-year M.S. student working on robotics, foundation models, and optimization-based control. They are interested in making robotic systems more capable, trustworthy, and adaptable in the real world.
 
-In my free time, I enjoy running, swimming, and listening to music.
+In their free time, Junlong enjoys running, swimming, and listening to music.
