@@ -1,0 +1,44 @@
+[data-dark=false] {
+  --primary: #514294;
+  --secondary: #ede9f6;
+  --text: #232534;
+  --background: #ffffff;
+  --background-alt: #f7f8fb;
+  --light-gray: #e2e4ec;
+  --gray: #707585;
+  --dark-gray: #555b6d;
+  --overlay: #25213e0d;
+}
+
+[data-dark=true] {
+  --primary: #c0b4f2;
+  --secondary: #342c50;
+  --text: #f1f2f7;
+  --background: #181923;
+  --background-alt: #20212e;
+  --light-gray: #383b4c;
+  --gray: #969bad;
+  --dark-gray: #bdc1d0;
+  --overlay: #ffffff10;
+}
+
+:root {
+  --title: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --heading: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --code: "Roboto Mono", monospace;
+  --large: 1.2rem;
+  --xl: 1.4rem;
+  --xxl: 1.6rem;
+  --thin: 400;
+  --regular: 400;
+  --semi-bold: 600;
+  --bold: 700;
+  --spacing: 1.75;
+  --compact: 1.5;
+  --rounded: 12px;
+  --shadow: 0 4px 20px var(--overlay);
+  --transition: 0.2s ease;
+}
+
+/*# sourceMappingURL=-theme.css.map */

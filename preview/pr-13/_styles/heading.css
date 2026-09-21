@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 40px 0 20px 0;
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  text-align: left;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  scroll-margin-top: 120px;
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: var(--bold);
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  padding-bottom: 14px;
+  border-bottom: solid 1px var(--light-gray);
+  font-weight: var(--semi-bold);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+:where(h1, h2, h3, h4, h5, h6) > .icon {
+  margin-right: 0.5em;
+  color: var(--primary);
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=heading.css.map */
