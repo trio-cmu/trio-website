@@ -2,6 +2,7 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -90,7 +91,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Inter:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -160,10 +161,6 @@
 
   
     <link href="/trio-website/_styles/cols.css" rel="stylesheet">
-  
-
-  
-    <link href="/trio-website/_styles/dark-toggle.css" rel="stylesheet">
   
 
   
@@ -352,8 +349,6 @@
 
   
 
-  
-
 
 <!-- include all css in styles folder -->
 
@@ -370,8 +365,6 @@
   <script src="/trio-website/_scripts/anchors.js"></script>
 
   <script src="/trio-website/_scripts/carousel.js"></script>
-
-  <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
 
@@ -44231,6 +44224,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
           <span class="title">TRIO Lab</span>
         
         
+        
           <span class="subtitle">Trustworthy Robotics, Intelligence, and Optimization Lab</span>
         
       </span>
@@ -44239,7 +44233,8 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main navigation">
+    
     
     
       
@@ -44252,9 +44247,13 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/team/" data-tooltip="About our team">
+        <a href="/trio-website/team/" aria-current="page" data-tooltip="About our team">
           Team
         </a>
+        
+      
+    
+      
         
       
     
@@ -44268,15 +44267,17 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-      
-    
-      
-        
         <a href="/trio-website/contact/" data-tooltip="Email, address, and location">
           Contact
         </a>
         
       
+    
+    
+      <a class="nav-github" href="https://github.com/trio-cmu" target="_blank" rel="noopener noreferrer" aria-label="TRIO Lab on GitHub">
+        <i class="icon fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
     
   </nav>
 </header>
@@ -44299,12 +44300,457 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   
 
   <section class="background" data-size="page">
-    <h1 id="team">
-<i class="icon fa-solid fa-users"></i>Team</h1>
+    <h1 id="our-team">Our team</h1>
 
-<p>Meet our team of Ph.D. students, Master’s students, undergraduates, and research assistants!</p>
+<p class="team-intro">Meet the people working together to build trustworthy robotics, intelligence, and optimization at Carnegie Mellon University.</p>
 
-<div class="carousel team-carousel" role="region" aria-label="Team image carousel">
+<div class="team-grid">
+  
+  
+    
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/frederike-duembgen.html" class="portrait" data-style="" aria-label="Frederike Duembgen">
+    
+    <img src="/trio-website/images/frederike-duembgen.jpg" class="portrait-image" alt="Frederike Duembgen" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Frederike Duembgen
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Principal Investigator
+      </span>
+    
+
+    
+  </a>
+</div>
+
+  
+  
+    
+  
+    
+      
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/ishaan-mahajan.html" class="portrait" data-style="" aria-label="Ishaan Mahajan">
+    
+    <img src="/trio-website/images/ishaan-mahajan.png" class="portrait-image" alt="Ishaan Mahajan" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Ishaan Mahajan
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/le-qiu.html" class="portrait" data-style="" aria-label="Le Qiu">
+    
+    <img src="/trio-website/images/le-qiu.jpg" class="portrait-image" alt="Le Qiu" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Le Qiu
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/zhongqi-wei.html" class="portrait" data-style="" aria-label="Zhongqi Wei">
+    
+    <img src="/trio-website/images/zhongqi-wei.jpg" class="portrait-image" alt="Zhongqi Wei" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Zhongqi Wei
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        PhD Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/andrew-hung.html" class="portrait" data-style="" aria-label="Andrew Hung">
+    
+    <img src="/trio-website/images/andrew-hung.jpg" class="portrait-image" alt="Andrew Hung" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Andrew Hung
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Master's Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/buqing-ou.html" class="portrait" data-style="" aria-label="Buqing Ou">
+    
+    <img src="/trio-website/images/buqing-ou.jpg" class="portrait-image" alt="Buqing Ou" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Buqing Ou
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Master's Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/emmanuel-amos.html" class="portrait" data-style="" aria-label="Emmanuel Amos">
+    
+    <img src="/trio-website/images/emmanuel-amos.jpg" class="portrait-image" alt="Emmanuel Amos" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Emmanuel Amos
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Master's Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/junlong-ning.html" class="portrait" data-style="" aria-label="Junlong Ning">
+    
+    <img src="/trio-website/images/junlong-ning.jpg" class="portrait-image" alt="Junlong Ning" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Junlong Ning
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Master's Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/oluwatodimu-olamide-afolayan.html" class="portrait" data-style="" aria-label="Oluwatodimu Olamide Afolayan">
+    
+    <img src="/trio-website/images/oluwatodimu-olamide-afolayan.jpg" class="portrait-image" alt="Oluwatodimu Olamide Afolayan" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Oluwatodimu Olamide Afolayan
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Master's Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+    
+  
+    
+      
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/remi-al-ajroudi.html" class="portrait" data-style="" aria-label="Rémi Al Ajroudi">
+    
+    <img src="/trio-website/images/remi-al-ajroudi.jpg" class="portrait-image" alt="Rémi Al Ajroudi" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Rémi Al Ajroudi
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Visitor
+      </span>
+    
+
+    
+      <span class="portrait-affiliation">
+        from École Normale Supérieure Paris-Saclay
+      </span>
+    
+  </a>
+</div>
+
+      
+    
+  
+    
+      
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/dylan-leong.html" class="portrait" data-style="" aria-label="Dylan Leong">
+    
+    <img src="/trio-website/images/dylan-leong.jpg" class="portrait-image" alt="Dylan Leong" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Dylan Leong
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Research Assistant
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/louis-nel.html" class="portrait" data-style="" aria-label="Louis Nel">
+    
+    <img src="/trio-website/images/louis-nel.jpg" class="portrait-image" alt="Louis Nel" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Louis Nel
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Research Assistant
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+    
+  
+    
+      
+      
+        
+
+
+
+
+
+<div class="portrait-wrapper">
+  <a href="/trio-website/members/ibrahim-wichka.html" class="portrait" data-style="" aria-label="Ibrahim Wichka">
+    
+    <img src="/trio-website/images/ibrahim-wichka.jpg" class="portrait-image" alt="Ibrahim Wichka" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
+    
+
+    
+      <span class="portrait-name">
+        Ibrahim Wichka
+      </span>
+    
+
+    
+      <span class="portrait-description">
+        Undergraduate Student
+      </span>
+    
+
+    
+  </a>
+</div>
+
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<div class="carousel team-carousel" role="region" aria-label="Life at TRIO Lab">
   <div class="carousel-container">
     
       
@@ -44395,238 +44841,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   
   
 
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/frederike-duembgen.html" class="portrait" data-style="" aria-label="Frederike Duembgen">
-    
-      <i class="icon fa-solid fa-microscope"></i>
-    
-
-    <img src="/trio-website/images/frederike-duembgen.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Frederike Duembgen
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Principal Investigator
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/zhongqi-wei.html" class="portrait" data-style="" aria-label="Zhongqi Wei">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/trio-website/images/zhongqi-wei.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Zhongqi Wei
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/ishaan-mahajan.html" class="portrait" data-style="" aria-label="Ishaan Mahajan">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/trio-website/images/ishaan-mahajan.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Ishaan Mahajan
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student (incoming)
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/le-qiu.html" class="portrait" data-style="" aria-label="Le Qiu">
-    
-      <i class="icon fa-solid fa-graduation-cap"></i>
-    
-
-    <img src="/trio-website/images/le-qiu.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Le Qiu
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        PhD Student (incoming)
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/buqing-ou.html" class="portrait" data-style="" aria-label="Buqing Ou">
-    
-      <i class="icon fa-solid fa-user-graduate"></i>
-    
-
-    <img src="/trio-website/images/buqing-ou.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Buqing Ou
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Master's Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/remi-al-ajroudi.html" class="portrait" data-style="" aria-label="Rémi Al Ajroudi">
-    
-      <i class="icon fa-solid fa-globe"></i>
-    
-
-    <img src="/trio-website/images/remi-al-ajroudi.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Rémi Al Ajroudi
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Visitor
-      </span>
-    
-
-    
-      <span class="portrait-affiliation">
-        from École Normale Supérieure Paris-Saclay
-      </span>
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/louis-nel.html" class="portrait" data-style="" aria-label="Louis Nel">
-    
-      <i class="icon fa-solid fa-hands-helping"></i>
-    
-
-    <img src="/trio-website/images/louis-nel.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Louis Nel
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Research Assistant
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/andrew-chen.html" class="portrait" data-style="" aria-label="Andrew Chen">
-    
-      <i class="icon fa-solid fa-school"></i>
-    
-
-    <img src="/trio-website/images/andrew-chen.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Andrew Chen
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Undergraduate Student
-      </span>
-    
-
-    
-  </a>
-</div>
-
-<div class="portrait-wrapper">
-  <a href="/trio-website/members/ibrahim-wichka.html" class="portrait" data-style="" aria-label="Ibrahim Wichka">
-    
-      <i class="icon fa-solid fa-school"></i>
-    
-
-    <img src="/trio-website/images/ibrahim-wichka.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
-
-    
-      <span class="portrait-name">
-        Ibrahim Wichka
-      </span>
-    
-
-    
-      <span class="portrait-description">
-        Undergraduate Student
-      </span>
-    
-
-    
-  </a>
-</div>
-  </section>
-
-  
-  
-  
-
   <section class="background" data-size="2" data-dark="false" style="--image: url('/trio-website/images/background-new.png')">
     <!--
   <background>images/background-new.png</background>
@@ -44634,23 +44848,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
   <size>2</size>
 -->
 
-<p>Interested in collaborating or joining the team? See our <a href="/contact/">contact page</a> for details.</p>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
-
-<div class="grid" data-style="square">
-  
-
+<h2 class="team-join-title">Join the team</h2>
+<p class="team-intro">Interested in collaborating or joining TRIO? We'd love to hear from you.</p>
+<div class="team-join-action">
+  <a class="button" href="/trio-website/contact/">Get in touch <span aria-hidden="true">→</span></a>
 </div>
   </section>
 
@@ -44660,34 +44861,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 
 <footer class="background" style="--image: url('/trio-website/images/background-new.png')" data-dark="false" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <div>
-    
-      
-      
-      
-
-
-
-
-  <div class="button-wrapper">
-    
-      <a class="button" href="https://github.com/trio-cmu" data-tooltip="GitHub" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i class="icon fa-brands fa-github"></i>
-        
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-
   <div>
     © 2026
     TRIO Lab
@@ -44697,7 +44870,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
     <dialog class="lightbox" aria-label="Image preview">

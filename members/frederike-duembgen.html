@@ -2,6 +2,7 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -90,7 +91,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Inter:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -160,10 +161,6 @@
 
   
     <link href="/trio-website/_styles/cols.css" rel="stylesheet">
-  
-
-  
-    <link href="/trio-website/_styles/dark-toggle.css" rel="stylesheet">
   
 
   
@@ -314,8 +311,6 @@
   <script src="/trio-website/_scripts/anchors.js"></script>
 
   <script src="/trio-website/_scripts/carousel.js"></script>
-
-  <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
 
@@ -44175,6 +44170,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
           <span class="title">TRIO Lab</span>
         
         
+        
           <span class="subtitle">Trustworthy Robotics, Intelligence, and Optimization Lab</span>
         
       </span>
@@ -44183,7 +44179,8 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main navigation">
+    
     
     
       
@@ -44204,13 +44201,13 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/research/" data-tooltip="Published works">
-          Publications
-        </a>
-        
       
     
       
+        
+        <a href="/trio-website/research/" data-tooltip="Published works">
+          Publications
+        </a>
         
       
     
@@ -44221,6 +44218,12 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
         </a>
         
       
+    
+    
+      <a class="nav-github" href="https://github.com/trio-cmu" target="_blank" rel="noopener noreferrer" aria-label="TRIO Lab on GitHub">
+        <i class="icon fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
     
   </nav>
 </header>
@@ -44246,12 +44249,10 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     <div class="float">
   
 <div class="portrait-wrapper">
-  <a class="portrait" data-style="" aria-label="Frederike Duembgen">
+  <div class="portrait" data-style="" aria-label="Frederike Duembgen">
     
-      <i class="icon fa-solid fa-microscope"></i>
+    <img src="/trio-website/images/frederike-duembgen.jpg" class="portrait-image" alt="Frederike Duembgen" width="200" height="200" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
     
-
-    <img src="/trio-website/images/frederike-duembgen.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/trio-website/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -44266,7 +44267,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
 
     
-  </a>
+  </div>
 </div>
 
 <div>
@@ -44300,10 +44301,30 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <div class="button-wrapper">
     
-      <a class="button" href="https://orcid.org/0000-0001-8713-9213" data-tooltip="ORCID" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="ORCID">
-        <i class="icon fa-brands fa-orcid"></i>
+      <a class="button" href="https://scholar.google.com/citations?user=_ABmvmkAAAAJ&hl=en&oi=ao" data-tooltip="Google Scholar" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+        <i class="icon fa-brands fa-google"></i>
         
-          <span>ORCID</span>
+          <span>Google Scholar</span>
+        
+      </a>
+    
+  </div>
+
+<br>
+  
+    
+    
+    
+
+
+
+
+  <div class="button-wrapper">
+    
+      <a class="button" href="https://www.linkedin.com/in/duembgen" data-tooltip="LinkedIn" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="icon fa-brands fa-linkedin"></i>
+        
+          <span>LinkedIn</span>
         
       </a>
     
@@ -44317,7 +44338,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 </div>
 
 
-
+<p>Frederike is an Assistant Professor of Mechanical Engineering at Carnegie Mellon University, with a courtesy appointment in the Robotics Institute. Her research combines global optimization and artificial intelligence to make robots more capable and trustworthy, with a focus on sample-efficient learning and reliable solutions to challenging nonconvex problems.</p>
 
 
 
@@ -44347,34 +44368,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 
 <footer class="background" style="--image: url('/trio-website/images/background-new.png')" data-dark="false" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <div>
-    
-      
-      
-      
-
-
-
-
-  <div class="button-wrapper">
-    
-      <a class="button" href="https://github.com/trio-cmu" data-tooltip="GitHub" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i class="icon fa-brands fa-github"></i>
-        
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-
   <div>
     © 2026
     TRIO Lab
@@ -44384,7 +44377,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
     <dialog class="lightbox" aria-label="Image preview">

@@ -2,6 +2,7 @@
 <html lang="en" data-dark="false">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -90,7 +91,7 @@
 <!-- automatically get url from fonts used in theme file -->
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?display=swap&&family=Inter:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;family=Roboto+Mono:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700" rel="stylesheet">
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -160,10 +161,6 @@
 
   
     <link href="/trio-website/_styles/cols.css" rel="stylesheet">
-  
-
-  
-    <link href="/trio-website/_styles/dark-toggle.css" rel="stylesheet">
   
 
   
@@ -314,8 +311,6 @@
   <script src="/trio-website/_scripts/anchors.js"></script>
 
   <script src="/trio-website/_scripts/carousel.js"></script>
-
-  <script src="/trio-website/_scripts/dark-mode.js"></script>
 
   <script src="/trio-website/_scripts/fetch-tags.js"></script>
 
@@ -44175,6 +44170,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
           <span class="title">TRIO Lab</span>
         
         
+        
           <span class="subtitle">Trustworthy Robotics, Intelligence, and Optimization Lab</span>
         
       </span>
@@ -44183,7 +44179,8 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main navigation">
+    
     
     
       
@@ -44204,13 +44201,13 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     
       
         
-        <a href="/trio-website/research/" data-tooltip="Published works">
-          Publications
-        </a>
-        
       
     
       
+        
+        <a href="/trio-website/research/" data-tooltip="Published works">
+          Publications
+        </a>
         
       
     
@@ -44221,6 +44218,12 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
         </a>
         
       
+    
+    
+      <a class="nav-github" href="https://github.com/trio-cmu" target="_blank" rel="noopener noreferrer" aria-label="TRIO Lab on GitHub">
+        <i class="icon fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
     
   </nav>
 </header>
@@ -44318,7 +44321,7 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 <section class="project-body">
   <p>There is always a trade-off between the expressiveness of an optimization problem and the difficulty of solving it. To create more capable robots, we need to push the boundaries of what optimization problems we can solve. For example, explicitly modeling contact interactions instead of using predefined gates and contact sequences can lead to the discovery of more efficient and robust behaviors, using more accurate sensor and noise models leads to better estimation performance, using more accurate dynamics leads to better control performance, and so on. We are actively exploring how to efficiently solve these hard problems in estimation and control, using tools from global optimization.</p>
 
-<p>A main challenge is improving efficiency of solvers and making the modeling aspect more seamless. See our projects on <a href="/projects/seamless/">seamless modeling and optimization</a> for an overview of our efforts in this direction.</p>
+<p>A main challenge is improving efficiency of solvers and making the modeling aspect more seamless. See our projects on <a href="/trio-website/projects/seamless/">seamless modeling and optimization</a> for an overview of our efforts in this direction.</p>
 
 </section>
 
@@ -45103,34 +45106,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
 
 
 <footer class="background" style="--image: url('/trio-website/images/background-new.png')" data-dark="false" data-size="wide">
-  <!--
-    <div>
-      Extra details like contact info or address
-    </div>
-  -->
-
-  <div>
-    
-      
-      
-      
-
-
-
-
-  <div class="button-wrapper">
-    
-      <a class="button" href="https://github.com/trio-cmu" data-tooltip="GitHub" data-style="bare" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <i class="icon fa-brands fa-github"></i>
-        
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-
   <div>
     © 2026
     TRIO Lab
@@ -45140,7 +45115,6 @@ LJ21DyalZny6aia3xGXInPP/AHdxwKcO1PO5AAAAAElFTkSuQmCC
     </a>
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
 </footer>
 
     <dialog class="lightbox" aria-label="Image preview">

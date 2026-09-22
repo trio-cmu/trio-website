@@ -4,11 +4,11 @@ body > header {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
-  box-shadow: var(--shadow);
-  position: sticky !important;
+  padding: 18px max(24px, (100% - 1200px) / 2);
+  border-bottom: 1px solid var(--light-gray);
+  position: sticky;
   top: 0;
-  z-index: 10 !important;
+  z-index: 10;
 }
 
 body > header a {
@@ -18,152 +18,223 @@ body > header a {
 
 .home {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  gap: 10px;
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
+  gap: 14px;
+  flex: 1;
+  min-width: 0;
 }
 
 .logo {
-  height: 40px;
+  height: 46px;
+  flex-shrink: 0;
 }
 
 .logo > * {
-  width: unset;
+  width: auto;
   height: 100%;
 }
 
 .title-text {
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 5px;
-  min-width: 0;
+  flex-direction: column;
+  gap: 3px;
   font-family: var(--title);
   text-align: left;
 }
 
 .title {
-  font-size: var(--large);
+  font-size: 1.25rem;
+  font-weight: var(--bold);
+  letter-spacing: -0.025em;
 }
 
 .subtitle {
-  opacity: 0.65;
-  font-weight: var(--thin);
+  max-width: 380px;
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
 .nav-toggle {
   display: none;
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   margin: 0;
-  color: var(--text);
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  background: var(--background);
   appearance: none;
-  transition: background var(--transition);
+  cursor: pointer;
 }
 
-.nav-toggle:after {
-  content: "\f0c9";
+.nav-toggle::after {
+  content: "";
   position: absolute;
-  left: 50%;
-  top: 50%;
-  color: var(--text);
-  font-size: 15px;
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  transform: translate(-50%, -50%);
+  inset: 13px 11px;
+  border-top: 2px solid var(--text);
+  border-bottom: 2px solid var(--text);
+  background: linear-gradient(var(--text), var(--text)) center/100% 2px no-repeat;
 }
 
-.nav-toggle:checked:after {
-  content: "\f00d";
+.nav-toggle:checked {
+  background: var(--secondary);
 }
 
-nav {
+header nav {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   font-family: var(--heading);
-  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: var(--semi-bold);
 }
 
-nav > a {
-  padding: 5px;
+header nav > a {
+  padding: 10px 14px;
+  border-radius: 8px;
 }
 
-nav > a:hover {
+header nav .nav-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-github .icon {
+  font-size: 1.15rem;
+}
+
+header nav > a:hover,
+header nav > a[aria-current=page] {
   color: var(--primary);
+  background: var(--secondary);
 }
 
-@media (max-width: 700px) {
-  body > header:not([data-big]) {
-    justify-content: flex-end;
+body > header[data-big] {
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+  padding: 42px 24px 24px;
+}
+body > header[data-big] .home {
+  flex-direction: column;
+  flex: none;
+  gap: 12px;
+}
+body > header[data-big] .logo {
+  height: 128px;
+}
+body > header[data-big] .title-text {
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+}
+body > header[data-big] .title {
+  font-size: clamp(2.75rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+body > header[data-big] .university {
+  margin: 4px 0;
+  color: var(--primary);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: var(--bold);
+}
+body > header[data-big] .subtitle {
+  max-width: 920px;
+  font-size: clamp(1.125rem, 2.1vw, 1.5rem);
+  text-wrap: balance;
+}
+
+.project-hero {
+  max-width: 800px;
+  margin: 12px auto 20px;
+  text-align: center;
+}
+
+.project-hero .page-title {
+  margin: 0;
+  font-size: clamp(2.1rem, 4.5vw, 3.4rem);
+  line-height: 1.15;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+.project-hero .page-subtitle {
+  max-width: 680px;
+  margin: 24px auto 0;
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  font-weight: var(--regular);
+  text-align: center;
+  line-height: 1.75;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-links .button {
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+  body > header:not([data-big]) .subtitle {
+    max-width: 290px;
   }
   body > header:not([data-big]) .nav-toggle {
-    display: flex;
+    display: block;
   }
   body > header:not([data-big]) .nav-toggle:not(:checked) + nav {
     display: none;
   }
   body > header:not([data-big]) nav {
-    align-items: flex-end;
-    flex-direction: column;
     width: 100%;
+    justify-content: center;
+    padding-top: 12px;
+    border-top: 1px solid var(--light-gray);
   }
 }
-
-body > header[data-big] {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 100px 20px;
-  top: unset;
-}
-body > header[data-big] .home {
-  flex-direction: column;
-  flex-grow: 0;
-}
-body > header[data-big] .logo {
-  height: 160px;
-  flex-shrink: 0;
-}
-body > header[data-big] .title-text {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-body > header[data-big] .title {
-  font-size: var(--xxl);
-}
-body > header[data-big] .subtitle {
-  font-size: var(--large);
-}
-
-.project-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin: 40px auto 0;
-  padding: 0 20px;
-  max-width: 800px;
-  text-align: center;
-}
-
-.project-hero .page-title,
-.project-hero .page-subtitle {
-  margin: 0;
-}
-
-.project-hero .page-subtitle {
-  opacity: 0.7;
-  font-size: var(--large);
-  font-weight: var(--thin);
+@media (max-width: 500px) {
+  body > header {
+    gap: 12px;
+    padding: 14px 20px;
+  }
+  body > header:not([data-big]) .subtitle {
+    max-width: 220px;
+    font-size: 0.7rem;
+  }
+  .logo {
+    height: 38px;
+  }
+  header nav {
+    gap: 2px;
+    font-size: 0.8rem;
+  }
+  header nav > a {
+    padding: 10px;
+  }
+  .nav-github span {
+    display: none;
+  }
+  body > header[data-big] {
+    padding: 30px 22px 18px;
+  }
+  body > header[data-big] .logo {
+    height: 96px;
+  }
+  .project-hero .page-subtitle {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

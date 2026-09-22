@@ -12,4 +12,9 @@ a:not([href]) {
   color: var(--text);
 }
 
+:where(a, button, input):focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 5px;
+}
+
 /*# sourceMappingURL=link.css.map */

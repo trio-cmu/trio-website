@@ -51,6 +51,7 @@
 
 .portrait-image {
   width: 100%;
+  height: auto;
   margin-bottom: 20px;
   aspect-ratio: 1/1;
   border-radius: 999px;
@@ -66,6 +67,31 @@
 .portrait-name {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
+  line-height: 1.5;
+  text-align: center;
+  color: var(--text);
+}
+
+.portrait-description,
+.portrait-affiliation {
+  margin-top: 5px;
+  color: var(--dark-gray);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.portrait-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--secondary);
+  color: var(--primary);
+  font-size: 3rem;
+  font-weight: var(--semi-bold);
+}
+
+.portrait[href]:hover .portrait-name {
+  color: var(--primary);
 }
 
 .portrait[data-style=tiny] .portrait-description,
