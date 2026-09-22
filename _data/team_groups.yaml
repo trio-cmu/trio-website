@@ -1,0 +1,20 @@
+- role: principal-investigator
+  title: Principal Investigator
+- role: phd
+  title: PhD Students
+- role: phd-incoming
+  title: Incoming PhD Students
+- role: masters
+  title: Master's Students
+- role: visitor
+  title: Visitors
+- role: research-assistant
+  title: Research Assistants
+- role: undergrad
+  title: Undergraduate Students
+- role: postdoc
+  title: Postdoctoral Researchers
+- role: researcher
+  title: Researchers
+- role: mascot
+  title: Mascots

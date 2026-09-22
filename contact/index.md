@@ -38,7 +38,7 @@ nav:
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-We are actively growing our lab. If you are an incoming student, an interested collaborator, or just generally curious about what we do, please check out our [projects page](/projects/) for open positions and get in touch! 
+We are actively growing our lab. If you are an incoming student, an interested collaborator, or just generally curious about what we do, please check out our [projects page]({{ '/projects/' | relative_url }}) for open positions and get in touch!
 
 {% capture col1 %}
 
@@ -96,4 +96,3 @@ Lorem ipsum dolor sit amet
 consectetur adipiscing elit  
 sed do eiusmod tempor
 {% endcapture %}
-

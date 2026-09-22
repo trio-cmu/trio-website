@@ -5,34 +5,33 @@ nav:
   tooltip: About our team
 ---
 
-# {% include icon.html icon="fa-solid fa-users" %}Team
+# Our team
 
+<p class="team-intro">Meet the people working together to build trustworthy robotics, intelligence, and optimization at Carnegie Mellon University.</p>
 
-Meet our team of Ph.D. students, Master's students, undergraduates, and research assistants! 
-
-
-{% include carousel.html class="team-carousel" aria_label="Team image carousel" items=site.data.team_carousel %}
-
+<div class="team-grid">
+  {% assign principal_investigators = site.members | where: "role", "principal-investigator" | sort: "name" %}
+  {% for member in principal_investigators %}
+    {% include portrait.html lookup=member.slug %}
+  {% endfor %}
+  {% for group in site.data.team_groups %}
+    {% unless group.role == "principal-investigator" %}
+      {% assign members = site.members | where: "role", group.role | sort: "name" %}
+      {% for member in members %}
+        {% include portrait.html lookup=member.slug %}
+      {% endfor %}
+    {% endunless %}
+  {% endfor %}
+</div>
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role == 'phd'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role == 'phd-incoming'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role == 'masters'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role == 'visitor'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role == 'research-assistant'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role == 'undergrad'" sort="name" %}
-{% include list.html data="members" component="portrait" filter="role != 'principal-investigator' and role != 'phd' and role != 'phd-incoming' and role != 'masters' and role != 'visitor' and role != 'research-assistant' and role != 'undergrad'" sort="name" %}
+{% include carousel.html class="team-carousel" aria_label="Life at TRIO Lab" items=site.data.team_carousel %}
 
 {% include section.html background="images/background-new.png" dark=false %}
 
-Interested in collaborating or joining the team? See our [contact page](/contact/) for details.
-
-{% include section.html %}
-
-{% capture content %}
-
-{% endcapture %}
-
-{% include grid.html style="square" content=content %}
+<h2 class="team-join-title">Join the team</h2>
+<p class="team-intro">Interested in collaborating or joining TRIO? We'd love to hear from you.</p>
+<div class="team-join-action">
+  <a class="button" href="{{ '/contact/' | relative_url }}">Get in touch <span aria-hidden="true">&rarr;</span></a>
+</div>

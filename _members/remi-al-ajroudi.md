@@ -9,4 +9,4 @@ links:
   orcid: 0009-0002-2275-8616
 ---
 
-I am visiting TRIO from École Normale Supérieure Paris-Saclay. I am currently working on latent world models for robotic planning and manipulation, with a focus on understanding when planners can successfully navigate learned latent representations.
+Rémi is visiting TRIO from École Normale Supérieure Paris-Saclay. Their current work focuses on latent world models for robotic planning and manipulation, particularly on understanding when planners can successfully navigate learned latent representations.
