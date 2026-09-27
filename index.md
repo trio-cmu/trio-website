@@ -4,7 +4,6 @@
 {% assign project_images = site.static_files | where_exp: "file", "file.path contains '/images/projects/'" | map: "path" | sort %}
 
 <div class="project-hero">
-  <h1 class="page-title">Building trustworthy<br> physical intelligence.</h1>
   <p class="page-subtitle">Welcome to TRIO Lab. We work at the intersection of robotics, intelligence, and optimization to build trustworthy autonomous agents for the physical world.</p>
   <div class="hero-links">
     <a class="button" href="{{ '/projects/' | relative_url }}">Explore our research <span aria-hidden="true">&rarr;</span></a>
