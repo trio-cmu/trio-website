@@ -1,0 +1,20 @@
+a {
+  color: var(--primary);
+  transition: color var(--transition);
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+a:not([href]) {
+  color: var(--text);
+}
+
+:where(a, button, input):focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 5px;
+}
+
+/*# sourceMappingURL=link.css.map */
