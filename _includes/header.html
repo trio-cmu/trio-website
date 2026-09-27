@@ -29,6 +29,9 @@
         {% if site.title and site.show-title != false %}
           <span class="title">{{ site.title }}</span>
         {% endif %}
+        {% if page.url == "/" %}
+          <strong class="university">Carnegie Mellon University</strong>
+        {% endif %}
         {% if site.subtitle and site.show-subtitle != false %}
           <span class="subtitle">{{ site.subtitle }}</span>
         {% endif %}
@@ -38,7 +41,8 @@
 
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
-  <nav>
+  <nav aria-label="Main navigation">
+    {% assign current_url = page.url %}
     {% assign pages = site.pages
       | where_exp: "page", "page.nav"
       | sort: "nav.order"
@@ -48,6 +52,7 @@
         {% unless page.title == "Blog" %}
         <a
           href="{{ page.dir | relative_url | uri_escape }}"
+          {% if current_url == page.url %}aria-current="page"{% endif %}
           data-tooltip="{{ page.nav.tooltip | xml_escape }}"
         >
           {{ page.title }}
@@ -55,5 +60,17 @@
         {% endunless %}
       {% endif %}
     {% endfor %}
+    {% if site.links.github %}
+      <a
+        class="nav-github"
+        href="https://github.com/{{ site.links.github | uri_escape }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="TRIO Lab on GitHub"
+      >
+        {% include icon.html icon="fa-brands fa-github" %}
+        <span>GitHub</span>
+      </a>
+    {% endif %}
   </nav>
 </header>

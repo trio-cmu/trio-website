@@ -13,4 +13,4 @@ links:
   linkedin: zhongqi-wei-40a5b6332
 ---
 
-I am a fourth-year PhD student working on robotics, optimization, and learning-based control, with a focus on contact-rich manipulation and dexterous robotic hands. I’m interested in making autonomous robots more capable, trustworthy, and adaptable in complex real-world environments. Outside of research, I enjoy playing video games, swimming, and camping.
+Zhongqi is a fourth-year PhD student working on robotics, optimization, and learning-based control, with a focus on contact-rich manipulation and dexterous robotic hands. Their research aims to make autonomous robots more capable, trustworthy, and adaptable in complex real-world environments. Outside of research, Zhongqi enjoys video games, swimming, and camping.

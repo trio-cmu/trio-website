@@ -8,7 +8,8 @@
 {% if include.data == "citations" %}
   {% assign data = data | sort: "date" | reverse %}
 {% else %}
-  {% assign data = data | sort: "order" %}
+  {% assign sort = include.sort | default: "order" %}
+  {% assign data = data | sort: sort %}
 {% endif %}
 
 {% for d in data %}

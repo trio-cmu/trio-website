@@ -11,4 +11,4 @@ links:
   # orcid: 0000-0001-8713-9213
 ---
 
-I completed my Master’s degree at the Polytechnic Institute of Paris and an internship at Inria Paris before moving to TRIO as a research assistant. I’m interested in developing safety monitors and safety filters for learned controllers in robotic systems.
+Louis completed a Master’s degree at the Polytechnic Institute of Paris and an internship at Inria Paris before joining TRIO as a research assistant. Their research focuses on developing safety monitors and safety filters for learned controllers in robotic systems.

@@ -27,7 +27,7 @@ masters:
   description: Master's Student
 
 undergrad:
-  icon: fa-solid fa-file-certificate
+  icon: fa-solid fa-school
   description: Undergraduate Student
 
 visitor:

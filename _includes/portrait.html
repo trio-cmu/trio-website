@@ -8,27 +8,34 @@
 {% endif %}
 
 {% assign type = site.data.types[member.role] %}
+{% assign portrait_tag = "a" %}
+{% if include.clickable == false or page.slug == member.slug %}
+  {% assign portrait_tag = "div" %}
+{% endif %}
 
 <div class="portrait-wrapper">
-  <a
-    {% if page.slug != member.slug %}
+  <{{ portrait_tag }}
+    {% if portrait_tag == "a" %}
       href="{{ member.url | relative_url | uri_escape }}"
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: "member link" | regex_strip }}"
   >
-    {% if type %}
-      {% include icon.html icon=type.icon %}
-    {% endif %}
-
+    {% if member.image %}
     <img
       src="{{ member.image | relative_url | uri_escape }}"
       class="portrait-image"
-      alt="member portrait"
+      alt="{{ member.name | xml_escape }}"
+      width="200"
+      height="200"
       loading="lazy"
       {% include fallback.html %}
     >
+    {% else %}
+      {% assign name_parts = member.name | split: ' ' %}
+      <span class="portrait-image portrait-placeholder" aria-hidden="true">{{ name_parts.first | slice: 0 }}{{ name_parts.last | slice: 0 }}</span>
+    {% endif %}
 
     {% if member.name %}
       <span class="portrait-name">
@@ -47,5 +54,5 @@
         {{ member.affiliation }}
       </span>
     {% endif %}
-  </a>
+  </{{ portrait_tag }}>
 </div>
