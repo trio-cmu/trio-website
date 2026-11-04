@@ -27,6 +27,9 @@
       src="{{ member.image | relative_url | uri_escape }}"
       class="portrait-image"
       alt="{{ member.name | xml_escape }}"
+      {% if member.image_position %}
+      style="object-position: {{ member.image_position | xml_escape }};"
+      {% endif %}
       width="200"
       height="200"
       loading="lazy"
